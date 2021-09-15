@@ -1,5 +1,6 @@
 import { getStorage, ref, getDownloadURL, list, listAll } from "firebase/storage";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const ProjectViewer = () => {
@@ -36,7 +37,7 @@ const ProjectViewer = () => {
 
     useEffect(() => {
         getProjects()
-    })
+    }, [])
     // console.log(projectList[3])
 
     // console.log(getProjects())
@@ -47,7 +48,7 @@ const ProjectViewer = () => {
         <>
             <h1>Projects</h1>
             {projects == null ? <h3>No Projects</h3> : projects.map((project, i) => {
-                return <a href={`/projects/${project}`} >{project} <br /></a>
+                return <Link to={`/projects/${project}`} key={i} >{project} <br /></Link>
             })}
 
             {/* <h3>{projectList[3]}</h3> */}

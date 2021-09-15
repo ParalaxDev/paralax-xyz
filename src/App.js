@@ -10,6 +10,7 @@ import { initializeApp } from "firebase/app"
 
 import ProjectEditor from "./components/ProjectEditor"
 import ProjectViewer from "./components/ProjectViewer";
+import Project from "./components/Project";
 
 const firebaseConfig = {
 	apiKey: process.env.APIKEY,
@@ -28,15 +29,15 @@ const App = () => {
 	return (
 		<Router>
 			<Switch>
-				<Route path="/project-editor">
-					<ProjectEditor />
-				</Route>
+				<Route path="/project-editor" component={ProjectEditor} />
+				<Route path="/projects/:name" component={Project} />
+				<Route exact path="/" component={ProjectViewer} />
 				<Route path="/">
-					<h1>Main page bby</h1>
-					<ProjectViewer />
+					<h1>Error 404</h1>
+					<h4>This is not the page your looking for</h4>
 				</Route>
 			</Switch>
-		</Router>
+		</Router >
 	)
 }
 
