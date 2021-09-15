@@ -3,17 +3,10 @@ import '../App.css'
 import { useState, useEffect } from "react";
 import { sampleText } from "../sampleText";
 
-import { initializeApp } from "firebase/app"
+
 import { getStorage, ref, uploadBytesResumable, getDownloadURL, listAll } from "firebase/storage"
 
-const firebaseConfig = {
-	apiKey: process.env.APIKEY,
-	authDomain: process.env.AUTHDOMAIN,
-	projectId: process.env.PROJECTID,
-	storageBucket: 'paralax-interactive-portfolio.appspot.com',
-	messagingSenderId: process.env.MESSAGINGSENDERID,
-	appId: process.env.APPID
-}
+
 
 const ProjectEditor = () => {
 
@@ -23,9 +16,9 @@ const ProjectEditor = () => {
 	const [fileName, setFileName] = useState('default')
 	const [projectName, setProjectName] = useState(null)
 
-	const firebaseApp = initializeApp(firebaseConfig)
 
-	const storage = getStorage(firebaseApp)
+
+	const storage = getStorage()
 
 	const handleChange = (e) => {
 		setText(e.target.value)
@@ -41,7 +34,7 @@ const ProjectEditor = () => {
 	}
 
 	const getNumberOfFiles = async () => {
-		const listRef = ref(storage, 'markdown/')
+		const listRef = ref(storage, 'Projects/null/markdown')
 
 		await listAll(listRef)
 			.then(async (res) => {

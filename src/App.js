@@ -6,11 +6,23 @@ import {
 	Link
 } from "react-router-dom";
 
+import { initializeApp } from "firebase/app"
+
 import ProjectEditor from "./components/ProjectEditor"
 import ProjectViewer from "./components/ProjectViewer";
 
+const firebaseConfig = {
+	apiKey: process.env.APIKEY,
+	authDomain: process.env.AUTHDOMAIN,
+	projectId: process.env.PROJECTID,
+	storageBucket: 'paralax-interactive-portfolio.appspot.com',
+	messagingSenderId: process.env.MESSAGINGSENDERID,
+	appId: process.env.APPID
+}
+
 const App = () => {
 
+	const firebaseApp = initializeApp(firebaseConfig)
 
 
 	return (
