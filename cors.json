@@ -1,0 +1,12 @@
+[
+  {
+    "origin": [
+      "https://localhost",
+      "https://localhost:3000",
+      "https://paralaxdev.github.io",
+      "https://paralax.xyz"
+    ],
+    "method": ["GET"],
+    "maxAgeSeconds": 3600
+  }
+]
