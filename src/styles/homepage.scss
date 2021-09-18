@@ -9,8 +9,8 @@
 $gradientColour1: #708df2;
 $gradientColour2: #64ffff;
 
-// $gradientColour1: #f12711;
-// $gradientColour2: #f5af19;
+$gradientColour1: #f12711;
+$gradientColour2: #f5af19;
 
 $blobSize: 75vw;
 
@@ -20,13 +20,24 @@ $blobSize: 75vw;
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
-  // overflow: hidden;
+  // overflow: auto;
+  // white-space: "nowrap";
   -ms-overflow-style: none;
   scrollbar-width: none;
+  // scroll-snap-type: x mandatory;
+  // scroll-behavior: smooth;
 }
 
 *:-webkit-scrollbar {
   display: none;
+}
+html {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+body {
+  height: 100%;
 }
 
 .title-container {
@@ -41,7 +52,7 @@ $blobSize: 75vw;
   z-index: 10;
   position: absolute;
   top: 0;
-  left: 0;
+  // left: 0;
 
   .title {
     font-size: 10vw;
@@ -74,6 +85,7 @@ $blobSize: 75vw;
   width: 100vw;
   height: 100vh;
   z-index: -10;
+  // overflow: hidden;
 
   .blob {
     position: absolute;
@@ -113,11 +125,22 @@ $blobSize: 75vw;
   }
 }
 
-.parallax-handler {
+.landing-container {
   position: absolute;
   z-index: 100;
   width: 100vw;
-  height: 100vw;
-  top: 0;
-  left: 0;
+  height: 100vh;
+  // top: 0;
+  // left: 0;
+  // background-color: red;
+}
+
+.wrapper {
+  // // scroll-snap-points-y: repeat(100vh);
+  // white-space: nowrap;
+  // overflow: scroll;
+}
+
+section {
+  scroll-snap-align: start;
 }

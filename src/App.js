@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import { initializeApp } from "firebase/app"
+import smoothscroll from 'smoothscroll-polyfill';
 
 import ProjectEditor from "./components/ProjectEditor"
 import ProjectViewer from "./components/ProjectViewer";
@@ -26,6 +27,7 @@ const firebaseConfig = {
 const App = () => {
 
 	const firebaseApp = initializeApp(firebaseConfig)
+	
 
 
 	return (
