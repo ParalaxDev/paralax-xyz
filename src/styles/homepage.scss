@@ -16,53 +16,20 @@ $blobSize: 75vw;
 
 //#endregion
 
-@mixin fade-in {
-  opacity: 1;
-  transform: translateY(0px);
-  // animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-  animation-duration: 1s;
-}
-
-@mixin fade-in-bottom {
-  @include fade-in();
-  animation-timing-function: ease-out;
-  animation-name: fade-in-bottom;
-  animation-duration: 1s;
-}
-
-@keyframes fade-in-top {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-@keyframes fade-in-bottom {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
 * {
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  // overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*:-webkit-scrollbar {
+  display: none;
 }
 
 .title-container {
-  @include fade-in-bottom();
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,7 +48,6 @@ $blobSize: 75vw;
     background: linear-gradient(90deg, $gradientColour1, $gradientColour2);
     // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     // background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     // line-height: 10vh;
@@ -98,6 +64,7 @@ $blobSize: 75vw;
     .bold {
       font-weight: 900;
       color: $gradientColour1;
+      font-size: 1.45vw;
     }
   }
 }
@@ -146,7 +113,11 @@ $blobSize: 75vw;
   }
 }
 
-.fade-in-top {
-  @include fade-in();
-  animation-name: fade-in-top;
+.parallax-handler {
+  position: absolute;
+  z-index: 100;
+  width: 100vw;
+  height: 100vw;
+  top: 0;
+  left: 0;
 }
