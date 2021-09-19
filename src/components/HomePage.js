@@ -10,10 +10,19 @@ const tagline = (x, y) => `translate3d(${x / 25}px,${y / 25}px,0)`
 const blob1 = (x, y) => `translate3d(${x / 20}px,${y / 20}px,0)`
 const blob2 = (x, y) => `translate3d(${x / 40}px,${y / 40}px,0)`
 
+const getWindowDimensions = () => {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+        width,
+        height
+    };
+}
+
 const Homepage = () => {
 
     const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }))
     const [isLoaded, setIsLoaded] = useState(false)
+    const [windowSize, setWindowSize] = useState(getWindowDimensions())
 
 
     const blobSpring = useSpring({ to: { opacity: 1, transform: 'translateY(0vh)' }, from: { opacity: 0, transform: 'translateY(-2vh)' }, delay: 1250, config: { duration: 2000 } })
@@ -28,7 +37,6 @@ const Homepage = () => {
     }, [])
 
 
-
     const ScrollHandler = (e) => {
         const elRef = useRef();
         useEffect(() => {
@@ -40,14 +48,20 @@ const Homepage = () => {
                     if (e.deltaY == 0) return;
                     e.preventDefault();
                     window.scroll({
-                        left: window.scrollX + (e.deltaY * 7.5),
+                        left: window.scrollX + Math.sign(e.deltaY) * window.innerWidth,
+                        // left: window.scrollX + window.innerWidth * 5,
                         behavior: "smooth"
                     });
+
+                    // console.log((e.deltaY) ? window.innerWidth : `-${window.innerWidth}`)
+                    console.log(Math.sign(e.deltaY) * window.innerWidth)
 
                     // console.log(el.scrollLeft + e.deltaY)
                     // el.scrollLeft += el.deltaY
                     // console.log(el.scrollLeft)
-                    console.log(window.scrollX)
+                    // console.log(window.scrollX)
+                    // console.log(window.innerWidth)
+                    // console.log(e.deltaY)
 
                 };
                 el.addEventListener("wheel", onWheel);
