@@ -9,8 +9,8 @@
 $gradientColour1: #708df2;
 $gradientColour2: #64ffff;
 
-$gradientColour1: #f12711;
-$gradientColour2: #f5af19;
+// $gradientColour1: #f12711;
+// $gradientColour2: #f5af19;
 
 $blobSize: 75vw;
 
@@ -136,11 +136,14 @@ body {
 }
 
 // .wrapper {
-//   scroll-snap-points-y: repeat(100vh);
-//   white-space: nowrap;
-//   overflow: scroll;
+
 // }
 
 section {
   scroll-snap-align: start;
+}
+
+.particles {
+  background-color: red;
+  color: black;
 }
