@@ -40,12 +40,12 @@ const Homepage = () => {
                     if (e.deltaY == 0) return;
                     e.preventDefault();
                     window.scroll({
-                        left: window.scrollX + e.deltaY,
+                        left: window.scrollX + (e.deltaY * 7.5),
                         behavior: "smooth"
                     });
 
                     // console.log(el.scrollLeft + e.deltaY)
-                    el.scrollLeft += el.deltaY
+                    // el.scrollLeft += el.deltaY
                     // console.log(el.scrollLeft)
                     console.log(window.scrollX)
 
