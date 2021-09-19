@@ -4,6 +4,7 @@ import Blob1 from '../svg/Blob1'
 import { useSpring, animated } from 'react-spring'
 import smoothscroll from 'smoothscroll-polyfill';
 import Particles from "react-tsparticles";
+const ReactRotatingText = require('react-rotating-text');
 
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
@@ -89,12 +90,12 @@ const Homepage = () => {
                         <animated.div style={{ transform: props.xy.to(title) }} >
                             <animated.h1 className='title' style={titleSpring}>Paralax.</animated.h1>
                         </animated.div>
-                        <animated.div style={{ transform: props.xy.to(tagline) }} >
+                        {/* <animated.div style={{ transform: props.xy.to(tagline) }} >
                             <animated.h3 className='tagline' style={taglineSpring}>Computer Science <span className='bold'>//</span> Graphic Design</animated.h3>
-                        </animated.div>
+                        </animated.div> */}
                     </div>
                 </section>
-                <section style={{ width: '100vw', height: '100vh', left: '100vw', position: 'absolute' }}>
+                <section style={{ width: '100vw', height: '100vh', left: '100vw', position: 'absolute', overflow: 'hidden' }}>
                     <animated.div className={`blob-container`} style={blobSpring}>
                         <animated.div style={{ transform: props.xy.to(blob1) }}>
                             <Blob1 className='blob bottom-right' />
@@ -106,9 +107,11 @@ const Homepage = () => {
                             <animated.h1 className='title'>About Me</animated.h1>
                         </animated.div>
                         <animated.div style={{ transform: props.xy.to(tagline) }} >
-                            <animated.h2 className='tagline'>I'm <span className='bold'>Will Baker</span>, a Graphic Design and Computer Science student from the UK</animated.h2>
+                            <animated.h2 className='tagline' style={{ width: '50vw', textAlign: 'center' }}>I'm <span className='bold'>Will Baker</span>, a Graphic Design and Computer Science student from the UK. I have experience in <ReactRotatingText items={['React', 'HTML', 'CSS', 'JS', 'Node', 'C#', 'Python']} /></animated.h2>
                         </animated.div>
                     </div>
+
+                    {/* React, HTML, CSS, JS, Node, C#, Python */}
                 </section>
             </div>
             <animated.div style={particlesSpring} >
