@@ -32,6 +32,18 @@ $blobSize: 75vw;
   }
 }
 
+::-moz-selection {
+  color: white;
+  // background-color: white;
+  background: #f5af1979;
+}
+
+::selection {
+  color: white;
+  // background-color: white;
+  background: #f5af1979;
+}
+
 //#endregion
 
 * {
