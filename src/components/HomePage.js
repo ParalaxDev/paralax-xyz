@@ -36,7 +36,8 @@ const Homepage = () => {
     const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }))
     const [isLoaded, setIsLoaded] = useState(false)
     const [isDarkTheme, setIsDarkTheme] = useState(getCurrentTheme());
-    // const [slide, setSlide] = useState(0)
+
+    const [slide, setSlide] = useState(0)
 
     const useThemeDetector = () => {
         const getCurrentTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -60,7 +61,7 @@ const Homepage = () => {
 
     useEffect(() => {
         smoothscroll.polyfill();
-        console.log(getCurrentTheme())
+        // console.log(getCurrentTheme())
 
         setTimeout(() => {
             setIsLoaded(true)
@@ -96,7 +97,6 @@ const Homepage = () => {
             const el = elRef.current;
             if (el) {
                 let oldScrollX = window.scrollX
-                let slide = 0
                 const onWheel = e => {
                     // console.log('super pog?')
                     if (e.deltaY == 0) return;
@@ -108,7 +108,14 @@ const Homepage = () => {
                     });
 
                     // props.history.push(`#${Math.round(window.scrollX / window.innerWidth)}`)
-                    const slide = Math.round(window.scrollX / window.innerWidth)
+                    setSlide(Math.round(window.scrollX / window.innerWidth))
+
+                    setTimeout(() => {
+                        console.log(Math.round(window.scrollX / window.innerWidth))
+                        window.location.href = `#${Math.round(window.scrollX / window.innerWidth)}`
+                    }, 200)
+
+                    // console.log(Math.floor(window.scrollX / window.innerWidth))
 
                     const root = document.documentElement;
 
@@ -117,7 +124,7 @@ const Homepage = () => {
 
                     // console.log(gradient1, gradient2)
 
-                    console.log(isDarkTheme)
+                    // console.log(isDarkTheme)
 
 
 
@@ -181,9 +188,9 @@ const Homepage = () => {
                         <animated.div style={{ transform: props.xy.to(title) }} >
                             <animated.h1 className='title' style={titleSpring}>Paralax.</animated.h1>
                         </animated.div>
-                        {/* <animated.div style={{ transform: props.xy.to(tagline) }} >
-                            <animated.h3 className='tagline' style={taglineSpring}>Computer Science <span className='bold'>//</span> Graphic Design</animated.h3>
-                        </animated.div> */}
+                        <animated.div style={{ transform: props.xy.to(tagline) }} >
+                            {/* <animated.h3 className='tagline' style={taglineSpring}><span className='bold'>{slide}</span></animated.h3> */}
+                        </animated.div>
                     </div>
                 </section>
                 <section style={{ width: '100vw', height: '100vh', left: '100vw', position: 'absolute', overflow: 'hidden' }}>
@@ -199,6 +206,7 @@ const Homepage = () => {
                         </animated.div>
                         <animated.div style={{ transform: props.xy.to(tagline) }} >
                             <animated.h2 className='tagline' style={{ width: '50vw', textAlign: 'center' }}>I'm <span className='bold'>Will Baker</span>, a Graphic Design and Computer Science student from the UK. I have experience in React, HTML, CSS, JS, Node, C#, Python</animated.h2>
+                            {/* <animated.h3 className='tagline' style={taglineSpring}><span className='bold'>{slide}</span></animated.h3> */}
                         </animated.div>
                     </div>
 
