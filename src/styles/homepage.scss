@@ -12,7 +12,25 @@ $gradientColour2: #64ffff;
 // $gradientColour1: #f12711;
 // $gradientColour2: #f5af19;
 
+:root {
+  --gradientColour1: #708df2;
+  --gradientColour2: #64ffff;
+}
+$gradientColour1: var(--gradientColour1);
+$gradientColour2: var(--gradientColour2);
+
 $blobSize: 75vw;
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #333;
+  }
+}
 
 //#endregion
 
@@ -57,6 +75,7 @@ body {
   .title {
     font-size: 10vw;
     background: linear-gradient(90deg, $gradientColour1, $gradientColour2);
+    // transition: 1s;
     // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     // background-size: 400% 400%;
     background-clip: text;
