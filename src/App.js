@@ -13,7 +13,7 @@ import ProjectEditor from "./components/ProjectEditor"
 import ProjectViewer from "./components/ProjectViewer";
 import Project from "./components/Project";
 import Homepage from "./components/HomePage";
-import MainSite from "./components/MainSite";
+// import NewHomepage from "./components/NewHomepage";
 
 const firebaseConfig = {
 	apiKey: process.env.APIKEY,
@@ -27,7 +27,7 @@ const firebaseConfig = {
 const App = () => {
 
 	const firebaseApp = initializeApp(firebaseConfig)
-	
+
 
 
 	return (
@@ -35,7 +35,7 @@ const App = () => {
 			<Switch>
 				<Route path="/project-editor" component={ProjectEditor} />
 				<Route path="/projects/:name" component={Project} />
-				<Route exact path="/" component={MainSite} />
+				<Route exact path="/" component={Homepage} />
 				<Route path="/">
 					<h1>Error 404</h1>
 					<h4>This is not the page your looking for</h4>
