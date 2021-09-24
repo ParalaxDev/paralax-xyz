@@ -35,7 +35,7 @@ function fragmentShader() {
     
     void main() {
       float time = uTime * 0.25;
-      vec2 repeat = -vec2(12., 3.);
+      vec2 repeat = -vec2(15., 3.);
       vec2 uv = fract(vUv * repeat - vec2(time, 0.));
     
       vec3 texture = texture2D(uTexture, uv).rgb;
@@ -86,7 +86,7 @@ const TorusKnot = (props) => {
         // Camera
 
         camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-        camera.position.z = 35
+        camera.position.z = 25
 
         // Scene
 
@@ -94,7 +94,7 @@ const TorusKnot = (props) => {
 
         // Geometry
 
-        // geometry = new THREE.TorusGeometry(3, 1, 100, 100)
+        geometry = new THREE.TorusGeometry(3, 1, 100, 100)
         // geometry = new THREE.BoxGeometry(1, 1, 1)
         geometry = new THREE.TorusKnotGeometry(9, 3, 768, 3, 4, 3);
 
@@ -162,6 +162,7 @@ const TorusKnot = (props) => {
 
     return (
         <canvas id='threejs_canvas' {...props} />
+        // < div />
     )
 }
 
