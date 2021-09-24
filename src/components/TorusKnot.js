@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import * as THREE from "three";
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import img from '../images/text.png'
+import img from '../images/paralax_text.png'
 // import vertexShader from '../shaders/vertex.glsl'
 // import fragmentShader from '../shaders/fragment.glsl'
 
@@ -14,17 +14,13 @@ let clock;
 function vertexShader() {
     return `
     varying vec2 vUv;
-    uniform float uTime;
+    varying vec3 vPos;
     
     void main() {
-        vUv = uv;
-        
-        float time = uTime * 1.0;
-        
-        vec3 transformed = position;
-        transformed.z += sin(position.y + time);
-        
-        gl_Position = projectionMatrix * modelViewMatrix * vec4(transformed, 1.0);
+      vUv = uv;
+      vPos = position;
+    
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.);
     }
     `
 }
@@ -32,25 +28,26 @@ function vertexShader() {
 function fragmentShader() {
     return `
     varying vec2 vUv;
-    uniform float uTime;
+    varying vec3 vPos;
+    
     uniform sampler2D uTexture;
-
+    uniform float uTime;
+    
     void main() {
-        float time = uTime;
-
-        vec2 uv = vUv;
-        uv.x += sin(uv.y * 0.25);
-        vec2 repeat = vec2(6.0, 12.0);
-        uv = fract(uv * repeat + vec2(0.0, time));
-        
-        vec4 color = texture2D(uTexture, uv);
-        
-        gl_FragColor = color;
+      float time = uTime * 0.25;
+      vec2 repeat = -vec2(12., 3.);
+      vec2 uv = fract(vUv * repeat - vec2(time, 0.));
+    
+      vec3 texture = texture2D(uTexture, uv).rgb;
+    
+      float shadow = clamp(vPos.z / 5., 0., 1.);
+    
+      gl_FragColor = vec4(texture * shadow, 1.);
     }
     `
 }
 
-const NewHomepage = () => {
+const TorusKnot = () => {
 
 
     const init = () => {
@@ -59,7 +56,7 @@ const NewHomepage = () => {
             antialias: true,
             alpha: true,
         })
-        renderer.setClearColor('black', 1)
+        // renderer.setClearColor('black', 1)
         renderer.setPixelRatio(window.devicePixelRatio)
         renderer.setSize(window.innerWidth, window.innerHeight);
         document.body.appendChild(renderer.domElement)
@@ -67,7 +64,7 @@ const NewHomepage = () => {
         // Camera
 
         camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-        camera.position.z = 8
+        camera.position.z = 25
 
         // Scene
 
@@ -75,7 +72,9 @@ const NewHomepage = () => {
 
         // Geometry
 
-        geometry = new THREE.TorusGeometry(3, 1, 100, 100)
+        // geometry = new THREE.TorusGeometry(3, 1, 100, 100)
+        // geometry = new THREE.BoxGeometry(1, 1, 1)
+        geometry = new THREE.TorusKnotGeometry(9, 3, 768, 3, 4, 3);
 
         // Texture
 
@@ -106,8 +105,8 @@ const NewHomepage = () => {
 
         // Controls
 
-        controls = new OrbitControls(camera, renderer.domElement);
-        controls.enableDamping = true;
+        // controls = new OrbitControls(camera, renderer.domElement);
+        // controls.enableDamping = true;
 
         // Clock
 
@@ -119,7 +118,7 @@ const NewHomepage = () => {
     }
 
     const render = () => {
-        controls.update()
+        // controls.update()
 
         material.uniforms.uTime.value = clock.getElapsedTime()
 
@@ -141,4 +140,4 @@ const NewHomepage = () => {
     )
 }
 
-export default NewHomepage
+export default TorusKnot

@@ -21,16 +21,16 @@ $gradientColour2: var(--gradientColour2);
 
 $blobSize: 75vw;
 
-@media (prefers-color-scheme: light) {
-  body {
-    background: #fff;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #333;
-  }
-}
+// @media (prefers-color-scheme: light) {
+//   body {
+//     background: #fff;
+//   }
+// }
+// @media (prefers-color-scheme: dark) {
+//   body {
+//     background: #333;
+//   }
+// }
 //#endregion
 
 * {
