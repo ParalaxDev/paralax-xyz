@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import * as THREE from "three";
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import img from '../images/paralax_text.png'
@@ -47,14 +47,36 @@ function fragmentShader() {
     `
 }
 
-const TorusKnot = () => {
+const useWindowSize = () => {
+    const [size, setSize] = useState([0, 0]);
+    useEffect(() => {
+        const updateSize = () => {
+            setSize([window.innerWidth, window.innerHeight]);
+            console.log('window resized')
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+        window.addEventListener('resize', updateSize);
+        updateSize();
+        return () => window.removeEventListener('resize', updateSize);
+    }, []);
+    // return size;
+}
+
+const TorusKnot = (props) => {
+
 
 
     const init = () => {
+        const canvReference = document.getElementById('threejs_canvas')
+
         // Renderer
         renderer = new THREE.WebGLRenderer({
             antialias: true,
             alpha: true,
+            canvas: canvReference
         })
         // renderer.setClearColor('black', 1)
         renderer.setPixelRatio(window.devicePixelRatio)
@@ -64,7 +86,7 @@ const TorusKnot = () => {
         // Camera
 
         camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-        camera.position.z = 25
+        camera.position.z = 35
 
         // Scene
 
@@ -131,12 +153,15 @@ const TorusKnot = () => {
     }
 
     useEffect(() => {
+
         init()
         animate()
     }, [])
 
+    const windowSize = useWindowSize()
+
     return (
-        <div />
+        <canvas id='threejs_canvas' {...props} />
     )
 }
 

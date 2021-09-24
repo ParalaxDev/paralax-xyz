@@ -1,14 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;800;900&display=swap");
+
+@font-face {
+  font-family: "Novecento";
+  src: url("../fonts/novecento_bold-webfont.woff");
+}
+
+$textOutline: 10px;
+
 * {
   //   width: 100vw;
   //   height: 100vh;
-  background-color: black;
+
   margin: 0;
   padding: 0;
   color: white;
+  font-family: "Novecento", "Inter", sans-serif;
 }
 
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title {
+  font-size: 15vw;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  color: #000;
+  z-index: -15;
+  position: fixed;
 }
