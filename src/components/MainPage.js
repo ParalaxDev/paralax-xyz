@@ -1,37 +1,40 @@
 import TorusKnot from "./TorusKnot"
 import '../styles/newHomepage.scss'
 import smoothscroll from 'smoothscroll-polyfill';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Cursor from "./Cursor";
 import SmoothScroll from "./SmoothScroll";
-import Subheading from "./Subheading";
+import Heading from "./Heading";
+import ImageCard from "./ImageCard";
+
+
+import test_image_1 from '../images/test_image_1.png'
 
 const MainPage = () => {
+
+    const [tooltip, setTooltip] = useState('scroll')
 
     useEffect(() => {
         smoothscroll.polyfill();
     }, [])
 
+    // setInterval(() => {
+    //     console.log(tooltip)
+    // }, 100)
+
 
     return (
         <>
-            {/* <SmoothScroll> */}
-            <Cursor />
+            <Cursor tooltip={tooltip} />
             <div className='wrapper'>
-                {/* <div className='navbar'>
-                <ul href='#'>Home</ul>
-                <ul href='#about me'>About Me</ul>
-                <ul href='#my work'>My Work</ul>
-                <ul href='#contact me'>Contact Me</ul>
-            </div> */}
-                {/* <h1 className='title' >Portfolio</h1> */}
                 <section id='landing-page'>
-                    <TorusKnot style={{ position: 'absolute', top: '0', left: '0', zIndex: 0, overflowX: 'hidden' }} />
-                    <div className='spacer' />
-                    <Subheading title='WORK' />
+                    <TorusKnot style={{ position: 'absolute', top: '0', left: '0', overflowX: 'hidden' }} />
+                    {/* <div style={{ position: 'absolute', top: 0, left: 0, width: '100vw', height: '100vh', zIndex: '100' }} /> */}
+                    <div style={{ position: 'static', width: '100vw', height: '250vh', zIndex: '100' }} />
+                    <Heading title='WORK' subtitle='FEATURED PROJECTS' />
+                    <ImageCard image={test_image_1} number='1' title='Kew Gardens' description='GCSE Brief' />
                 </section>
             </div>
-            {/* </SmoothScroll> */}
         </>
     )
 }

@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+
+.imagecard {
+  padding-left: 5vw;
+  font-family: "Poppins", sans-serif;
+  img {
+    width: 25vw;
+  }
+  h1 {
+    font-weight: 500;
+    font-size: 1.5vw;
+  }
+
+  h2 {
+    font-weight: 500;
+    color: rgb(151, 151, 151);
+    font-size: 1vw;
+  }
+
+  .inset {
+    position: relative;
+    left: 5vw;
+    top: -2.5vw;
+  }
+}

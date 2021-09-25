@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
+
+.heading {
+  width: 100vw;
+  user-select: none;
+
+  .outline {
+    -webkit-text-stroke: 0.2vw #505050;
+    color: rgba(0, 0, 0, 0);
+  }
+
+  h1 {
+    word-spacing: 2px;
+    font-size: 8vw;
+    font-family: "Syncopate", sans-serif;
+    height: 6vw;
+    text-align: end;
+    padding-right: 5vw;
+  }
+
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    text-align: start;
+    padding-left: 5vw;
+    font-size: 1.25vw;
+  }
+}

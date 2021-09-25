@@ -1,8 +1,10 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import '../styles/cursor.scss'
-import scrollCursor from '../images/scrollCursor.png'
+import scrollTooltip from '../images/scrollTooltip.png'
 
-const Cursor = (text) => {
+const Cursor = (props) => {
+
+    const [scrollTip, setScrollTip] = useState(true)
 
     const delay = 18;
 
@@ -75,8 +77,11 @@ const Cursor = (text) => {
         _x.current += (endX.current - _x.current) / delay
         _y.current += (endY.current - _y.current) / delay
 
+
         dotOutline.current.style.top = _y.current + 'px'
         dotOutline.current.style.left = _x.current + 'px'
+
+
 
         requestRef.current = requestAnimationFrame(animateDotOutline)
     }
@@ -101,11 +106,14 @@ const Cursor = (text) => {
         }
     }, [])
 
+
     return (
         <>
 
             {/* <div ref={dotOutline} className='cursor-dot-outline'>{text.text}</div> */}
-            <img ref={dotOutline} className='cursor-dot-outline' src={scrollCursor} />
+            <img ref={dotOutline} className='cursor-dot-outline' src={props.tooltip == 'scroll' ? scrollTooltip : null} />
+
+
             <div ref={dot} className='cursor-dot' />
 
         </>

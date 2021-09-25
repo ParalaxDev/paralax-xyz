@@ -18,13 +18,15 @@ $textOutline: 10px;
   margin: 0;
   padding: 0;
   color: white;
-  // overflow-x: hidden;
+  overflow-x: clip;
+  position: relative;
   // font-family: "Novecento", "Inter", sans-serif;
 }
 
 html {
   background-color: #0d0d0d;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: none;
 }
 
 .wrapper {
@@ -58,5 +60,6 @@ html {
 .spacer {
   height: 150vh;
   width: 10px;
-  // width: 100vw;
+  width: 100vw;
+  // position: relative;
 }
