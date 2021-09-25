@@ -34,7 +34,7 @@ function fragmentShader() {
     uniform float uScrolled;
     
     void main() {
-      float scrolled = uScrolled * 0.001;
+      float scrolled = uScrolled * 0.25;
       vec2 repeat = -vec2(15., 3.);
       vec2 uv = fract(vUv * repeat - vec2(scrolled, 0.));
     
@@ -142,7 +142,7 @@ const TorusKnot = (props) => {
     const render = () => {
         // controls.update()
 
-        material.uniforms.uScrolled.value = window.scrollY
+        material.uniforms.uScrolled.value = clock.getElapsedTime()
 
         renderer.render(scene, camera)
     }

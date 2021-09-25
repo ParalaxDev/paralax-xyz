@@ -12,14 +12,14 @@
 }
 
 .cursor-dot {
-  width: 8px;
-  height: 8px;
-  background-color: white;
+  width: 1vw;
+  height: 1vw;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .cursor-dot-outline {
-  width: 80px;
-  height: 80px;
+  width: 5vw;
+  height: 5vw;
   animation: rotation 10s infinite linear;
   //   background-color: rgba(255, 255, 255, 0.301);
 }

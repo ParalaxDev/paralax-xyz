@@ -11,16 +11,20 @@ $textOutline: 10px;
 * {
   //   width: 100vw;
   //   height: 100vh;
-  font-family: "Arvo", serif;
+  // font-family: "Arvo", serif;
 
-  cursor: none;
+  // cursor: none;
 
   margin: 0;
   padding: 0;
   color: white;
   background-color: #0d0d0d;
-  // overflow-: hidden;
+  // overflow-x: hidden;
   // font-family: "Novecento", "Inter", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -52,6 +56,7 @@ $textOutline: 10px;
 }
 
 .spacer {
-  height: 1000vh;
-  width: 100vw;
+  height: 150vh;
+  width: 10px;
+  // width: 100vw;
 }
