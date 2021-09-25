@@ -13,9 +13,13 @@ $textOutline: 10px;
   //   height: 100vh;
   font-family: "Arvo", serif;
 
+  cursor: none;
+
   margin: 0;
   padding: 0;
   color: white;
+  background-color: #0d0d0d;
+  // overflow-: hidden;
   // font-family: "Novecento", "Inter", sans-serif;
 }
 
@@ -45,4 +49,9 @@ $textOutline: 10px;
   // font-style: ;
 
   padding: 0.5vw;
+}
+
+.spacer {
+  height: 1000vh;
+  width: 100vw;
 }

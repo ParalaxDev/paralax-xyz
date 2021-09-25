@@ -31,12 +31,12 @@ function fragmentShader() {
     varying vec3 vPos;
     
     uniform sampler2D uTexture;
-    uniform float uTime;
+    uniform float uScrolled;
     
     void main() {
-      float time = uTime * 0.25;
+      float scrolled = uScrolled * 0.001;
       vec2 repeat = -vec2(15., 3.);
-      vec2 uv = fract(vUv * repeat - vec2(time, 0.));
+      vec2 uv = fract(vUv * repeat - vec2(scrolled, 0.));
     
       vec3 texture = texture2D(uTexture, uv).rgb;
     
@@ -86,7 +86,7 @@ const TorusKnot = (props) => {
         // Camera
 
         camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-        camera.position.z = 25
+        camera.position.z = 35
 
         // Scene
 
@@ -110,7 +110,7 @@ const TorusKnot = (props) => {
             vertexShader: vertexShader(),
             fragmentShader: fragmentShader(),
             uniforms: {
-                uTime: { value: 0 },
+                uScrolled: { value: 0 },
                 uTexture: { value: texture },
             },
             transparent: true,
@@ -142,7 +142,7 @@ const TorusKnot = (props) => {
     const render = () => {
         // controls.update()
 
-        material.uniforms.uTime.value = clock.getElapsedTime()
+        material.uniforms.uScrolled.value = window.scrollY
 
         renderer.render(scene, camera)
     }
