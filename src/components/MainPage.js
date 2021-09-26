@@ -9,6 +9,8 @@ import ImageCard from "./ImageCard";
 
 
 import test_image_1 from '../images/test_image_1.png'
+import test_image_2 from '../images/test_image_2.png'
+import test_image_3 from '../images/test_image_3.png'
 
 const MainPage = () => {
 
@@ -30,9 +32,11 @@ const MainPage = () => {
                 <section id='landing-page'>
                     <TorusKnot style={{ position: 'absolute', top: '0', left: '0', overflowX: 'hidden' }} />
                     {/* <div style={{ position: 'absolute', top: 0, left: 0, width: '100vw', height: '100vh', zIndex: '100' }} /> */}
-                    <div style={{ position: 'static', width: '100vw', height: '250vh', zIndex: '100' }} />
+                    <div style={{ position: 'relative', width: '100vw', height: '300vh', zIndex: '100' }} />
                     <Heading title='WORK' subtitle='FEATURED PROJECTS' />
-                    <ImageCard image={test_image_1} number='1' title='Kew Gardens' description='GCSE Brief' />
+                    <ImageCard image={test_image_1} number='1' title='Kew Gardens Outcome 2' description='GCSE Brief' position='left' />
+                    <ImageCard image={test_image_2} number='2' title='Kew Gardens Outcome 3' description='GCSE Brief' position='right' />
+                    <ImageCard image={test_image_3} number='3' title='Kew Gardens Outcome 1' description='GCSE Brief' position='left' />
                 </section>
             </div>
         </>
