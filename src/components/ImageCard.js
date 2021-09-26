@@ -1,6 +1,10 @@
+import luxy from 'luxy.js'
+import { useEffect } from 'react'
+
 import '../styles/imagecard.scss'
 
 const ImageCard = (props) => {
+
     return (
         <div className='imagecard'>
             <div className={props.position}>

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import '../styles/cursor.scss'
 import scrollTooltip from '../images/scrollTooltip.png'
+import { isMobile } from 'react-device-detect';
 
 const Cursor = (props) => {
 
@@ -20,6 +21,8 @@ const Cursor = (props) => {
 
     const dot = useRef(null)
     const dotOutline = useRef(null)
+
+    const [width, setWidth] = useState(window.innerWidth)
 
     const toggleCursorVisibility = () => {
         if (cursorVisible.current) {
@@ -110,11 +113,9 @@ const Cursor = (props) => {
     return (
         <>
 
-            {/* <div ref={dotOutline} className='cursor-dot-outline'>{text.text}</div> */}
-            <img ref={dotOutline} className='cursor-dot-outline' src={props.tooltip == 'scroll' ? scrollTooltip : null} />
 
-
-            <div ref={dot} className='cursor-dot' />
+            <img ref={dotOutline} className={`cursor-dot-outline ${isMobile ? 'hidden' : null}`} src={props.tooltip == 'scroll' ? scrollTooltip : null} />
+            <div ref={dot} className={`cursor-dot ${isMobile ? 'hidden' : null}`} />
 
         </>
 

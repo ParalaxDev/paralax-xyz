@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { isMobile } from "react-device-detect";
 import * as THREE from "three";
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import img from '../images/paralax_text.png'
@@ -53,10 +54,14 @@ const useWindowSize = () => {
         const updateSize = () => {
             setSize([window.innerWidth, window.innerHeight]);
             // console.log('window resized')
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
 
-            renderer.setSize(window.innerWidth, window.innerHeight);
+            if (!isMobile) {
+
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            }
         }
         window.addEventListener('resize', updateSize);
         updateSize();
