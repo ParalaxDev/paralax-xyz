@@ -16,6 +16,15 @@
     border-bottom: 1px solid rgb(151, 151, 151);
     transition: 0.2s ease-in-out;
   }
+
+  .arrow {
+    filter: invert(100%);
+    width: 1vw;
+    position: relative;
+    top: 0.25vw;
+    left: 0.5vw;
+  }
+
   a:hover {
     background-color: white;
     padding-left: 2vw;
@@ -23,7 +32,8 @@
     border: none;
 
     .arrow {
-      color: black;
+      filter: none;
+      // left: 22.25vw;
     }
   }
 }
