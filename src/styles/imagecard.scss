@@ -39,4 +39,12 @@ $imageWidth: 35vw;
     left: 5vw;
     top: -2.5vw;
   }
+
+  .arrow {
+    filter: invert(50%);
+    width: 0.9vw;
+    position: relative;
+    top: 0.2vw;
+    left: 0.25vw;
+  }
 }
