@@ -1,14 +1,15 @@
 import '../styles/listobject.scss'
 import arrow from '../images/arrow.svg'
+import { Link } from "react-router-dom";
 
 const ListObject = ({ year, title, description, link }) => {
     return (
-        <div className='list-object'>
-            <h2>{year}</h2>
-            <h1>{title}</h1>
-            <h2>{description}</h2>
+        <Link className='list-object' to={link}>
+            <h2 className='list-year'>{year}</h2>
+            <h1 className='list-title'>{title}</h1>
+            <h2 className='list-description'>{description}</h2>
             <img src={arrow} className='arrow' />
-        </div>
+        </Link >
     )
 }
 

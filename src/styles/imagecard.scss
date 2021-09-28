@@ -16,9 +16,12 @@ $imageWidth: 35vw;
   margin-right: 0;
   width: $imageWidth;
 }
+
 .imagecard {
-  padding: 0px 5vw;
+  padding: 0 5vw;
+  // margin: 5vw;
   font-family: "Poppins", sans-serif;
+  // transition: 0.25s;
 
   img {
     width: $imageWidth;
@@ -48,3 +51,11 @@ $imageWidth: 35vw;
     left: 0.25vw;
   }
 }
+
+// .imagecard-link {
+//   transition: 0.25s;
+// }
+
+// .imagecard-link:hover {
+//   transform: scale(0.98);
+// }

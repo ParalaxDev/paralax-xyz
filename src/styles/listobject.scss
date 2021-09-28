@@ -18,17 +18,30 @@
   //   background-color: blue;
   border-bottom: 1px solid rgb(127, 127, 127);
   transition: 0.25s;
+  text-decoration: none;
+  text-align: left;
 
   h1 {
     font-size: 1vw;
     font-weight: 400;
-    flex-grow: 1;
+    // flex-grow: 1;
   }
   h2 {
     font-size: 1vw;
     font-weight: 400;
     color: rgb(127, 127, 127);
+    // flex-grow: 1;
+  }
+
+  .list-title {
+    width: 50%;
+    flex-grow: 2;
+  }
+  .list-description {
     flex-grow: 1;
+  }
+  .list-year {
+    flex-grow: 0.5;
   }
 
   .arrow {
