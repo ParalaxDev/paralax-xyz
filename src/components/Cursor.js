@@ -1,16 +1,19 @@
 import { useEffect, useRef, useState } from "react"
 import '../styles/cursor.scss'
 import scrollTooltip from '../images/scrollTooltip.png'
+import clickTooltip from '../images/clickTooltip.png'
 import { isMobile } from 'react-device-detect';
 
-const Cursor = (props) => {
+const Cursor = ({ parentTooltip }) => {
 
-    const [scrollTip, setScrollTip] = useState(true)
+    // const [scrollTip, setScrollTip] = useState(true)
+    const [tooltip, setTooltip] = useState('scroll')
 
     const delay = 18;
 
     const cursorVisible = useRef(true)
     const cursorEnlarged = useRef(false)
+    // const cursorTooltip = useRef('scroll')
 
     const endX = useRef(window.innerWidth / 2)
     const endY = useRef(window.innerHeight / 2)
@@ -24,7 +27,9 @@ const Cursor = (props) => {
 
     const [width, setWidth] = useState(window.innerWidth)
 
-    const toggleCursorVisibility = () => {
+    setInterval(() => setTooltip(parentTooltip), 100)
+
+    const toggleCursor = () => {
         if (cursorVisible.current) {
             dot.current.style.opacity = 1
             dotOutline.current.style.opacity = 1
@@ -45,6 +50,37 @@ const Cursor = (props) => {
         }
     }
 
+    const toggleTooltip = () => {
+
+        if (!dotOutline) return
+
+        if (tooltip == 'scroll') {
+            // try {
+            // cursorTooltip.current = 'scroll'
+            dotOutline.current.src = scrollTooltip
+            // } catch {
+            console.log('error')
+            // }
+
+        }
+        else if (tooltip == 'click') {
+            // try {
+
+            // cursorTooltip.current = 'click'
+            dotOutline.current.src = clickTooltip
+            // } catch {
+            console.log('error')
+            // }
+        }
+    }
+
+
+
+
+    window.addEventListener('keydown', e => {
+        toggleTooltip()
+    })
+
     const mouseOverEvent = () => {
         cursorEnlarged.current = true
         toggleCursorSize()
@@ -57,17 +93,20 @@ const Cursor = (props) => {
 
     const mouseEnterEvent = () => {
         cursorEnlarged.current = true
-        toggleCursorVisibility()
+        // console.log('yay?')
+        toggleCursor()
     }
 
     const mouseLeaveEvent = () => {
         cursorEnlarged.current = false
-        toggleCursorVisibility()
+        toggleCursor()
     }
 
     const mouseMoveEvent = e => {
-        cursorVisible.current = true
-        toggleCursorVisibility()
+        // cursorVisible.current = true
+        // toggleCursor()
+
+        // toggleTooltip(props.tooltip)
 
         endX.current = e.pageX
         endY.current = e.pageY
@@ -109,12 +148,9 @@ const Cursor = (props) => {
         }
     }, [])
 
-
     return (
         <>
-
-
-            <img ref={dotOutline} className={`cursor-dot-outline ${isMobile ? 'hidden' : null}`} src={props.tooltip == 'scroll' ? scrollTooltip : null} />
+            <img ref={dotOutline} className={`cursor-dot-outline ${isMobile ? 'hidden' : null}`} />
             <div ref={dot} className={`cursor-dot ${isMobile ? 'hidden' : null}`} />
 
         </>
@@ -124,3 +160,4 @@ const Cursor = (props) => {
 }
 
 export default Cursor
+// exports.toggleTooltip = toggleTooltip
