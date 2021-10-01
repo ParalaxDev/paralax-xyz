@@ -2,122 +2,108 @@ import { useParams, Redirect } from "react-router-dom"
 import { useEffect, useState } from "react";
 import { getStorage, ref, getDownloadURL, list, listAll } from "firebase/storage";
 import marked from "marked";
+import { collection, doc, setDoc, getFirestore, getDocs, addDoc, getDoc, query, where } from "firebase/firestore";
+
 
 
 
 const Project = () => {
+    const [text, setText] = useState('# loading...')
+    const [projects, setProjects] = useState([])
+
+    const db = getFirestore();
 
     const params = useParams()
-    const storage = getStorage()
-
-    const [isProject, setIsProject] = useState(true)
-    // const [markdownList, setMarkdownList] = useState(null)
-    const [markdownData, setMarkdownData] = useState(['# loading'])
-
 
     useEffect(() => {
+        getFirestoreProjects()
+        getMD()
+    }, [])
 
-        getProjects()
+    // #region Firestore
 
+    const getFirestoreProjects = async () => {
+        const array = []
+        const querySnapshot = await getDocs(collection(db, "projects"));
+        querySnapshot.forEach((doc) => {
+            // doc.data() is never undefined for query doc snapshots
+            // console.log(doc.id, " => ", doc.data());
+            // console.log(doc.id)
+            array.push(doc.data().title)
+        });
 
-    }, []);
-
-    const getProjects = async () => {
-
-        const listRef = ref(storage, `Projects/${params.name}/markdown`)
-
-        const markdownData = await listAll(listRef)
-            .then(async (res) => {
-                // const projectList = []
-                // res.prefixes.forEach((folderRef) => {
-                //     // console.log(folderRef.fullPath.replace(/Projects\//gm, ''))
-                //     projectList.push(folderRef.fullPath.replace(/Projects\//gm, ''))
-                // });
-                // return projectList
-                setIsProject(res.prefixes.length == 0 && res.items.length == 0 ? false : true)
-                const markdownList = []
-                res.items.forEach((itemRef) => {
-                    markdownList.push(itemRef.fullPath.replace(new RegExp(`Projects\/${params.name}\/markdown\/`, 'gm'), ''))
-                })
-
-                return markdownList
-
-            })
-
-        console.log('MARKDOWN LIST ==========>', markdownData)
-
-        // setMarkdownList(markdownData)
-        getMarkdown(markdownData)
+        // console.log(array)
+        setProjects(array)
 
     }
 
-    const getMarkdown = async (markdownList) => {
+    const getMDFromFirestore = async (id) => {
+        const docRef = doc(db, "projects", id);
+        const docSnap = await getDoc(docRef);
+
+        if (docSnap.exists()) {
+            console.log("Document data:", docSnap.data().projectPageMD);
+
+            const fetchedData = fetch(docSnap.data().projectPageMD)
+                .then(function (response) {
+                    response.text().then(function (text) {
+                        // console.log(text);
+                        setText(text)
+                        // markdownDataList.push(text)
+
+                        // return (<div dangerouslySetInnerHTML={renderText('#loading')} />)
 
 
-        if (markdownList == null) return
-
-        const markdownDataList = []
-
-        markdownList.forEach((file) => {
-            const listRef = ref(storage, `Projects/${params.name}/markdown/${file}`)
-
-            const getMarkdownData = getDownloadURL(listRef).then(data => {
-                const fetchedData = fetch(data)
-                    .then(function (response) {
-                        response.text().then(function (text) {
-                            // console.log(text);
-                            // setMarkdownList(text)
-                            markdownDataList.push(text)
-
-                            // return (<div dangerouslySetInnerHTML={renderText('#loading')} />)
-
-
-                            // console.log(markdownList)
-                        });
-
-                        return markdownDataList
+                        // console.log(markdownList)
                     });
 
-                return fetchedData
+                    // return markdownDataList
+                });
 
 
-            });
+        } else {
+            // doc.data() will be undefined in this case
+            console.log("No such document!");
+        }
 
-            console.log('download url data', getMarkdownData)
-            // markdownDataList.push(getMarkdownData)
-
-
-        })
-
-        console.log(markdownDataList)
+    }
 
 
-        setMarkdownData(markdownDataList)
+    // #endregion
+
+    const getMD = async () => {
+
+        const projectsRef = collection(db, "projects");
+
+        const q = query(projectsRef, where("urlName", "==", params.name));
+
+        const querySnapshot = await getDocs(q);
+        querySnapshot.forEach((doc) => {
+            // doc.data() is never undefined for query doc snapshots
+            // console.log(doc.id, " => ", doc.data());
+            console.log(doc.data().title)
+            getMDFromFirestore(doc.id)
+        });
     }
 
     const renderText = (text) => {
-        // console.log(text)
         const __html = marked(text)
         return { __html }
     }
 
-
-
     return (
         <>
             <h4>{params.name}</h4>
-            {isProject ? <h4>This is a project!</h4> : <Redirect to='/' />}
+
 
 
             {/* <div dangerouslySetInnerHTML={renderText(markdownList)} /> */}
             {
 
             }
+            <div dangerouslySetInnerHTML={renderText(text)} />
 
-            {markdownData.map((md, i) => {
-                return (<p key={i}>lets friking go!?!?</p>)
-            })}
-            <p>{markdownData}</p>
+            {/* <p>{markdownData}</p> */}
         </>
     )
 }

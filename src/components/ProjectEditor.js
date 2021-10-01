@@ -3,7 +3,7 @@
 import marked from "marked";
 import { useState, useEffect } from "react";
 import { sampleText } from "../sampleText";
-import { collection, doc, setDoc, getFirestore, getDocs, addDoc, getDoc } from "firebase/firestore";
+import { collection, doc, setDoc, getFirestore, getDocs, addDoc, getDoc, query, where } from "firebase/firestore";
 import { initializeApp } from "firebase/app"
 // import { getFirestore } from 'firebase/firestore';
 
@@ -12,8 +12,7 @@ const ProjectEditor = () => {
 
     const [text, setText] = useState(sampleText)
     const [projects, setProjects] = useState([])
-    const [currentProject, setCurrentProject] = useState(null)
-    // const firebaseApp = initializeApp(firebaseConfig)
+
     const db = getFirestore();
 
     useEffect(() => {
@@ -72,9 +71,18 @@ const ProjectEditor = () => {
 
     // #endregion
 
-    const handleTextAreaChange = (e) => {
-        setCurrentProject(e.target.value)
-        console.log(e.target.value)
+    const handleTextAreaChange = async (e) => {
+
+        const projectsRef = collection(db, "projects");
+
+        const q = query(projectsRef, where("title", "==", e.target.value));
+
+        const querySnapshot = await getDocs(q);
+        querySnapshot.forEach((doc) => {
+            // doc.data() is never undefined for query doc snapshots
+            // console.log(doc.id, " => ", doc.data());
+            getMDFromFirestore(doc.id)
+        });
     }
 
 
