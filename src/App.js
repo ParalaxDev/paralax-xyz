@@ -19,17 +19,26 @@ import ProjectsPage from "./components/ProjectsPage";
 // import NewHomepage from "./components/NewHomepage";
 
 const firebaseConfig = {
-	apiKey: process.env.APIKEY,
-	authDomain: process.env.AUTHDOMAIN,
-	projectId: process.env.PROJECTID,
-	storageBucket: 'paralax-interactive-portfolio.appspot.com',
-	messagingSenderId: process.env.MESSAGINGSENDERID,
-	appId: process.env.APPID
+	apiKey: "AIzaSyBAhfk_WkXdvdci2kXZLpj7ZCziXCZ_wBg",
+
+	authDomain: "paralax-interactive-portfolio.firebaseapp.com",
+
+	projectId: "paralax-interactive-portfolio",
+
+	storageBucket: "paralax-interactive-portfolio.appspot.com",
+
+	messagingSenderId: "915228355972",
+
+	appId: "1:915228355972:web:a6349365168a5f174401d1",
+
+	measurementId: "G-QLPEGNTJH3"
 }
 
 const App = () => {
 
 	const firebaseApp = initializeApp(firebaseConfig)
+	// const db = getFirestore();
+
 
 
 
