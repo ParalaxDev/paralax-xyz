@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+$font-color: #fff;
+
+.md {
+  padding: 5vw;
+  color: $font-color;
+  font-family: "Segoe UI", sans-serif;
+
+  h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 25px;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+  h5 {
+    font-size: 18px;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+  h6 {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 700;
+  }
+  p {
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 400;
+  }
+}

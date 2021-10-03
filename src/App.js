@@ -12,6 +12,7 @@ import smoothscroll from 'smoothscroll-polyfill';
 import ProjectEditor from "./components/ProjectEditor"
 import ProjectViewer from "./components/ProjectViewer";
 import Project from "./components/Project";
+import SubProject from "./components/SubProject";
 // import Homepage from "./components/HomePage";
 // import NewHomepage from "./components/NewHomepage";
 import MainPage from "./components/MainPage";
@@ -46,7 +47,8 @@ const App = () => {
 		<Router>
 			<Switch>
 				<Route path="/project-editor" component={ProjectEditor} />
-				<Route path="/projects/:name" component={Project} />
+				<Route exact path="/projects/:name" component={Project} />
+				<Route path="/projects/:name/:subpage" component={SubProject} />
 				<Route path="/projects" component={ProjectsPage} />
 				<Route exact path="/" component={MainPage} />
 				<Route path="/">

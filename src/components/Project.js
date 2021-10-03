@@ -3,6 +3,10 @@ import { useEffect, useState } from "react";
 import { getStorage, ref, getDownloadURL, list, listAll } from "firebase/storage";
 import marked from "marked";
 import { collection, doc, setDoc, getFirestore, getDocs, addDoc, getDoc, query, where } from "firebase/firestore";
+import '../styles/generalStyles.scss'
+// import '../styles/notion.css'
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -92,9 +96,7 @@ const Project = () => {
     }
 
     return (
-        <>
-            <h4>{params.name}</h4>
-
+        <div className='md'>
 
 
             {/* <div dangerouslySetInnerHTML={renderText(markdownList)} /> */}
@@ -104,7 +106,7 @@ const Project = () => {
             <div dangerouslySetInnerHTML={renderText(text)} />
 
             {/* <p>{markdownData}</p> */}
-        </>
+        </div>
     )
 }
 
