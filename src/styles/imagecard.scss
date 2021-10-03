@@ -33,7 +33,7 @@ $imageWidth: 35vw;
 
   h2 {
     font-weight: 500;
-    color: rgb(127, 127, 127);
+    color: #eb5757;
     font-size: 1vw;
   }
 
@@ -44,10 +44,11 @@ $imageWidth: 35vw;
   }
 
   .arrow {
-    filter: invert(50%);
+    filter: invert(75%) sepia(93%) saturate(5535%) hue-rotate(329deg)
+      brightness(98%) contrast(89%);
     width: 0.9vw;
     position: relative;
-    top: 0.2vw;
+    top: 0.1vw;
     left: 0.25vw;
   }
 }

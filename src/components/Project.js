@@ -97,15 +97,22 @@ const Project = () => {
 
     return (
         <div className='md'>
+            <div className='page sans'>
+                <header>
+                    <img class="page-cover-image" src="https://images.unsplash.com/photo-1516131206008-dd041a9764fd?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb" style={{ objectPosition: 'center 50%' }} />
+                </header>
+                <div class="page-header-icon page-header-icon-with-cover">
+                    <span class="icon">🖌️</span>
+                </div>
 
+                {/* <div dangerouslySetInnerHTML={renderText(markdownList)} /> */}
+                {
 
-            {/* <div dangerouslySetInnerHTML={renderText(markdownList)} /> */}
-            {
+                }
+                <div dangerouslySetInnerHTML={renderText(text)} />
 
-            }
-            <div dangerouslySetInnerHTML={renderText(text)} />
-
-            {/* <p>{markdownData}</p> */}
+                {/* <p>{markdownData}</p> */}
+            </div>
         </div>
     )
 }
