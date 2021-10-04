@@ -13,6 +13,7 @@ $font-color: #fff;
     margin: 2em auto;
     max-width: 900px;
     color: rgb(55, 53, 47);
+    padding: 5vw;
   }
 
   line-height: 1.5;
@@ -21,7 +22,7 @@ $font-color: #fff;
   a,
   a.visited {
     color: #eb5757;
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   .pdf-relative-link-path {

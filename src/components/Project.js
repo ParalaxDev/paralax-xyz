@@ -97,10 +97,10 @@ const Project = () => {
 
     return (
         <div className='md'>
+            <header>
+                <img class="page-cover-image" src="https://images.unsplash.com/photo-1582904188469-0a8b2cea8d54?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" style={{ objectPosition: 'center 50%' }} />
+            </header>
             <div className='page sans'>
-                <header>
-                    <img class="page-cover-image" src="https://images.unsplash.com/photo-1582904188469-0a8b2cea8d54?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" style={{ objectPosition: 'center 50%' }} />
-                </header>
                 <div class="page-header-icon page-header-icon-with-cover">
                     <span class="icon">🖌️</span>
                 </div>
