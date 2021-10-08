@@ -17,6 +17,8 @@ import SubProject from "./components/SubProject";
 // import NewHomepage from "./components/NewHomepage";
 import MainPage from "./components/MainPage";
 import ProjectsPage from "./components/ProjectsPage";
+import Kew from "./projects/Kew";
+import Typography from "./projects/Typography";
 // import NewHomepage from "./components/NewHomepage";
 
 const firebaseConfig = {
@@ -47,8 +49,10 @@ const App = () => {
 		<Router>
 			<Switch>
 				<Route path="/project-editor" component={ProjectEditor} />
-				<Route exact path="/projects/:name" component={Project} />
-				<Route path="/projects/:name/:subpage" component={SubProject} />
+				{/* <Route exact path="/projects/:name" component={Project} /> */}
+				{/* <Route path="/projects/:name/:subpage" component={SubProject} /> */}
+				<Route path="/projects/kew" component={Kew} />
+				<Route path="/projects/typography" component={Typography} />
 				<Route path="/projects" component={ProjectsPage} />
 				<Route exact path="/" component={MainPage} />
 				<Route path="/">
