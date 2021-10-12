@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
 
 .heading {
-  width: 100vw;
+  width: 100%;
   user-select: none;
 
   .outline {
@@ -12,18 +12,18 @@
 
   h1 {
     word-spacing: 2px;
-    font-size: 8vw;
+    font-size: 6vw;
     font-family: "Syncopate", sans-serif;
-    height: 6vw;
+    height: 4.25vw;
     text-align: end;
-    padding-right: 5vw;
+    // padding-right: 5vw;
   }
 
   h2 {
     font-family: "Poppins", sans-serif;
     font-weight: normal;
     text-align: start;
-    padding-left: 5vw;
-    font-size: 1.25vw;
+    // padding-left: 5vw;
+    font-size: 1vw;
   }
 }

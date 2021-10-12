@@ -12,6 +12,7 @@ import Button from "./Button";
 import test_image_1 from '../images/test_image_1.png'
 import test_image_2 from '../images/test_image_2.png'
 import test_image_3 from '../images/test_image_3.png'
+import drbarkers from '../images/drbarkers.png'
 
 const MainPage = () => {
 
@@ -43,7 +44,8 @@ const MainPage = () => {
                 <ImageCard image={test_image_3} number='1' title='Kew Gardens Outcome 1' description='GCSE Brief' link='/projects/kew' position='left' parentCallback={parentCallback} />
                 <Button text='See All Projects' link='/projects' />
                 <ImageCard image={test_image_1} number='2' title='Kew Gardens Outcome 2' description='GCSE Brief' link='/projects/kew' position='right' parentCallback={parentCallback} />
-                <ImageCard image={test_image_2} number='3' title='Kew Gardens Outcome 3' description='GCSE Brief' link='/projects/kew' position='left' parentCallback={parentCallback} />
+                <ImageCard image={drbarkers} number='3' title='Dr Barkers' description='GCSE Brief' link='/projects/drbarkers' position='left' parentCallback={parentCallback} />
+                <ImageCard image={test_image_2} number='4' title='Kew Gardens Outcome 3' description='GCSE Brief' link='/projects/kew' position='right' parentCallback={parentCallback} />
             </section>
             <section id='about'>
                 <Heading title='ABOUT' subtitle='ABOUT ME' />
