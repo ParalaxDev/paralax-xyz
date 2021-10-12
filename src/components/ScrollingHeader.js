@@ -32,9 +32,9 @@ const ScrollingHeader = (props) => {
 
     return (
         <div className='scrolling-header'>
+            {/* <div className='scrolling-header-container'> */}
             {/* <div className='img-container'> */}
 
-            <img src={props.image} />
             {/* </div> */}
             <div className='row' style={{ transform: `translate(calc(${scrolledAmount}px - 50%))`, zIndex: '2' }}>
                 <GenerateText type='filled' title={props.title} />
@@ -42,6 +42,8 @@ const ScrollingHeader = (props) => {
             <div className='row' style={{ transform: `translate(calc(${-scrolledAmount}px + 50% ))` }}>
                 <GenerateText type='outline' title={props.title} />
             </div>
+            <img src={props.image} />
+            {/* </div> */}
         </div>
     )
 }

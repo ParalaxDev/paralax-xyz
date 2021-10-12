@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
 
 .scrolling-header {
-  // top: calc(50vh-50vw);
-  height: 100vh;
-  // transform: translate(0, -50%);
-  flex-direction: row;
-  justify-content: center;
-  overflow: visible;
+  position: relative;
+
+  top: 50vh;
+  transform: translate(0, -25%);
 
   h1 {
     font-family: "Syncopate", sans-serif;
@@ -51,9 +49,10 @@
 
   img {
     position: relative;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
+    top: 50%;
     left: 50%;
-    top: 27.5vw;
+    // top: 27.5vw;
     // ;eft: -50vh;
 
     width: 30vw;
