@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
+
+.scrolling-header {
+  // top: calc(50vh-50vw);
+  height: 100vh;
+  // transform: translate(0, -50%);
+  flex-direction: row;
+  justify-content: center;
+  overflow: visible;
+
+  h1 {
+    font-family: "Syncopate", sans-serif;
+    font-size: 8vw;
+    word-spacing: 2px;
+    height: 6vw;
+    word-wrap: normal;
+    white-space: nowrap;
+    padding-left: 3.5vw;
+    // padding-left: 1vw;
+  }
+
+  .filled {
+    color: white;
+  }
+
+  .outline {
+    position: relative;
+    -webkit-text-stroke: 0.2vw #eb5757;
+    color: rgba(0, 0, 0, 0);
+    z-index: 20;
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: visible;
+    // z-index: -1;
+  }
+
+  .block {
+    width: auto;
+  }
+
+  .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    position: relative;
+    transform: translate(-50%, 0);
+    left: 50%;
+    top: 27.5vw;
+    // ;eft: -50vh;
+
+    width: 30vw;
+    z-index: 1;
+    // z-index: -10;
+  }
+}
