@@ -8,9 +8,9 @@ import titleThumbnail from '../images/drbarkers.png'
 const DrBarkers = () => {
     return (
         <>
+            <ScrollingHeader title='DR BARKERS' image={titleThumbnail} />
             <div className='content-container'>
-                <ScrollingHeader title='DR BARKERS' image={titleThumbnail} />
-                <Heading title='BRIEF' subtitle='THE AQA BRIEF' />
+                <Heading title='BRIEF' subtitle='THE EXAM BRIEF' />
                 <div style={{ height: '1000vh' }} />
 
             </div>
