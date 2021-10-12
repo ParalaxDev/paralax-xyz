@@ -7,6 +7,7 @@ import SmoothScroll from "./SmoothScroll";
 import Heading from "./Heading";
 import ImageCard from "./ImageCard";
 import Button from "./Button";
+import '../styles/basicStyling.scss'
 
 
 import test_image_1 from '../images/test_image_1.png'
@@ -39,7 +40,7 @@ const MainPage = () => {
             <section id='landing-page'>
                 <TorusKnot style={{ position: 'absolute', top: '0', left: '0', overflowX: 'hidden' }} />
             </section>
-            <section id='work'>
+            <section id='work' className='content-container'>
                 <Heading title='WORK' subtitle='FEATURED PROJECTS' />
                 <ImageCard image={test_image_3} number='1' title='Kew Gardens Outcome 1' description='GCSE Brief' link='/projects/kew' position='left' parentCallback={parentCallback} />
                 <Button text='See All Projects' link='/projects' />
