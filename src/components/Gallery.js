@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import '../styles/gallery.scss'
 const imgUrls = [
     'https://i.pinimg.com/474x/6e/83/1f/6e831f00afadee6872f4fa1000687971.jpg',
@@ -33,14 +34,28 @@ const imgUrls = [
     'https://pro2-bar-s3-cdn-cf.myportfolio.com/a21db12f-3a56-4739-a144-6dc87aa0a368/86ed3f07-1083-4d42-b8ff-1cd08f136443_rw_3840.png?h=bc58f7647303d649197b6bc7b1853907'
 ]
 
-const Gallery = ({ rows }) => {
+const Modal = ({ selectedImage, setSelectedImage }) => {
     return (
-        <div className='gallery'>
-            {imgUrls.map((item, i) => {
-                console.log(item)
-                return <img key={i} src={item} className='images' />
-            })}
+        <div className='backdrop' onClick={() => setSelectedImage(null)}>
+            <img src={selectedImage} alt='enlarged picture' />
         </div>
+    )
+}
+
+const Gallery = ({ rows }) => {
+
+    const [selectedImage, setSelectedImage] = useState(null)
+
+    return (
+        <>
+            {selectedImage ? <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage} /> : null}
+            <div className='gallery'>
+                {imgUrls.map((item, i) => {
+                    // console.log(item)
+                    return <img key={i} src={item} className='images' onClick={() => setSelectedImage(item)} />
+                })}
+            </div>
+        </>
     )
 }
 
