@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
 
 * {
   font-family: "Inter", serif;
 }
 
 .content-container {
-  padding: 0vw 5vw;
+  padding: 0vw 15vw;
+
+  h1 {
+    font-size: 3vw;
+    padding-bottom: 0.2vw;
+  }
 }
