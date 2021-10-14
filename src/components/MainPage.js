@@ -42,13 +42,11 @@ const MainPage = () => {
             </section>
             <section id='work' className='content-container'>
                 <Heading title='WORK' subtitle='FEATURED PROJECTS' />
-                <ImageCard image={test_image_3} number='1' title='Kew Gardens Outcome 1' description='GCSE Brief' link='/projects/kew' position='left' parentCallback={parentCallback} />
+                <ImageCard image={test_image_3} number='1' title='Kew Gardens' description='GCSE Brief' link='/projects/kew' position='left' parentCallback={parentCallback} />
                 <Button text='See All Projects' link='/projects' />
-                <ImageCard image={test_image_1} number='2' title='Kew Gardens Outcome 2' description='GCSE Brief' link='/projects/kew' position='right' parentCallback={parentCallback} />
-                <ImageCard image={drbarkers} number='3' title='Dr Barkers' description='GCSE Brief' link='/projects/drbarkers' position='left' parentCallback={parentCallback} />
-                <ImageCard image={test_image_2} number='4' title='Kew Gardens Outcome 3' description='GCSE Brief' link='/projects/kew' position='right' parentCallback={parentCallback} />
+                <ImageCard image={drbarkers} number='2' title='Dr Barkers' description='GCSE Brief' link='/projects/drbarkers' position='right' parentCallback={parentCallback} />
             </section>
-            <section id='about'>
+            <section id='about' className='content-container'>
                 <Heading title='ABOUT' subtitle='ABOUT ME' />
             </section>
             {/* </div> */}
