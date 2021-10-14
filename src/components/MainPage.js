@@ -15,6 +15,8 @@ import test_image_2 from '../images/test_image_2.png'
 import test_image_3 from '../images/test_image_3.png'
 import drbarkers from '../images/drbarkers.png'
 
+
+
 const MainPage = () => {
 
     const [tooltip, setTooltip] = useState('click')
