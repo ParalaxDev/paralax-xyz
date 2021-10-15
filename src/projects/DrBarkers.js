@@ -9,6 +9,7 @@ import '../styles/gallery.scss'
 
 
 import titleThumbnail from '../images/drbarkers.png'
+import Section from '../components/Section';
 
 const moodboardImages = [
     'https://i.pinimg.com/474x/6e/83/1f/6e831f00afadee6872f4fa1000687971.jpg',
@@ -34,7 +35,7 @@ const moodboardImages = [
     'https://i.pinimg.com/474x/86/48/89/86488938bcbbde5e76aa98b312a8e759.jpg',
     'https://i.pinimg.com/474x/a1/73/95/a17395b4a16a70e2a944e2a51ab45e42.jpg',
     'https://i.pinimg.com/474x/b1/27/0a/b1270a5340af84a63e50db6a7940f3c5.jpg',
-    'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7d4d1e2e-f2f5-4ff5-bcee-801e507dad66/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20211014%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211014T140521Z&X-Amz-Expires=86400&X-Amz-Signature=6753e2b39c89b763a1bdf196cdbc96632d1f4ea5e1825cd0df42817dad6bc5fb&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22',
+    'https://pro2-bar-s3-cdn-cf1.myportfolio.com/a21db12f-3a56-4739-a144-6dc87aa0a368/92442fa7-e9e1-4ec8-b932-8d9265c787be_rw_3840.png?h=c3f5cb4237c815d696c0eb5745742dd8',
     'https://pro2-bar-s3-cdn-cf3.myportfolio.com/a21db12f-3a56-4739-a144-6dc87aa0a368/e949411a-cc12-4eaa-9589-9e405bb04352_rw_1920.png?h=b163f8847f2125ee452dc85381f21ef0',
     'https://pro2-bar-s3-cdn-cf3.myportfolio.com/a21db12f-3a56-4739-a144-6dc87aa0a368/ef522edb-b1ee-4918-bbd2-133c70191bd6_rw_3840.png?h=5f32af0fe9ca617df89444c96784e95f',
     'https://pro2-bar-s3-cdn-cf5.myportfolio.com/a21db12f-3a56-4739-a144-6dc87aa0a368/6fd06295-f196-40c0-a589-8380b0be898f_rw_3840.jpg?h=05a9377a7a4fbad4b8e56a42d352d026',
@@ -52,19 +53,23 @@ const DrBarkers = () => {
             <ScrollingHeader title='DR BARKERS' image={titleThumbnail} />
             <div style={{ height: '40vh' }} />
             <div className='text-container'>
-                <section id='brief'>
-                    <h1>The Brief</h1>
+                <Section id='brief' title='The Brief'>
+                    {/* <h1>The Brief</h1> */}
                     <p>A manufacturer requires graphics for a new brand of pet food named 'Dr Barker's'. You might consider approaches such branding and packaging or advertising material. Examples can be seen in packaging designs and in advertising for pet food by Ideas that Kick, 29 Agency, Seymourpowell Ltd, and Break Packaging and Design. When producing your response, carefully consider shelf presence and the target market.</p>
-                </section>
-                <section id='statementofintent'>
-                    <h1>Statement Of Intent</h1>
+                </Section>
+                <Section id='statementofintent' title='Statement Of Intent'>
+                    {/* <h1>Statement Of Intent</h1> */}
                     <p>A manufacturer requires graphics for a new brand of pet food named 'Dr Barker's'. You might consider approaches such branding and packaging or advertising material. Examples can be seen in packaging designs and in advertising for pet food by Ideas that Kick, 29 Agency, Seymourpowell Ltd, and Break Packaging and Design. When producing your response, carefully consider shelf presence and the target market.</p>
-                </section>
-                <section id='moodboard'>
-                    <h1>Moodboard</h1>
+                </Section>
+                <Section id='moodboard' title='Moodboard'>
+                    {/* <h1>Moodboard</h1> */}
                     <p>For my moodboard, I created a Pinterest board full of ideas and styles that I love, and want to introduce into my final outcomes. I especially love the very simple and flat illustrated styles, more specifically from the artist <a href='https://georgetonks.com/'>George Tonks</a>.</p>
                     <Gallery imgs={moodboardImages} />
-                </section>
+                </Section>
+                <Section id='artistresearch' title='Artist Research'>
+                    <h1>Artist Research</h1>/
+                    <p>I chose George Tonks to research for his colourful and approchable art style, which I think represents what I want my brand to be perfectly</p>
+                </Section>
                 <div style={{ height: '1000vh' }} />
             </div>
         </>
