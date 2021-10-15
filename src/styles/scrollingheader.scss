@@ -1,20 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
 
 .scrolling-header {
-  // position: relative;
+  position: relative;
   // overflow-x: hidden;
 
-  top: 20vh;
+  padding: 20vh;
+
   // transform: translate(0, -25%);
 
   h1 {
     font-family: "Syncopate", sans-serif;
-    font-size: 8vw;
+    font-size: 120px;
     word-spacing: 2px;
-    height: 6vw;
+    height: 90px;
     word-wrap: normal;
     white-space: nowrap;
-    padding-left: 3.5vw;
+    padding-left: 30px;
     // padding-left: 1vw;
   }
 
@@ -59,5 +60,27 @@
     width: 30vw;
     z-index: 1;
     // z-index: -10;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .scrolling-header {
+    padding: 200px;
+    h1 {
+      font-size: 90px;
+      height: 65px;
+      padding-left: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scrolling-header {
+    padding: 100px;
+    h1 {
+      font-size: 40px;
+      height: 35px;
+      padding-left: 15px;
+    }
   }
 }

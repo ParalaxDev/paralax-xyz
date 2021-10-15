@@ -51,7 +51,7 @@ const DrBarkers = () => {
         <>
             {/* <img src={titleThumbnail} style={{ width: '20vw' }} /> */}
             <ScrollingHeader title='DR BARKERS' image={titleThumbnail} />
-            <div style={{ height: '40vh' }} />
+            {/* <div style={{ height: '40vh' }} /> */}
             <div className='text-container'>
                 <section id='brief'>
                     <h1>The Brief</h1>
