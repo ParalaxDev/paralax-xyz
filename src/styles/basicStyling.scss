@@ -2,16 +2,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap");
 
+// $content-width: 25vw;
+
 .content-container {
   padding: 0vw 5vw;
 }
 
 .text-container {
-  padding: 0vw 15vw;
+  padding: 0px 25vw;
   font-family: "Inter", serif;
 
   h1 {
-    font-size: 3vw;
+    font-size: 3.5rem;
     padding-bottom: 0.2vw;
+  }
+}
+
+// body {
+//   background-color: tan;
+// }
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  // body {
+  //   background-color: blue;
+  // }
+  .text-container {
+    padding: 0px 15vw;
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  // body {
+  //   background-color: olive;
+  // }
+  .text-container {
+    padding: 0px 20px;
+    h1 {
+      font-size: 1.5rem;
+    }
   }
 }

@@ -6,12 +6,15 @@ const Section = (props) => {
     const [open, setOpen] = useState(false)
 
     const togglePanel = (e) => {
+
+
         setOpen(!open)
+
     }
 
     return (
         <section id={props.id} className='section'>
-            <h1 onClick={(e) => togglePanel(e)} className='header'>{props.title}</h1>
+            <p style={{ cursor: 'pointer', userSelect: 'none' }} onClick={(e) => togglePanel(e)} className='header'>{open ? '▼' : '➤'} {props.title}</p>
             {open ? (
                 <div className='content'>
                     {props.children}

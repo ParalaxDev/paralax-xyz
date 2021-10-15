@@ -53,23 +53,25 @@ const DrBarkers = () => {
             <ScrollingHeader title='DR BARKERS' image={titleThumbnail} />
             <div style={{ height: '40vh' }} />
             <div className='text-container'>
-                <Section id='brief' title='The Brief'>
-                    {/* <h1>The Brief</h1> */}
+                <section id='brief' title='The Brief'>
+                    <h1>The Brief</h1>
                     <p>A manufacturer requires graphics for a new brand of pet food named 'Dr Barker's'. You might consider approaches such branding and packaging or advertising material. Examples can be seen in packaging designs and in advertising for pet food by Ideas that Kick, 29 Agency, Seymourpowell Ltd, and Break Packaging and Design. When producing your response, carefully consider shelf presence and the target market.</p>
-                </Section>
-                <Section id='statementofintent' title='Statement Of Intent'>
-                    {/* <h1>Statement Of Intent</h1> */}
+                </section>
+                <section id='statementofintent' title='Statement Of Intent'>
+                    <h1>Statement Of Intent</h1>
                     <p>A manufacturer requires graphics for a new brand of pet food named 'Dr Barker's'. You might consider approaches such branding and packaging or advertising material. Examples can be seen in packaging designs and in advertising for pet food by Ideas that Kick, 29 Agency, Seymourpowell Ltd, and Break Packaging and Design. When producing your response, carefully consider shelf presence and the target market.</p>
-                </Section>
-                <Section id='moodboard' title='Moodboard'>
-                    {/* <h1>Moodboard</h1> */}
+                </section>
+                <section id='moodboard' title='Moodboard'>
+                    <h1>Moodboard</h1>
                     <p>For my moodboard, I created a Pinterest board full of ideas and styles that I love, and want to introduce into my final outcomes. I especially love the very simple and flat illustrated styles, more specifically from the artist <a href='https://georgetonks.com/'>George Tonks</a>.</p>
-                    <Gallery imgs={moodboardImages} />
-                </Section>
-                <Section id='artistresearch' title='Artist Research'>
-                    <h1>Artist Research</h1>/
+                    <Section title='My Moodboard' canOpen={true}>
+                        <Gallery imgs={moodboardImages} />
+                    </Section>
+                </section>
+                <section id='artistresearch' title='Artist Research'>
+                    <h1>Artist Research</h1>
                     <p>I chose George Tonks to research for his colourful and approchable art style, which I think represents what I want my brand to be perfectly</p>
-                </Section>
+                </section>
                 <div style={{ height: '1000vh' }} />
             </div>
         </>
