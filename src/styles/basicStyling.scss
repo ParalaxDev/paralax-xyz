@@ -36,24 +36,35 @@
   }
   .content-img {
     width: 50%;
+    cursor: pointer;
   }
   .divider-img {
     width: 100%;
     padding: 10px 0;
+    cursor: pointer;
   }
   .right {
     padding: 20px;
     padding-right: 0;
     padding-top: 0;
     float: right;
-    clear: right;
+    // clear: right;
   }
   .left {
     padding: 20px;
     padding-left: 0;
     padding-top: 10px;
     float: left;
-    clear: left;
+    // clear: left;
+  }
+  a {
+    color: #6196cc;
+    text-decoration: none;
+
+    transition: 0.1s;
+  }
+  a:hover {
+    color: #6196ccd2;
   }
 }
 
