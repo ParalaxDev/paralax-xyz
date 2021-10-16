@@ -3,7 +3,7 @@ import '../styles/section.scss'
 
 const Collapseable = (props) => {
 
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(true)
 
     const togglePanel = (e) => {
 

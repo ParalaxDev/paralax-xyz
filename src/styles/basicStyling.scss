@@ -15,19 +15,45 @@
   h1 {
     font-size: 3.25rem;
     padding-bottom: 20px;
+    padding-top: 20px;
     cursor: pointer;
     transition: 0.25s;
+    -webkit-animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
+    animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
   }
   h1:hover {
     opacity: 0.9;
   }
   h2 {
     font-size: 2rem;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    // padding-top: 10px;
   }
   p {
     font-size: 1rem;
     padding-bottom: 15px;
+  }
+  .content-img {
+    width: 50%;
+  }
+  .divider-img {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .right {
+    padding: 20px;
+    padding-right: 0;
+    padding-top: 0;
+    float: right;
+    clear: right;
+  }
+  .left {
+    padding: 20px;
+    padding-left: 0;
+    padding-top: 10px;
+    float: left;
+    clear: left;
   }
 }
 
@@ -76,5 +102,34 @@
       font-size: 0.8rem;
       padding-bottom: 12.5px;
     }
+    .left {
+      padding: 10px;
+      padding-left: 0;
+    }
+    .right {
+      padding: 10px;
+      padding-right: 0;
+    }
+    .divider-img {
+      padding: 5px 0;
+    }
+  }
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

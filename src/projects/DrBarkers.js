@@ -84,13 +84,25 @@ const DrBarkers = (props) => {
                 <Section id='moodboard' >
                     {/* <h1>Moodboard</h1> */}
                     <p>For my moodboard, I created a Pinterest board full of ideas and styles that I love, and want to introduce into my final outcomes. I especially love the very simple and flat illustrated styles, more specifically from the artist <a href='https://georgetonks.com/'>George Tonks</a>.</p>
-                    <Collapseable title='My Moodboard' canOpen={true}>
-                        <Gallery imgs={moodboardImages} />
-                    </Collapseable>
+                    {/* <Collapseable title='My Moodboard' canOpen={true}> */}
+                    <Gallery imgs={moodboardImages} />
+                    {/* </Collapseable> */}
                 </Section>
                 <Section id='artist-research'  >
                     {/* <h1>Artist Research</h1> */}
+                    <img className='right content-img' src='https://pro2-bar-s3-cdn-cf5.myportfolio.com/a21db12f-3a56-4739-a144-6dc87aa0a368/6fd06295-f196-40c0-a589-8380b0be898f_rw_3840.jpg?h=05a9377a7a4fbad4b8e56a42d352d026' />
                     <p>I chose George Tonks to research for his colourful and approchable art style, which I think represents what I want my brand to be perfectly</p>
+                    <p>For my Artist Research I chose to look at George Tonks, an artist who uses digital illustrations to create colourful and inciting designs by combining his passion of the outdoors and wildlife. He uses a very geometric approach to exaggerate their shape and form to show off their diversity. He is 28, and was born in the Cotswolds and has a 1st class BA Hons degree in Illustration from the University of Arts in Bournemouth.</p>
+                    <img className='left content-img' src='https://s3.us-west-2.amazonaws.com/secure.notion-static.com/242cbcf8-b69a-4b4b-b913-42dbb1f72765/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20211016%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211016T133227Z&X-Amz-Expires=86400&X-Amz-Signature=9030c286a6a91bd758a32dbd7a059fde9dee05572829bf5b73a2e59d732ff097&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22' />
+                    <p>He primarily uses Procreate for sketches and illustrator where he refines the line work, and adds colours and textures. However, in his final year project, a short film called N-Orbit where he uses Blender.</p>
+                    <p>I got in touch with him via his Instagram, where he told me that his primary goal is to provide awareness towards local wildlife. He does this by including snippets of interesting information and facts with each piece of art. As well as this, he sells prints and t-shirts of his work, where the product materials are sustainably sourced.</p>
+                    <p>His inspiration primarily comes from wildlife which stems from his childhood love of Steve Irwin and documentaries by David Attenborough.</p>
+                    <p>I love his style due to how he uses very exaggerated proportions in his animals, emphasising and adding to the character. This helps create a link between the viewer, and makes the animal seem more friendly.</p>
+                    <img className='divider-img' src='https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2c426aa1-3e41-44d9-a34b-b1eabb69f7b5/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20211016%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211016T133511Z&X-Amz-Expires=86400&X-Amz-Signature=16f29d36c61d86ac0470654c6d3e5217694bf48aeba133199ef238001da14e5f&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22' />
+                    <p>I also love the very saturated colours that he uses, suggesting a very friendly design, which i think matches what I want to represent. He also uses a very flat illustrative style, which has become very popular recently. This is partly why I have chosen this style, as it is something that the audience can relate with, making it more approachable. </p>
+                    <h2>My Response</h2>
+                    <img className='right content-img' src='https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a056ccea-b2ed-4079-9e6c-e0897d3e8cbd/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20211016%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211016T133835Z&X-Amz-Expires=86400&X-Amz-Signature=8e61db3168a371a40fe226f0a1707481551f1e3da572c64a6ed4a1808fd57ef9&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22' />
+                    <p>For my Response to my artist, I decided to create a visually similar image, but using this picture of my dog as a reference.</p>
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
             </div>

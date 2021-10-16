@@ -16,6 +16,8 @@
     word-wrap: normal;
     white-space: nowrap;
     padding-left: 30px;
+    // -webkit-animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
+    // animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
     // padding-left: 1vw;
   }
 
@@ -41,6 +43,9 @@
 
   .block {
     width: auto;
+    // .slide-up {
+
+    // }
   }
 
   .img-container {
@@ -82,5 +87,23 @@
       height: 35px;
       padding-left: 15px;
     }
+  }
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
