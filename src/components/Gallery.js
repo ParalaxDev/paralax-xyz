@@ -1,5 +1,7 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import '../styles/gallery.scss'
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 
 
 const Modal = ({ selectedImage, setSelectedImage }) => {
@@ -13,16 +15,53 @@ const Modal = ({ selectedImage, setSelectedImage }) => {
 const Gallery = ({ imgs }) => {
 
     const [selectedImage, setSelectedImage] = useState(null)
+    const [ref, inView] = useInView()
+
+    const controls = useAnimation()
+
+    useEffect(() => {
+        if (inView) {
+            controls.start("visible")
+        }
+    }, [controls, inView])
+
+
+
+    const container = {
+        visible: {
+
+            transition: {
+                delayChildren: 1,
+                staggerChildren: 0.05
+            }
+        }
+    }
+
+    const child = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+            y: 0,
+            opacity: 1
+        }
+    }
 
     return (
         <>
             {selectedImage ? <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage} /> : null}
-            <div className='gallery'>
+            <motion.div className='gallery'
+                variants={container}
+                initial="hidden"
+                // animate="visible"
+                ref={ref}
+                animate={controls}
+            >
                 {imgs.map((item, i) => {
                     // console.log(item)
-                    return <img key={i} src={item} className='images' onClick={() => setSelectedImage(item)} />
+                    return <motion.img
+                        variants={child}
+                        key={i} src={item} className='images' onClick={() => setSelectedImage(item)} />
                 })}
-            </div>
+            </motion.div>
         </>
     )
 }

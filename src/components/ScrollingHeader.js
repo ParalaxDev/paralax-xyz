@@ -1,5 +1,7 @@
 import '../styles/scrollingheader.scss'
 import { useEffect, useState } from 'react';
+import { motion, useAnimation } from 'framer-motion'
+
 
 
 const GenerateText = (props) => {
@@ -27,7 +29,6 @@ const ScrollingHeader = (props) => {
     useEffect(() => {
         window.addEventListener('scroll', onScroll);
     }, []);
-
 
 
     return (
