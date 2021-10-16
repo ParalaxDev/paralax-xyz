@@ -9,14 +9,16 @@ const Modal = ({ selectedImage, setSelectedImage }) => {
     )
 }
 
-const Image = ({ src, className, }) => {
+const Image = ({ src, className, style }) => {
 
     const [selectedImage, setSelectedImage] = useState(null)
+
+    console.log(style)
 
     return (
         <>
             {selectedImage ? <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage} /> : null}
-            <img className={className} src={src} onClick={() => { setSelectedImage(src); console.log('clicked'); }} style={{ zIndex: '10' }} />
+            <img className={className} style={style} src={src} onClick={() => { setSelectedImage(src); console.log('clicked'); }} />
 
         </>
     )
