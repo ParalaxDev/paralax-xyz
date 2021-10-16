@@ -27,19 +27,11 @@
 }
 
 @media screen and (max-width: 992px) {
-  body {
-    background-color: green;
-  }
-
   .index-container {
     display: none;
   }
 }
 @media screen and (max-width: 600px) {
-  body {
-    background-color: blue;
-  }
-
   .index-container {
     display: none;
   }

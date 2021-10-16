@@ -92,7 +92,7 @@ const DrBarkers = (props) => {
                     {/* <h1>Artist Research</h1> */}
                     <p>I chose George Tonks to research for his colourful and approchable art style, which I think represents what I want my brand to be perfectly</p>
                 </Section>
-                <div style={{ height: '1000vh' }} />
+                {/* <div style={{ height: '1000vh' }} /> */}
             </div>
         </>
     )
