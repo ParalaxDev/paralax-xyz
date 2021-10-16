@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import '../styles/index.scss'
 
 const titleCase = (str) => {
     var splitStr = str.toLowerCase().split(' ');
@@ -27,10 +28,10 @@ const Index = () => {
     }, [])
 
     return (
-        <li>
+        <li className='index-container'>
             {elements.map((item, i) => {
                 console.log(item);
-                return <ul key={i} onClick={() => { window.history.pushState({}, null, `#${item}`); document.getElementById(item).scrollIntoView(); }}>{titleCase(item.replace(new RegExp('-', 'g'), ' '))}</ul>
+                return <ul key={i} onClick={() => { window.history.pushState({}, null, `#${item}`); document.getElementById(item).scrollIntoView(); }}><span className='hash'>#</span> {titleCase(item.replace(new RegExp('-', 'g'), ' '))}</ul>
             })}
         </li>
     )

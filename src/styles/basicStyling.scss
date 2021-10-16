@@ -16,6 +16,10 @@
     font-size: 3.25rem;
     padding-bottom: 20px;
     cursor: pointer;
+    transition: 0.25s;
+  }
+  h1:hover {
+    opacity: 0.9;
   }
   h2 {
     font-size: 2rem;
