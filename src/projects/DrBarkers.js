@@ -48,7 +48,40 @@ const moodboardImages = [
     'https://pro2-bar-s3-cdn-cf.myportfolio.com/a21db12f-3a56-4739-a144-6dc87aa0a368/86ed3f07-1083-4d42-b8ff-1cd08f136443_rw_3840.png?h=bc58f7647303d649197b6bc7b1853907'
 ]
 
+const primarySourcePhotos = [
+    'https://i.ibb.co/f2yBW7K/20210424-124914.jpg',
+    'https://i.ibb.co/gtVF4j1/IMG-20211002-WA0004.jpg',
+    'https://i.ibb.co/qgL8rtY/IMG-20211002-WA0000.jpg',
+    'https://i.ibb.co/fHbMCJb/IMG-20210927-WA0004.jpg',
+    'https://i.ibb.co/DbN4fkK/IMG-20210927-WA0001.jpg',
+    'https://i.ibb.co/1LMcnFL/IMG-20210925-WA0014.jpg',
+    'https://i.ibb.co/pjrTpD9/IMG-20210907-WA0003.jpg',
+    'https://i.ibb.co/CQBTdBm/IMG-20210904-WA0001.jpg',
+    'https://i.ibb.co/cvxc5v2/IMG-20210831-WA0004.jpg',
+    'https://i.ibb.co/xLvmJPn/IMG-20210829-WA0000.jpg',
+    'https://i.ibb.co/kB6Nv9w/IMG-20210826-WA0003.jpg',
+    'https://i.ibb.co/GWd0TtN/IMG-20210825-WA0003.jpg',
+    'https://i.ibb.co/G5pkLZW/IMG-20210821-WA0003.jpg',
+    'https://i.ibb.co/ssqcpKx/IMG-20210817-WA0006.jpg',
+    'https://i.ibb.co/GWbndFS/IMG-20210816-WA0008.jpg',
+    'https://i.ibb.co/g7NfLrb/IMG-20210816-WA0005.jpg',
+    'https://i.ibb.co/pyB0F1Z/IMG-20210815-WA0018.jpg',
+    'https://i.ibb.co/f8mnm7S/IMG-20210815-WA0017.jpg',
+    'https://i.ibb.co/qNfQfcV/IMG-20210813-WA0009.jpg',
+    'https://i.ibb.co/HtCmQ54/IMG-20210813-WA0000.jpg',
+    'https://i.ibb.co/mBdTPYY/IMG-20210811-WA0003.jpg',
+    'https://i.ibb.co/LgRtNqg/IMG-20210805-WA0000.jpg',
+    'https://i.ibb.co/VWm8PD0/IMG-20210730-WA0005.jpg',
+    'https://i.ibb.co/fD3PFpb/IMG-20210723-WA0002.jpg',
+    'https://i.ibb.co/yF7yx11/IMG-20210727-WA0013.jpg',
+    'https://i.ibb.co/gW4yYvX/IMG-20210701-WA0001.jpg',
+    'https://i.ibb.co/RbVqR8f/IMG-20210624-WA0005.jpg',
+    'https://i.ibb.co/sHKMMdz/IMG-20210607-WA0000.jpg',
+    'https://i.ibb.co/hmDXw75/IMG-20210605-WA0000.jpg',
+    'https://i.ibb.co/vz58dBQ/IMG-20210530-WA0003.jpg',
+    'https://i.ibb.co/wLPgThG/IMG-20210530-WA0001.jpg'
 
+]
 
 const DrBarkers = (props) => {
 
@@ -87,6 +120,9 @@ const DrBarkers = (props) => {
                     {/* <Collapseable title='My Moodboard' canOpen={true}> */}
                     <Gallery imgs={moodboardImages} />
                     {/* </Collapseable> */}
+                </Section>
+                <Section id='primary-source-photos'  >
+                    <Gallery imgs={primarySourcePhotos} />
                 </Section>
                 <Section id='artist-research'  >
                     {/* <h1>Artist Research</h1> */}
