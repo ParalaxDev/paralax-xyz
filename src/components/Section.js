@@ -18,7 +18,7 @@ const Section = (props) => {
     const executeScroll = () => ref.current.scrollIntoView()
 
     return (
-        <section id={props.id} >
+        <section id={props.id} className='section'>
             <h1 onClick={() => { window.history.pushState({}, null, `#${props.id}`); executeScroll() }} ref={ref}>{titleCase(props.id.replace(new RegExp('-', 'g'), ' '))}</h1>
             {props.children}
         </section>

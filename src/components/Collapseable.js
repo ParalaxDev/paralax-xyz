@@ -13,7 +13,7 @@ const Collapseable = (props) => {
     }
 
     return (
-        <section id={props.id} className='section'>
+        <section id={props.id}>
             <p style={{ cursor: 'pointer', userSelect: 'none' }} onClick={(e) => togglePanel(e)} className='header'>{open ? '▼' : '➤'} {props.title}</p>
             {open ? (
                 <div className='content'>

@@ -1,6 +1,6 @@
 import ScrollingHeader from '../components/ScrollingHeader'
 import Heading from '../components/Heading'
-import React from 'react'
+import React, { useEffect } from 'react'
 // import React from 'react'
 import Gallery from '../components/Gallery';
 
@@ -11,6 +11,7 @@ import '../styles/gallery.scss'
 import titleThumbnail from '../images/drbarkers.png'
 import Collapseable from '../components/Collapseable';
 import Section from '../components/Section';
+import Index from '../components/Index';
 
 
 const moodboardImages = [
@@ -51,20 +52,21 @@ const moodboardImages = [
 
 const DrBarkers = (props) => {
 
+
     return (
         <>
             <ScrollingHeader title='DR BARKERS' image={titleThumbnail} />
-
+            <Index />
             <div className='text-container'>
-                <Section id='brief'>
+                <Section id='brief' >
                     {/* <h1>The Brief</h1> */}
                     <p>A manufacturer requires graphics for a new brand of pet food named 'Dr Barker's'. You might consider approaches such branding and packaging or advertising material. Examples can be seen in packaging designs and in advertising for pet food by Ideas that Kick, 29 Agency, Seymourpowell Ltd, and Break Packaging and Design. When producing your response, carefully consider shelf presence and the target market.</p>
                 </Section>
-                <Section id='statment-of-intent'>
+                <Section id='statment-of-intent' >
                     {/* <h2>Statement of Intent</h2> */}
                     <p>I chose the Dog Food Brief, as i thought that it related to me far more than any of the others. Whilst I have loved space for a while, and will continue to, I thought that by chosing to make packaging for Dog Food, I would be able to combine by love for my Dog, Milo, and my graphical ability. I also chose it, as upon seeing it, I instantly had loads of ideas (that you can see below), for what I wanted the company and packaging to be. As well as this, I also thought that it would give me the most individual elements to demonstrate my artistic and graphical ability.</p>
                 </Section>
-                <Section id='ideas'>
+                <Section id='ideas' >
                     {/* <h1>Ideas</h1> */}
                     <h2>The Company</h2>
                     <p>I wanted to represent Dr Barker's as a family friendly, premium, fun dog food company. I wanted its packaging to be organic, environmentally friendly, and eye catching. To do this, I wanted to primarily use paper bags, and sustainable resources, as the environment is a big aspect to the customer.</p>
@@ -79,14 +81,14 @@ const DrBarkers = (props) => {
                     <p>For the advertising campaign I know I want to do it via Social Media. In this case I chose Instagram, for its simple advertising style. Instagram uses square images or videos to distribute to the customer in their feed. As well as this, it uses tracking to give the user customised adverts based on their interests. This is useful for me, as it will prioritise sending adverts to dog owners, or people interested in dogs, increasing traffic to the website.</p>
                     <p>I want to make a range of adverts, some displaying the actual subscription, some displaying the individual products, and some using just standard graphics, similar to the artwork I will be using on the packaging. As well as this, I will be creating a series of video adverts, demonstrating all the products, and giving some examples using my own dog. It will also give an example of the experience I want to give to the user.</p>
                 </Section>
-                <Section id='moodboard'>
+                <Section id='moodboard' >
                     {/* <h1>Moodboard</h1> */}
                     <p>For my moodboard, I created a Pinterest board full of ideas and styles that I love, and want to introduce into my final outcomes. I especially love the very simple and flat illustrated styles, more specifically from the artist <a href='https://georgetonks.com/'>George Tonks</a>.</p>
                     <Collapseable title='My Moodboard' canOpen={true}>
                         <Gallery imgs={moodboardImages} />
                     </Collapseable>
                 </Section>
-                <Section id='artist-research' >
+                <Section id='artist-research'  >
                     {/* <h1>Artist Research</h1> */}
                     <p>I chose George Tonks to research for his colourful and approchable art style, which I think represents what I want my brand to be perfectly</p>
                 </Section>
