@@ -62,7 +62,7 @@ const DrBarkers = (props) => {
                     {/* <h1>The Brief</h1> */}
                     <p>A manufacturer requires graphics for a new brand of pet food named 'Dr Barker's'. You might consider approaches such branding and packaging or advertising material. Examples can be seen in packaging designs and in advertising for pet food by Ideas that Kick, 29 Agency, Seymourpowell Ltd, and Break Packaging and Design. When producing your response, carefully consider shelf presence and the target market.</p>
                 </Section>
-                <Section id='statment-of-intent' >
+                <Section id='statement-of-intent' >
                     {/* <h2>Statement of Intent</h2> */}
                     <p>I chose the Dog Food Brief, as i thought that it related to me far more than any of the others. Whilst I have loved space for a while, and will continue to, I thought that by chosing to make packaging for Dog Food, I would be able to combine by love for my Dog, Milo, and my graphical ability. I also chose it, as upon seeing it, I instantly had loads of ideas (that you can see below), for what I wanted the company and packaging to be. As well as this, I also thought that it would give me the most individual elements to demonstrate my artistic and graphical ability.</p>
                 </Section>
