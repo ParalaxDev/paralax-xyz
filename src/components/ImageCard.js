@@ -19,7 +19,7 @@ const ImageCard = ({ position, image, number, title, description, parentCallback
                 onMouseEnter={() => parentCallback('click')}
                 onMouseLeave={() => parentCallback('scroll')}
             >
-                <Link style={{ textDecoration: 'none' }} className='imagecard-link' to={link}>
+                <a style={{ textDecoration: 'none' }} className='imagecard-link' href={link}>
                     <img src={image} />
                     <h1 >{number}.</h1>
                     <div className='inset'>
@@ -27,7 +27,7 @@ const ImageCard = ({ position, image, number, title, description, parentCallback
                         <h2>{description} <img src={arrow} className='arrow' /> </h2>
                         {/* <h2>{hovered} pog?</h2> */}
                     </div>
-                </Link>
+                </a>
             </div>
         </div >
     )
