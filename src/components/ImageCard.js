@@ -21,12 +21,12 @@ const ImageCard = ({ position, image, number, title, description, parentCallback
             >
                 <a style={{ textDecoration: 'none' }} className='imagecard-link' href={link}>
                     <img src={image} />
-                    <h1 >{number}.</h1>
-                    <div className='inset'>
-                        <h1 className='project-title'>{title}</h1>
-                        <h2>{description} <img src={arrow} className='arrow' /> </h2>
-                        {/* <h2>{hovered} pog?</h2> */}
-                    </div>
+                </a>
+                <h1 >{number}.</h1>
+                <a className='inset' href={link} style={{ textDecoration: 'none' }}>
+                    <h1 className='project-title'>{title}</h1>
+                    <h2>{description} <img src={arrow} className='arrow' /> </h2>
+                    {/* <h2>{hovered} pog?</h2> */}
                 </a>
             </div>
         </div >

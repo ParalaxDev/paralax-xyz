@@ -1,11 +1,11 @@
-import Heading from './Heading'
-import ListObject from './ListObject'
+import Heading from '../components/Heading'
+import ListObject from '../components/ListObject'
 
 import '../styles/basicStyling.scss'
 
 
 
-const ProjectsPage = ({ }) => {
+const Projects = ({ }) => {
     return (
         <>
 
@@ -20,4 +20,4 @@ const ProjectsPage = ({ }) => {
     )
 }
 
-export default ProjectsPage
+export default Projects

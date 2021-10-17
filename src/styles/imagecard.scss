@@ -18,6 +18,7 @@ $imageWidth: 35vw;
 }
 
 .imagecard {
+  width: 100%;
   // padding: 0 5vw;
   // margin: 5vw;
   font-family: "Poppins", sans-serif;
@@ -55,10 +56,60 @@ $imageWidth: 35vw;
   }
 }
 
-// .imagecard-link {
-//   transition: 0.25s;
-// }
+@media screen and (max-width: 992px) {
+  .left,
+  .right {
+    width: 100%;
+  }
 
-// .imagecard-link:hover {
-//   transform: scale(0.98);
-// }
+  .imagecard {
+    img {
+      width: 100%;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 0.9rem;
+      position: relative;
+      top: -10px;
+    }
+    .arrow {
+      width: 0.8rem;
+      top: 1px;
+    }
+    .inset {
+      top: -37px;
+      left: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .imagecard {
+    img {
+      width: 100%;
+    }
+    h1 {
+      font-size: 1.1rem;
+    }
+    h2 {
+      font-size: 0.6rem;
+      position: relative;
+      top: -10px;
+    }
+    .arrow {
+      width: 0.45rem;
+      top: 1px;
+    }
+    .inset {
+      top: -33px;
+      left: 50px;
+    }
+  }
+}

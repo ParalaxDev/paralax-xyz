@@ -2,6 +2,7 @@
 
 .button-link {
   // padding-left: 5vw;
+  margin-left: calc(90vw - 35vw);
   width: 35vw;
   top: 25vw;
   position: relative;
@@ -38,5 +39,11 @@
     .arrow {
       filter: none;
     }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .button-link {
+    display: none;
   }
 }

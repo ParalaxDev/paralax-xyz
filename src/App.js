@@ -15,11 +15,11 @@ import Project from "./components/Project";
 import SubProject from "./components/SubProject";
 // import Homepage from "./components/HomePage";
 // import NewHomepage from "./components/NewHomepage";
-import MainPage from "./components/MainPage";
-import ProjectsPage from "./components/ProjectsPage";
-import Kew from "./projects/Kew";
-import Typography from "./projects/Typography";
-import DrBarkers from "./projects/DrBarkers";
+import Homepage from "./pages/Homepage";
+import Projects from "./pages/Projects";
+import Kew from "./pages/Kew";
+import Typography from "./pages/Typography";
+import DrBarkers from "./pages/DrBarkers";
 // import NewHomepage from "./components/NewHomepage";
 
 const firebaseConfig = {
@@ -55,8 +55,8 @@ const App = () => {
 				<Route path="/projects/kew" component={Kew} />
 				<Route path="/projects/typography" component={Typography} />
 				<Route path="/projects/drbarkers" component={DrBarkers} />
-				<Route path="/projects" component={ProjectsPage} />
-				<Route exact path="/" component={MainPage} />
+				<Route path="/projects" component={Projects} />
+				<Route exact path="/" component={Homepage} />
 				<Route path="/">
 					<h1>Error 404</h1>
 					<h4>This is not the page your looking for</h4>

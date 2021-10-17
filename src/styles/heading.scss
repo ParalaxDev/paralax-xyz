@@ -4,6 +4,7 @@
 .heading {
   width: 100%;
   user-select: none;
+  padding-bottom: 50px;
 
   .outline {
     -webkit-text-stroke: 0.2vw #6196cc;
@@ -12,9 +13,9 @@
 
   h1 {
     word-spacing: 2px;
-    font-size: 6vw;
+    font-size: 7.5vw;
     font-family: "Syncopate", sans-serif;
-    height: 4.25vw;
+    height: 5.3vw;
     text-align: end;
     // padding-right: 5vw;
   }
@@ -25,5 +26,35 @@
     text-align: start;
     // padding-left: 5vw;
     font-size: 1vw;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .heading {
+    padding-bottom: 30px;
+    h1 {
+      position: relative;
+      font-size: 4rem;
+      height: 45px;
+      top: -30px;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heading {
+    padding-bottom: 20px;
+    h1 {
+      position: relative;
+      font-size: 2.5rem;
+      height: 32px;
+      top: -20px;
+    }
+    h2 {
+      font-size: 0.65rem;
+    }
   }
 }

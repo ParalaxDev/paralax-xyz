@@ -1,14 +1,14 @@
-import TorusKnot from "./TorusKnot"
+import TorusKnot from "../components/TorusKnot"
 import '../styles/newHomepage.scss'
 import smoothscroll from 'smoothscroll-polyfill';
 import { useEffect, useState } from "react";
-import Cursor from "./Cursor";
-import SmoothScroll from "./SmoothScroll";
-import Heading from "./Heading";
-import ImageCard from "./ImageCard";
-import Button from "./Button";
+import Cursor from "../components/Cursor";
+import SmoothScroll from "../components/SmoothScroll";
+import Heading from "../components/Heading";
+import ImageCard from "../components/ImageCard";
+import Button from "../components/Button";
 import '../styles/basicStyling.scss'
-
+import { isMobile } from "react-device-detect";
 
 import test_image_1 from '../images/test_image_1.png'
 import test_image_2 from '../images/test_image_2.png'
@@ -17,7 +17,7 @@ import drbarkers from '../images/drbarkers.png'
 
 
 
-const MainPage = () => {
+const Homepage = () => {
 
     const [tooltip, setTooltip] = useState('click')
 
@@ -44,9 +44,11 @@ const MainPage = () => {
             </section>
             <section id='work' className='content-container'>
                 <Heading title='WORK' subtitle='FEATURED PROJECTS' />
-                <ImageCard image={test_image_3} number='1' title='Kew Gardens' description='GCSE Brief' link='/projects/kew' position='left' parentCallback={parentCallback} />
-                <Button text='See All Projects' link='/projects' />
-                <ImageCard image={drbarkers} number='2' title='Dr Barkers' description='GCSE Brief' link='/projects/drbarkers' position='right' parentCallback={parentCallback} />
+                <div className='image-list-center'>
+                    {isMobile ? null : <Button text='See All Projects' link='/projects' />}
+                    <ImageCard image={drbarkers} number='1' title='Dr Barkers' description='GCSE Brief' link='/projects/drbarkers' position='left' parentCallback={parentCallback} />
+                    <ImageCard image={test_image_3} number='2' title='Kew Gardens' description='GCSE Brief' link='/projects/kew' position='right' parentCallback={parentCallback} />
+                </div>
             </section>
             <section id='about' className='content-container'>
                 <Heading title='ABOUT' subtitle='ABOUT ME' />
@@ -56,4 +58,4 @@ const MainPage = () => {
     )
 }
 
-export default MainPage
+export default Homepage
