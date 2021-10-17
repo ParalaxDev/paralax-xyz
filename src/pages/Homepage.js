@@ -25,9 +25,6 @@ const Homepage = () => {
         smoothscroll.polyfill();
     }, [])
 
-    // setInterval(() => {
-    //     console.log(tooltip)
-    // }, 100)
 
     const parentCallback = (result) => { // the callback. Use a better name
         console.log(result);
