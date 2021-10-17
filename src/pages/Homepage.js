@@ -33,7 +33,7 @@ const Homepage = () => {
 
 
     return (
-        <>
+        <div style={{ overflowX: 'hidden' }}>
             {/* <Cursor tooltip={tooltip} /> */}
             {/* <div className='wrapper'> */}
             <section id='landing-page'>
@@ -51,7 +51,7 @@ const Homepage = () => {
                 {/* <Heading title='ABOUT' subtitle='ABOUT ME' /> */}
             </section>
             {/* </div> */}
-        </>
+        </div>
     )
 }
 

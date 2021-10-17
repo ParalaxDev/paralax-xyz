@@ -5,6 +5,7 @@
   width: 100%;
   user-select: none;
   padding-bottom: 50px;
+  overflow: visible;
 
   .outline {
     -webkit-text-stroke: 0.2vw #6196cc;
@@ -50,7 +51,7 @@
     h1 {
       position: relative;
       font-size: 2.5rem;
-      height: 32px;
+      height: 33px;
       top: -20px;
     }
     h2 {
