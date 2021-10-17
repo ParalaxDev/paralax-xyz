@@ -8,6 +8,7 @@
   font-family: "Inter";
 
   padding: 30px;
+  list-style-type: none;
 
   .hash {
     opacity: 0;
@@ -17,6 +18,8 @@
     text-align: right;
     padding: 2.5px;
     margin: 10px;
+    list-style-type: none;
+    margin: 0;
   }
   ul:hover {
     cursor: pointer;
