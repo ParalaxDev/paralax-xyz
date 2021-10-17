@@ -81,7 +81,40 @@ const primarySourcePhotos = [
     'https://i.ibb.co/hmDXw75/IMG-20210605-WA0000.jpg',
     'https://i.ibb.co/vz58dBQ/IMG-20210530-WA0003.jpg',
     'https://i.ibb.co/wLPgThG/IMG-20210530-WA0001.jpg'
+]
 
+const artistResearchMediaExperiment = [
+    'https://i.ibb.co/dmQGW6n/20211011-123356.jpg',
+    'https://i.ibb.co/4tv316z/20211011-123848.jpg',
+    'https://i.ibb.co/zmpZcYX/20211011-124811.jpg',
+    'https://i.ibb.co/ZKhnnjp/20211011-124817.jpg',
+    'https://i.ibb.co/QPNjQkW/20211011-130201.jpg',
+    'https://i.ibb.co/v3pd8yy/20211011-130316.jpg',
+    'https://i.ibb.co/d7MS5gW/20211011-130455.jpg',
+    'https://i.ibb.co/frsy781/20211011-130635.jpg',
+    'https://i.ibb.co/56tjRFY/20211011-130637.jpg',
+    'https://i.ibb.co/0Bfj1pp/20211011-130938.jpg',
+    'https://i.ibb.co/DfVv9WC/20211011-131035.jpg',
+    'https://i.ibb.co/pRHJHMq/20211011-131037.jpg',
+    // 'https://i.ibb.co/FbpZtV3/20211012-105228.jpg',
+    // 'https://i.ibb.co/FbpZtV3/20211012-105228.jpg',
+    // 'https://i.ibb.co/hX910Rn/20211013-133938.jpg'
+]
+const artistResearchDigitalOutcomes = [
+    'https://i.ibb.co/GMKg2cZ/2.png',
+    'https://i.ibb.co/d7zrpnZ/3.png',
+    'https://i.ibb.co/PmzWs4t/4.png',
+    'https://i.ibb.co/m6HQcz6/5.png',
+    'https://i.ibb.co/bFLFX6S/6.png',
+    'https://i.ibb.co/xMH2TLx/7.png',
+    'https://i.ibb.co/jvcHGRT/8.png',
+    'https://i.ibb.co/BTMy4cZ/9.png',
+    'https://i.ibb.co/ZmK9MSD/10.png',
+    'https://i.ibb.co/SvtkdSB/11.png',
+    'https://i.ibb.co/ss4xQT8/12.png',
+    'https://i.ibb.co/6BCHb9q/13.png',
+    'https://i.ibb.co/FqFqQW6/14.png',
+    'https://i.ibb.co/Kz1Mkhq/15.png'
 ]
 
 const DrBarkers = (props) => {
@@ -118,9 +151,9 @@ const DrBarkers = (props) => {
                 <Section id='moodboard' >
                     {/* <h1>Moodboard</h1> */}
                     <p>For my moodboard, I created a Pinterest board full of ideas and styles that I love, and want to introduce into my final outcomes. I especially love the very simple and flat illustrated styles, more specifically from the artist <a href='https://georgetonks.com/'>George Tonks</a>.</p>
-                    {/* <Collapseable title='My Moodboard' canOpen={true}> */}
                     <Gallery imgs={moodboardImages} />
-                    {/* </Collapseable> */}
+                    <p>I love the very simple and illustrative style, often associated with big tech companies. I also love the playful way of using the packaging to display the product, such as with a small perspex window. I also love the very saturated colours that are used in packaging, as it represents a playful product, which is exactly what I want Dr Barker's to represent. </p>
+                    <p>In addition to this, I also love the simple geometric shapes that are used, implying to the customer that the food itself is fuss free and simple, encouraging them to try it out.</p>
                 </Section>
                 <Section id='primary-source-photos'  >
                     <Gallery imgs={primarySourcePhotos} />
@@ -130,17 +163,24 @@ const DrBarkers = (props) => {
                     <Image className='right content-img' src='https://pro2-bar-s3-cdn-cf5.myportfolio.com/a21db12f-3a56-4739-a144-6dc87aa0a368/6fd06295-f196-40c0-a589-8380b0be898f_rw_3840.jpg?h=05a9377a7a4fbad4b8e56a42d352d026' />
                     {/* <p>I chose George Tonks to research for his colourful and approchable art style, which I think represents what I want my brand to be perfectly</p> */}
                     <p>For my Artist Research I chose to look at <a href='https://georgetonks.com/'>George Tonks</a>, an artist who uses digital illustrations to create colourful and inciting designs by combining his passion of the outdoors and wildlife. He uses a very geometric approach to exaggerate their shape and form to show off their diversity. He is 28, and was born in the Cotswolds and has a 1st class BA Hons degree in Illustration from the University of Arts in Bournemouth.</p>
-                    <Image className='left content-img' src='https://s3.us-west-2.amazonaws.com/secure.notion-static.com/242cbcf8-b69a-4b4b-b913-42dbb1f72765/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20211016%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211016T133227Z&X-Amz-Expires=86400&X-Amz-Signature=9030c286a6a91bd758a32dbd7a059fde9dee05572829bf5b73a2e59d732ff097&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22' />
+                    <Image className='left content-img' src='https://mir-s3-cdn-cf.behance.net/project_modules/1400/29197c96340871.5eac0a49ce5fa.jpg' />
                     <p>He primarily uses Procreate for sketches and illustrator where he refines the line work, and adds colours and textures. However, in his final year project, a short film called <a href='https://www.youtube.com/watch?v=g7vEjF0lebE'>N-Orbit</a> where he uses Blender.</p>
                     <p>I got in touch with him via his Instagram, where he told me that his primary goal is to provide awareness towards local wildlife. He does this by including snippets of interesting information and facts with each piece of art. As well as this, he sells prints and t-shirts of his work, where the product materials are sustainably sourced.</p>
                     <p>His inspiration primarily comes from wildlife which stems from his childhood love of Steve Irwin and documentaries by David Attenborough.</p>
                     <p>I love his style due to how he uses very exaggerated proportions in his animals, emphasising and adding to the character. This helps create a link between the viewer, and makes the animal seem more friendly.</p>
                     <p>I also love the very saturated colours that he uses, suggesting a very friendly design, which i think matches what I want to represent. He also uses a very flat illustrative style, which has become very popular recently. This is partly why I have chosen this style, as it is something that the audience can relate with, making it more approachable. </p>
-                    <Image className='divider-img' src='https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2c426aa1-3e41-44d9-a34b-b1eabb69f7b5/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20211016%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211016T133511Z&X-Amz-Expires=86400&X-Amz-Signature=16f29d36c61d86ac0470654c6d3e5217694bf48aeba133199ef238001da14e5f&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22' />
+                    <Image className='divider-img' src='https://mir-s3-cdn-cf.behance.net/project_modules/1400/07bffa96340871.5eac0a49cf33f.png' />
                     <h2>My Response</h2>
-                    <Image className='right content-img' src='https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a056ccea-b2ed-4079-9e6c-e0897d3e8cbd/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20211016%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211016T133835Z&X-Amz-Expires=86400&X-Amz-Signature=8e61db3168a371a40fe226f0a1707481551f1e3da572c64a6ed4a1808fd57ef9&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22' />
-                    <Image className='inline content-img' src='https://s3.us-west-2.amazonaws.com/secure.notion-static.com/242cbcf8-b69a-4b4b-b913-42dbb1f72765/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20211016%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211016T133227Z&X-Amz-Expires=86400&X-Amz-Signature=9030c286a6a91bd758a32dbd7a059fde9dee05572829bf5b73a2e59d732ff097&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22' />
                     <p>For my Response to my artist, I decided to create a visually similar image, but using this picture of my dog as a reference.</p>
+                    <Image className='right content-img' src='https://i.ibb.co/wLPgThG/IMG-20210530-WA0001.jpg' />
+                    <Image className='inline content-img' src='https://mir-s3-cdn-cf.behance.net/project_modules/1400/29197c96340871.5eac0a49ce5fa.jpg' />
+                    <h2>Non Digital Response</h2>
+                    <p>I first decided to make a non digital collage as it would best represent the simple and flat shapes and colours Tonks uses in his own work, and to help give me an idea of what i wanted to do digitally. </p>
+                    <Gallery imgs={artistResearchMediaExperiment} />
+                    <p>I started off my cutting out the rough shapes of my dog, and placing them together. I used a contrasting colour for the nose and eyes, to further define its shape, and to add to the recognisability of the dog. I then added some grass and leaves behind him, to add variety to the image. I then added pupils and lines on the nose, to add realism, and to make it more recognisable</p>
+                    <Image className='divider-img' src='https://i.ibb.co/hX910Rn/20211013-133938.jpg' />
+                    <h2>Digital Response</h2>
+                    <Gallery imgs={artistResearchDigitalOutcomes} />
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
             </div>
