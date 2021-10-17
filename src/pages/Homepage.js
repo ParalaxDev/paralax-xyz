@@ -51,7 +51,7 @@ const Homepage = () => {
                 </div>
             </section>
             <section id='about' className='content-container'>
-                <Heading title='ABOUT' subtitle='ABOUT ME' />
+                {/* <Heading title='ABOUT' subtitle='ABOUT ME' /> */}
             </section>
             {/* </div> */}
         </>
