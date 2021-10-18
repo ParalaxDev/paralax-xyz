@@ -112,9 +112,16 @@ const artistResearchDigitalOutcomes = [
     'https://i.ibb.co/ZmK9MSD/10.png',
     'https://i.ibb.co/SvtkdSB/11.png',
     'https://i.ibb.co/ss4xQT8/12.png',
+    'https://i.ibb.co/SvtkdSB/11.png',
     'https://i.ibb.co/6BCHb9q/13.png',
     'https://i.ibb.co/FqFqQW6/14.png',
-    'https://i.ibb.co/Kz1Mkhq/15.png'
+    'https://i.ibb.co/Kz1Mkhq/15.png',
+    'https://i.ibb.co/Tg12dmN/16.png',
+    'https://i.ibb.co/ZN9GLhx/17.png',
+    'https://i.ibb.co/rF4SQQM/18.png',
+    'https://i.ibb.co/rF4SQQM/18.png',
+    'https://i.ibb.co/cbWDdjp/19.png',
+    // 'https://i.ibb.co/rF4SQQM/18.png',
 ]
 
 const DrBarkers = (props) => {
@@ -156,7 +163,9 @@ const DrBarkers = (props) => {
                     <p>In addition to this, I also love the simple geometric shapes that are used, implying to the customer that the food itself is fuss free and simple, encouraging them to try it out.</p>
                 </Section>
                 <Section id='primary-source-photos'  >
+                    <h2>Photos of My Dog</h2>
                     <Gallery imgs={primarySourcePhotos} />
+                    <h2>Photos of Dog Food Packaging</h2>
                 </Section>
                 <Section id='artist-research'  >
                     {/* <h1>Artist Research</h1> */}
@@ -181,6 +190,9 @@ const DrBarkers = (props) => {
                     <Image className='divider-img' src='https://i.ibb.co/hX910Rn/20211013-133938.jpg' />
                     <h2>Digital Response</h2>
                     <Gallery imgs={artistResearchDigitalOutcomes} />
+                    <h2>Final Outcome</h2>
+                    <Image className='right content-img' src='https://i.ibb.co/NVp1WpS/final.png' />
+                    <p>For my final artist research outcome, I removed the extra hairs on his stomach, as I thought that it didn't look as similar as my reference photo. This is because my dog has quite smooth hair on the rest of his body, apart from his tummy</p>
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
             </div>
