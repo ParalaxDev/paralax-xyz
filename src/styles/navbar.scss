@@ -1,0 +1,136 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #1b191f;
+    color: #fff;
+    list-style: none;
+    font-family: "Inter";
+    z-index: 100;
+    width: 100%;
+    position: fixed;
+
+    .logo {
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .dropdown-content {
+        position: relative;
+        list-style: none;
+    }
+
+    .dropdown {
+        background-color: #1b191f;
+        padding: 1em 0;
+        position: absolute; /*WITH RESPECT TO PARENT*/
+        display: none;
+        // border-radius: 8px;
+        top: 30px;
+        list-style: none;
+        // width: 100%;
+        // display: block;
+        // overflow: visible;
+        position: absolute;
+
+        li {
+            padding: 0.5em 1em;
+            width: 8em;
+            // overflow: visible;
+            // text-align: center;
+            list-style: none;
+        }
+
+        li:hover {
+            // overflow: visible;
+            // background-color: #4c9e9e;
+        }
+    }
+
+    .dropdown li + li {
+        margin-top: 10px;
+    }
+
+    .dropdown-content:hover .dropdown {
+        display: block;
+    }
+}
+
+.menu {
+    // display: inline-block;
+    display: flex;
+    // position: absolute;
+    // overflow: scroll;/
+    gap: 1em;
+    font-size: 1rem;
+    padding-right: 40px;
+
+    li {
+        padding: 5px 14px;
+    }
+
+    li:hover {
+        background-color: #292630;
+        // border-radius: 5px;
+        transition: 0.3s ease;
+    }
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/*HAMBURGER MENU*/
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+    padding-right: 30px;
+}
+
+/* APPLYING MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        // background-color: teal;
+        background-color: #1b191f;
+        // right: 0;
+        left: -90vw;
+        text-align: center;
+        width: 100vw;
+        padding: 16px 0;
+    }
+    .menu li:hover {
+        display: inline-block;
+        background-color: #4c9e9e;
+        transition: 0.3s ease;
+    }
+    .menu li + li {
+        margin-top: 12px;
+    }
+    input[type="checkbox"]:checked ~ .menu {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+        // z-index: 1000;
+    }
+    .dropdown li:hover {
+        background-color: #4c9e9e;
+    }
+}

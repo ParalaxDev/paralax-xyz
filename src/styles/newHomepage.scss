@@ -18,7 +18,7 @@ $textOutline: 10px;
   margin: 0;
   padding: 0;
   color: #d9d7e0;
-  overflow-x: clip;
+  // overflow-x: clip;
   position: relative;
   // font-family: "Novecento", "Inter", sans-serif;
   // overflow-x: hidden;
@@ -44,21 +44,20 @@ html {
   font-size: 15vw;
 
   font-style: italic;
-  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-    1px 1px 0 #fff;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   color: #000;
   z-index: -15;
   position: fixed;
 }
 
-.navbar {
-  top: 0;
-  left: 0;
-  position: absolute;
-  // font-style: ;
+// .navbar {
+// top: 0;
+// left: 0;
+// position: absolute;
+// font-style: ;
 
-  padding: 0.5vw;
-}
+// padding: 0.5vw;
+// }
 
 .spacer {
   height: 150vh;
