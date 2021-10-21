@@ -13,6 +13,7 @@ import Collapseable from '../components/Collapseable';
 import Section from '../components/Section';
 import Index from '../components/Index';
 import Image from '../components/Image';
+import Navbar from '../components/Navbar';
 
 
 const moodboardImages = [
@@ -130,6 +131,7 @@ const DrBarkers = (props) => {
     return (
         <>
             <ScrollingHeader title='DR BARKERS' image={titleThumbnail} />
+            {/* <Navbar /> */}
             <Index />
             <div className='text-container'>
                 <Section id='brief' >
