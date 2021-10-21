@@ -2,6 +2,9 @@ import { useEffect, useState, useRef } from "react";
 import { useScroll } from "../hooks/useScroll";
 import '../styles/navbar.scss'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faPinterest, faDiscord, faYoutube } from '@fortawesome/free-brands-svg-icons';
+
 const titleCase = (str) => {
     var splitStr = str.toLowerCase().split(' ');
     for (var i = 0; i < splitStr.length; i++) {
@@ -13,11 +16,9 @@ const titleCase = (str) => {
     return splitStr.join(' ');
 }
 
-const Navbar = () => {
-
+const NavLinks = () => {
 
     const [elements, setElements] = useState(['test'])
-    const { y, x, scrollDirection } = useScroll();
 
 
     useEffect(() => {
@@ -47,6 +48,73 @@ const Navbar = () => {
 
     }, [])
 
+
+    return (
+        <ul className='nav-links'>
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div className='menu'>
+                {elements.map((item, i) => {
+                    if (item.section) {
+
+                        const subsections = []
+
+                        try {
+                            if (item['subsections'].length != 0) {
+                                item['subsections'].map((test, k) => {
+                                    subsections.push(test)
+                                })
+                            }
+                        } catch {
+                            // console.log('OH NO AN ERROR')
+                        }
+
+                        return (
+                            <li className='dropdown-content'>
+                                <a key={i} href={`#${item['section']}`}>{titleCase(item['section'].replace(new RegExp('-', 'g'), ' '))}</a>
+                                <ul className='dropdown'>
+                                    {subsections.map((item, i) => {
+                                        console.log(item)
+                                        return <li><a href={`#${item}`}>{titleCase(item.split('--')[0].replace(new RegExp('-', 'g'), ' '))}</a></li>
+                                    })}
+                                </ul>
+                            </li>
+                        )
+                    }
+                })}
+            </div>
+        </ul>
+
+    )
+}
+
+const NavSocials = () => {
+
+    const handleDiscordLink = () => {
+        const tag = 'Paralax#7228'
+        navigator.clipboard.writeText(tag);
+
+        /* Alert the copied text */
+        alert("Copied: " + tag + " to clipboard!");
+    }
+
+    return (
+        <div className='nav-socials'>
+            <a href='https://github.com/ParalaxDev' ><FontAwesomeIcon className='social-icons' icon={faGithub} size='1x' /></a>
+            <a onClick={() => handleDiscordLink()} ><FontAwesomeIcon className='social-icons' icon={faDiscord} size='1x' /></a>
+            <a href='' ><FontAwesomeIcon className='social-icons' icon={faYoutube} size='1x' /></a>
+            <a href='' ><FontAwesomeIcon className='social-icons' icon={faPinterest} size='1x' /></a>
+        </div>
+    )
+}
+
+const Navbar = () => {
+
+
+    const { y, x, scrollDirection } = useScroll();
+
+    // console.log();
+
     const styles = {
         active: {
             visibility: "visible",
@@ -66,40 +134,7 @@ const Navbar = () => {
             {/* <div className='left'> */}
             <a href='/' className='logo'>Paralax</a>
             <nav>
-                <ul className='nav-links'>
-                    <input type="checkbox" id="checkbox_toggle" />
-                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-                    <div className='menu'>
-                        {elements.map((item, i) => {
-                            if (item.section) {
-
-                                const subsections = []
-
-                                try {
-                                    if (item['subsections'].length != 0) {
-                                        item['subsections'].map((test, k) => {
-                                            subsections.push(test)
-                                        })
-                                    }
-                                } catch {
-                                    // console.log('OH NO AN ERROR')
-                                }
-
-                                return (
-                                    <li className='dropdown-content'>
-                                        <a key={i} href={`#${item['section']}`}>{titleCase(item['section'].replace(new RegExp('-', 'g'), ' '))}</a>
-                                        <ul className='dropdown'>
-                                            {subsections.map((item, i) => {
-                                                console.log(item)
-                                                return <li><a href={`#${item}`}>{titleCase(item.split('--')[0].replace(new RegExp('-', 'g'), ' '))}</a></li>
-                                            })}
-                                        </ul>
-                                    </li>
-                                )
-                            }
-                        })}
-                    </div>
-                </ul>
+                {window.location.href.split('/')[3] === 'projects' ? <NavLinks /> : null}
             </nav>
             {/* <a className='cta' href='#'><button>To The Top</button></a> */}
         </header >

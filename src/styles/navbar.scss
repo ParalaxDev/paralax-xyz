@@ -15,6 +15,7 @@ header {
         text-decoration: none;
         font-size: 1.5rem;
         font-weight: 600;
+        padding-left: 30px;
     }
 
     .nav-links a {
@@ -133,4 +134,13 @@ input[type="checkbox"] {
     .dropdown li:hover {
         background-color: #4c9e9e;
     }
+}
+
+.nav-socials {
+    padding-right: 100px;
+}
+
+.social-icons {
+    margin: 0px 20px;
+    // width: 40px;
 }
