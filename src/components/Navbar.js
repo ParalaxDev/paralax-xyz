@@ -24,10 +24,26 @@ const Navbar = () => {
         const ele = []
         const allElements = document.getElementsByClassName("section")
         for (var i = 0, len = allElements.length; i < len; i++) {
-            ele.push(allElements[i].id)
+
+
+            const allSubElements = allElements[i].getElementsByClassName("subsection")
+            // console.log(`---${allElements[i].id}---`)
+
+            ele.push({
+                "section": allElements[i].id,
+                "subsections": [
+
+                ]
+            })
+
+            for (var j = 0, len2 = allSubElements.length; j < len2; j++) {
+                // console.log(allSubElements[j].id)
+                ele[i].subsections.push(allSubElements[j].id)
+            }
+            // ele.push(allElements[i].id)
         }
         setElements(ele)
-        console.log(ele)
+        // console.log(ele)
 
     }, [])
 
@@ -43,16 +59,46 @@ const Navbar = () => {
         }
     }
 
+    // 
 
     return (
-        <header style={scrollDirection === "down" ? styles.active : styles.hidden}>
+        <header className='navbar' style={scrollDirection === "down" ? styles.active : styles.hidden}>
             {/* <div className='left'> */}
-            <a href='/'>🠐 Back</a>
+            <a href='/' className='logo'>Paralax</a>
             <nav>
                 <ul className='nav-links'>
-                    {elements.map((item, i) => {
-                        return <li><a key={i} href={`#${item}`}>{titleCase(item.replace(new RegExp('-', 'g'), ' '))}</a></li>
-                    })}
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <div className='menu'>
+                        {elements.map((item, i) => {
+                            if (item.section) {
+
+                                const subsections = []
+
+                                try {
+                                    if (item['subsections'].length != 0) {
+                                        item['subsections'].map((test, k) => {
+                                            subsections.push(test)
+                                        })
+                                    }
+                                } catch {
+                                    // console.log('OH NO AN ERROR')
+                                }
+
+                                return (
+                                    <li className='dropdown-content'>
+                                        <a key={i} href={`#${item['section']}`}>{titleCase(item['section'].replace(new RegExp('-', 'g'), ' '))}</a>
+                                        <ul className='dropdown'>
+                                            {subsections.map((item, i) => {
+                                                console.log(item)
+                                                return <li><a href={`#${item}`}>{titleCase(item.split('--')[0].replace(new RegExp('-', 'g'), ' '))}</a></li>
+                                            })}
+                                        </ul>
+                                    </li>
+                                )
+                            }
+                        })}
+                    </div>
                 </ul>
             </nav>
             {/* <a className='cta' href='#'><button>To The Top</button></a> */}
