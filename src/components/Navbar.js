@@ -62,7 +62,7 @@ const Navbar = () => {
     // 
 
     return (
-        <header className='navbar' style={scrollDirection === "down" ? styles.active : styles.hidden}>
+        <header className='navbar' >
             {/* <div className='left'> */}
             <a href='/' className='logo'>Paralax</a>
             <nav>

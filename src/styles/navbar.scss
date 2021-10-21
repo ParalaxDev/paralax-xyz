@@ -38,13 +38,13 @@ header {
         // width: 100%;
         // display: block;
         // overflow: visible;
-        // position: absolute;
+        position: absolute;
 
         li {
             padding: 0.5em 1em;
             width: 8em;
-            overflow: visible;
-            text-align: center;
+            // overflow: visible;
+            // text-align: center;
             list-style: none;
         }
 
@@ -86,21 +86,28 @@ header {
 input[type="checkbox"] {
     display: none;
 }
+
 /*HAMBURGER MENU*/
+
 .hamburger {
     display: none;
     font-size: 24px;
     user-select: none;
+    padding-right: 30px;
 }
+
 /* APPLYING MEDIA QUERIES */
+
 @media (max-width: 768px) {
     .menu {
         display: none;
         position: absolute;
-        background-color: teal;
-        right: 0;
-        left: 0;
+        // background-color: teal;
+        background-color: #1b191f;
+        // right: 0;
+        left: -90vw;
         text-align: center;
+        width: 100vw;
         padding: 16px 0;
     }
     .menu li:hover {
@@ -121,6 +128,7 @@ input[type="checkbox"] {
         left: 50%;
         top: 30px;
         transform: translateX(35%);
+        // z-index: 1000;
     }
     .dropdown li:hover {
         background-color: #4c9e9e;
