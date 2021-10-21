@@ -49,7 +49,7 @@ const App = () => {
 
 	return (
 		<Router>
-			<Navbar />
+			{window.location.href.split('/')[3] === 'projects' ? <Navbar /> : null}
 			<Switch>
 				<Route path="/project-editor" component={ProjectEditor} />
 				{/* <Route exact path="/projects/:name" component={Project} /> */}
