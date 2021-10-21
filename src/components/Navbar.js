@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import { useScroll } from "../hooks/useScroll";
 import '../styles/navbar.scss'
 
 const titleCase = (str) => {
@@ -16,6 +17,8 @@ const Navbar = () => {
 
 
     const [elements, setElements] = useState(['test'])
+    const { y, x, scrollDirection } = useScroll();
+
 
     useEffect(() => {
         const ele = []
@@ -28,19 +31,32 @@ const Navbar = () => {
 
     }, [])
 
+    const styles = {
+        active: {
+            visibility: "visible",
+            transition: "all 0.5s"
+        },
+        hidden: {
+            visibility: "hidden",
+            transition: "all 0.5s",
+            transform: "translateY(-100%)"
+        }
+    }
+
+
     return (
-        <div className='navbar'>
+        <header style={scrollDirection === "down" ? styles.active : styles.hidden}>
             {/* <div className='left'> */}
-            <a href='/'>Paralax</a>
-            {/* </div> */}
-            {/* <div className='right'> */}
-            {elements.map((item, i) => {
-                console.log(item);
-                // return <a key={i} onClick={() => { window.history.pushState({}, null, `#${item}`); document.getElementById(item).scrollIntoView(); }}><span className='hash'>#</span> {titleCase(item.replace(new RegExp('-', 'g'), ' '))}</a>
-                return <a key={i} href={`#${item}`}>{titleCase(item.replace(new RegExp('-', 'g'), ' '))}</a>
-            })}
-            {/* </div> */}
-        </div>
+            <a href='/'>🠐 Back</a>
+            <nav>
+                <ul className='nav-links'>
+                    {elements.map((item, i) => {
+                        return <li><a key={i} href={`#${item}`}>{titleCase(item.replace(new RegExp('-', 'g'), ' '))}</a></li>
+                    })}
+                </ul>
+            </nav>
+            {/* <a className='cta' href='#'><button>To The Top</button></a> */}
+        </header >
     )
 }
 

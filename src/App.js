@@ -20,6 +20,7 @@ import Projects from "./pages/Projects";
 import Kew from "./pages/Kew";
 import Typography from "./pages/Typography";
 import DrBarkers from "./pages/DrBarkers";
+import Navbar from "./components/Navbar";
 // import NewHomepage from "./components/NewHomepage";
 
 const firebaseConfig = {
@@ -48,6 +49,7 @@ const App = () => {
 
 	return (
 		<Router>
+			<Navbar />
 			<Switch>
 				<Route path="/project-editor" component={ProjectEditor} />
 				{/* <Route exact path="/projects/:name" component={Project} /> */}

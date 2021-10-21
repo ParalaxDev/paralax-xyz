@@ -132,7 +132,7 @@ const DrBarkers = (props) => {
         <>
             <ScrollingHeader title='DR BARKERS' image={titleThumbnail} />
             {/* <Navbar /> */}
-            <Index />
+            {/* <Index /> */}
             <div className='text-container'>
                 <Section id='brief' >
                     {/* <h1>The Brief</h1> */}
