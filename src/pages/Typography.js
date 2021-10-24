@@ -1,15 +1,15 @@
 import ScrollingHeader from '../components/ScrollingHeader'
-import Heading from '../components/Heading'
+// import Heading from '../components/Heading'
 import React, { useEffect } from 'react'
 // import React from 'react'
-import Gallery from '../components/Gallery';
+// import Gallery from '../components/Gallery';
 
 import '../styles/basicStyling.scss'
 import '../styles/gallery.scss'
 
 
 import titleThumbnail from '../images/drbarkers.png'
-import Collapseable from '../components/Collapseable';
+// import Collapseable from '../components/Collapseable';
 import Section from '../components/Section';
 import Index from '../components/Index';
 import Image from '../components/Image';
