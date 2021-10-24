@@ -1,3 +1,5 @@
+***WARNING: THIS IS THE DEVELOPMENT BRANCH, SOME FEATURES MAY BE UNSTABLE/UNUSABLE***
+
 # About the Project
 
 👋 Hey, this is the source code for my website https://paralax.xyz. It's primarily for my Graphic Design GCSE, but also a showcase for my computer science projects.
