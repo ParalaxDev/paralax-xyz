@@ -34,9 +34,17 @@
   p {
     font-size: 1rem;
     margin-bottom: 15px;
+    line-height: 150%;
+    color: #d9d7e0cc;
   }
   .content-img {
     width: 50%;
+    cursor: pointer;
+    z-index: 10;
+    margin-bottom: 20px;
+  }
+  .thumbnail-img {
+    width: 30%;
     cursor: pointer;
     z-index: 10;
     margin-bottom: 20px;
@@ -65,6 +73,7 @@
     width: calc(50% - 20px);
     margin: 0;
     margin-bottom: 20px;
+    object-fit: cover;
   }
   a {
     color: #6196cc;

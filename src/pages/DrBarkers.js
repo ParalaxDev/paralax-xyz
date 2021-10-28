@@ -184,7 +184,7 @@ const DrBarkers = (props) => {
                     <Subsection id='photos-of-dog-food-packaging' />
                     {/* <h2>Photos of Dog Food Packaging</h2> */}
                 </Section>
-                <Section id='artist-research'  >
+                <Section id='artist-research' >
                     {/* <h1>Artist Research</h1> */}
                     <Image className='right content-img' src='https://pro2-bar-s3-cdn-cf5.myportfolio.com/a21db12f-3a56-4739-a144-6dc87aa0a368/6fd06295-f196-40c0-a589-8380b0be898f_rw_3840.jpg?h=05a9377a7a4fbad4b8e56a42d352d026' />
                     {/* <p>I chose George Tonks to research for his colourful and approchable art style, which I think represents what I want my brand to be perfectly</p> */}
