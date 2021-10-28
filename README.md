@@ -20,6 +20,7 @@ This also applies to any of the actual projects on my website. Whilst some of th
 - Add previous programming projects
 - Add about me and contact me sections to main page
 - Add a contact form in the page
+- Animations
 
 # Usage
 
