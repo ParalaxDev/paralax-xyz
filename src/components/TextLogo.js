@@ -4,24 +4,27 @@ import { motion } from "framer-motion";
 const TextLogo = (props) => {
 
     const container = {
-        hidden: { opacity: 1, scale: 0 },
+        // hidden: { opacity: 1, scale: 0 },
         visible: {
-            opacity: 1,
-            scale: 1,
+            // opacity: 1,
+            // scale: 1,
             transition: {
-                delayChildren: 0.3,
-                staggerChildren: 0.2
+                // delayChildren: 0.1,
+                staggerChildren: 0.045
             }
         }
     }
 
     const item = {
-        hidden: { y: 20, opacity: 0 },
+        hidden: { y: -80 },
         visible: {
             y: 0,
-            opacity: 1
+            // opacity: 1
         }
     }
+
+    // animate={{ y: [-40, 40, -40] }}
+    // transition={{ ease: "anticipate", duration: 1 }}
 
 
     return (
