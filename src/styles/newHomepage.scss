@@ -59,6 +59,20 @@ html {
 // padding: 0.5vw;
 // }
 
+.text-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  .text-logo {
+    width: 90%;
+  }
+}
+
 .spacer {
   height: 150vh;
   width: 10px;
