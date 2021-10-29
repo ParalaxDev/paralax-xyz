@@ -1,6 +1,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 
+
 const TextLogo = (props) => {
 
     const container = {
@@ -9,18 +10,18 @@ const TextLogo = (props) => {
             // opacity: 1,
             // scale: 1,
             transition: {
-                // delayChildren: 0.1,
+                delayChildren: 0.5,
                 staggerChildren: 0.045
             }
         }
     }
 
     const item = {
-        hidden: { y: -80 },
+        hidden: { y: -210 },
         visible: {
             y: 0,
             // opacity: 1
-        }
+        },
     }
 
     // animate={{ y: [-40, 40, -40] }}
