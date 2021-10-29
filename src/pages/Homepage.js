@@ -38,10 +38,8 @@ const Homepage = () => {
             {/* <Cursor tooltip={tooltip} /> */}
             {/* <div className='wrapper'> */}
             <section id='landing-page'>
-                <div className='text-logo-container'>
-                    {/* <TorusKnot style={{ position: 'absolute', top: '0', left: '0', overflowX: 'hidden' }} /> */}
-                    <TextLogo className='text-logo' />
-                </div>
+                {/* <TorusKnot style={{ position: 'absolute', top: '0', left: '0', overflowX: 'hidden' }} /> */}
+                <TextLogo className='text-logo' />
             </section>
             <section id='work' className='content-container'>
                 <Heading title='WORK' subtitle='FEATURED PROJECTS' />

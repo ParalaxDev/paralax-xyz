@@ -59,7 +59,7 @@ html {
 // padding: 0.5vw;
 // }
 
-.text-logo-container {
+.logo-motion-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,8 +73,6 @@ html {
   // transform: translate(-50%, -50%);
   width: 60%;
 }
-
-
 
 @media screen and (max-width: 600px) {
   .text-logo {
