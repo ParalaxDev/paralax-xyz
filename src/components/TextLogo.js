@@ -6,22 +6,34 @@ const TextLogo = (props) => {
 
     const container = {
         // hidden: { opacity: 1, scale: 0 },
-        visible: {
-            // opacity: 1,
-            // scale: 1,
+        animate: {
+            opacity: 1,
+            scale: 1,
+
             transition: {
                 delayChildren: 0.5,
-                staggerChildren: 0.045
+                staggerChildren: 0.045,
+                ease: "easeInOut",
+
+                repeat: Infinity
             }
         }
     }
 
     const item = {
-        hidden: { y: -210 },
-        visible: {
-            y: 0,
+        // hidden: { y: -210 },
+        animate: {
+            y: [0, 40, 0],
             // opacity: 1
+            transition: {
+                duration: 1,
+                repeat: Infinity, /* new */
+            },
         },
+        // animate: {
+        //     y: [-40, 40, -40]
+        // },
+        // transition: { ease: "easeInOut", duration: 1, repeat: Infinity }
     }
 
     // animate={{ y: [-40, 40, -40] }}
@@ -32,8 +44,8 @@ const TextLogo = (props) => {
 
         <motion.div className="logo-motion-container"
             variants={container}
-            initial="hidden"
-            animate="visible" >
+            // initial="hidden"
+            animate="animate" >
             <svg
                 viewBox="0 0 1247 204"
                 xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +58,9 @@ const TextLogo = (props) => {
                 }}
                 {...props}
             >
-                <motion.g variants={item} id='logo-p'>
+                <motion.g variants={item} id='logo-p'
+
+                >
                     <path
                         d="M441.68 244.972v56.659l66.387 38.293.082-56.612-66.469-38.34Z"
                         style={{
