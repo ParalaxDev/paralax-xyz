@@ -1,15 +1,51 @@
-import * as React from "react";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 
 const TextLogo = (props) => {
 
+    // const container = {
+    //     // hidden: { opacity: 1, scale: 0 },
+    //     visible: {
+    //         opacity: 1,
+    //         scale: 1,
+
+    //         transition: {
+    //             delayChildren: 0.5,
+    //             staggerChildren: 0.045,
+    //             ease: "easeInOut",
+
+    //             repeat: Infinity
+    //         }
+    //     }
+    // }
+
+    // const item = {
+    //     hidden: { y: -210 },
+    //     visible: {
+    //         y: [0, 40, 0],
+    //         transition: {
+    //             duration: 1,
+    //             repeat: Infinity, /* new */
+    //         },
+    //     },
+
+    // }
+
+    const [animationType, setAnimationType] = useState('visible')
+
+
     const container = {
         // hidden: { opacity: 1, scale: 0 },
-        animate: {
-            opacity: 1,
-            scale: 1,
-
+        visible: {
+            // opacity: 1,
+            // scale: 1,
+            transition: {
+                delayChildren: 0.05,
+                staggerChildren: 0.045
+            }
+        },
+        general: {
             transition: {
                 delayChildren: 0.5,
                 staggerChildren: 0.045,
@@ -21,31 +57,36 @@ const TextLogo = (props) => {
     }
 
     const item = {
-        // hidden: { y: -210 },
-        animate: {
+        hidden: { y: -100 },
+        visible: {
+            y: 0,
+
+        },
+        general: {
             y: [0, 40, 0],
-            // opacity: 1
             transition: {
                 duration: 1,
                 repeat: Infinity, /* new */
             },
-        },
-        // animate: {
-        //     y: [-40, 40, -40]
-        // },
-        // transition: { ease: "easeInOut", duration: 1, repeat: Infinity }
+        }
     }
 
     // animate={{ y: [-40, 40, -40] }}
     // transition={{ ease: "anticipate", duration: 1 }}
+
+    useEffect(() => {
+        setTimeout(() => {
+            setAnimationType('general')
+        }, 575)
+    }, [])
 
 
     return (
 
         <motion.div className="logo-motion-container"
             variants={container}
-            // initial="hidden"
-            animate="animate" >
+            initial="hidden"
+            animate={animationType} >
             <svg
                 viewBox="0 0 1247 204"
                 xmlns="http://www.w3.org/2000/svg"
