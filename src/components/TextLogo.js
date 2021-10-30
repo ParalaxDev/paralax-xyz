@@ -57,7 +57,7 @@ const TextLogo = (props) => {
     }
 
     const item = {
-        hidden: { y: -100 },
+        hidden: { y: -260 },
         visible: {
             y: 0,
 
