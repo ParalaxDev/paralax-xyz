@@ -42,7 +42,7 @@ const TextLogo = (props) => {
             // scale: 1,
             transition: {
                 delayChildren: 0.05,
-                staggerChildren: 0.045
+                staggerChildren: 0.05
             }
         },
         general: {
@@ -77,7 +77,7 @@ const TextLogo = (props) => {
     useEffect(() => {
         setTimeout(() => {
             setAnimationType('general')
-        }, 575)
+        }, 600)
     }, [])
 
 
