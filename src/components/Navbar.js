@@ -4,6 +4,7 @@ import '../styles/navbar.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faPinterest, faDiscord, faYoutube } from '@fortawesome/free-brands-svg-icons';
+// import { useScroll } from './../../hooks/useScroll'
 
 const titleCase = (str) => {
     var splitStr = str.toLowerCase().split(' ');
@@ -127,14 +128,15 @@ const Navbar = () => {
         }
     }
 
-    // 
+
 
     return (
-        <header className='navbar' >
+        <header className='navbar' style={window.scrollY > 10 ? styles.active : styles.hidden}>
             {/* <div className='left'> */}
-            <a href='/' className='logo'>Paralax</a>
+            <a href='/' className='logo'><img src='/final-icon.png' /></a>
             <nav>
                 {window.location.href.split('/')[3] === 'projects' ? <NavLinks /> : null}
+                <a href='https://github.com/ParalaxDev' ><FontAwesomeIcon className='social-icon-github' size='2x' style={{ width: ' 100px ' }} icon={faGithub} /></a>
             </nav>
             {/* <a className='cta' href='#'><button>To The Top</button></a> */}
         </header >

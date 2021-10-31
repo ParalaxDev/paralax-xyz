@@ -14,6 +14,7 @@ import test_image_1 from '../images/test_image_1.png'
 import test_image_2 from '../images/test_image_2.png'
 import test_image_3 from '../images/test_image_3.png'
 import drbarkers from '../images/drbarkers.png'
+import TextLogo from "../components/TextLogo";
 
 
 
@@ -37,7 +38,8 @@ const Homepage = () => {
             {/* <Cursor tooltip={tooltip} /> */}
             {/* <div className='wrapper'> */}
             <section id='landing-page'>
-                <TorusKnot style={{ position: 'absolute', top: '0', left: '0', overflowX: 'hidden' }} />
+                {/* <TorusKnot style={{ position: 'absolute', top: '0', left: '0', overflowX: 'hidden' }} /> */}
+                <TextLogo className='text-logo' />
             </section>
             <section id='work' className='content-container'>
                 <Heading title='WORK' subtitle='FEATURED PROJECTS' />
