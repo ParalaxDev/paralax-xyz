@@ -135,8 +135,8 @@ const Navbar = () => {
             {/* <div className='left'> */}
             <a href='/' className='logo'><img src='/final-icon.png' /></a>
             <nav>
-                {window.location.href.split('/')[3] === 'projects' ? <NavLinks /> : null}
-                <a href='https://github.com/ParalaxDev' ><FontAwesomeIcon className='social-icon-github' size='2x' style={{ width: ' 100px ' }} icon={faGithub} /></a>
+                {window.location.href.split('/')[3] === 'projects' ? <NavLinks /> : <a href='https://github.com/ParalaxDev' ><FontAwesomeIcon className='social-icon-github' size='2x' style={{ width: ' 100px ' }} icon={faGithub} /></a>}
+
             </nav>
             {/* <a className='cta' href='#'><button>To The Top</button></a> */}
         </header >
