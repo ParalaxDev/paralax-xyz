@@ -1,9 +1,9 @@
 import { isMobile } from "react-device-detect";
 
-const Spacer = () => {
+const Spacer = ({ h }) => {
     return (
         <>
-            {isMobile ? null : <br />}
+            {isMobile || window.innerWidth < 922 ? null : <div style={{ height: h }} />}
         </>
     )
 }

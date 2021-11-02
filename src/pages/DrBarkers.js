@@ -14,6 +14,8 @@ import Section from '../components/Section';
 import Index from '../components/Index';
 import Image from '../components/Image';
 import Navbar from '../components/Navbar';
+import Spacer from '../components/Spacer'
+
 import Subsection from '../components/Subsection';
 
 
@@ -126,6 +128,31 @@ const artistResearchDigitalOutcomes = [
     // 'https://i.ibb.co/rF4SQQM/18.png',
 ]
 
+const logoMoodboard = [
+    'https://i.pinimg.com/474x/8a/24/e9/8a24e9897f91030a39bc2fbc52d88ed4.jpg',
+    'https://i.pinimg.com/474x/9c/d0/58/9cd0587c8239b18ddc6a1f7c5f31ff2f.jpg',
+    'https://i.pinimg.com/474x/62/40/d8/6240d881a3ece4d59249b35f9ff420a0.jpg',
+    'https://i.pinimg.com/474x/4e/07/c2/4e07c24e44317ba1129a7cda4406ec62.jpg',
+    'https://i.pinimg.com/474x/df/cd/7e/dfcd7e7d98ccfcc59d3550c8ffc91716.jpg',
+    'https://i.pinimg.com/474x/b5/33/92/b533920ee75e471a6fb2fb3e7c4297d2.jpg',
+    'https://i.pinimg.com/474x/ed/4d/20/ed4d20aa0325dba7b1cc55c4539d3b4d.jpg',
+    'https://i.pinimg.com/474x/91/5d/82/915d8216347ab93d1e47714b0ea989de.jpg',
+    'https://i.pinimg.com/474x/c3/20/9b/c3209ba804ff8c2187b1123386f2289e.jpg',
+    'https://i.pinimg.com/474x/6e/09/37/6e0937a443f991208f026b11eb94142d.jpg',
+    'https://i.pinimg.com/474x/8b/1c/0c/8b1c0c57d50822908d3ee0e76eb05291.jpg',
+    'https://i.pinimg.com/474x/60/05/62/600562d6b161b6a181174672ea6ea8ab.jpg',
+    'https://i.pinimg.com/474x/b1/e6/37/b1e63781c8c297a1fdf8835196cf6b46.jpg',
+    'https://i.pinimg.com/474x/d0/f8/71/d0f871a01d5a6e0e61d4bb3d1833921b.jpg',
+    'https://i.pinimg.com/474x/a1/62/a8/a162a8cfb16e89376ccc2c8c662e1eb5.jpg',
+    'https://i.pinimg.com/474x/75/41/b1/7541b1dd8a301b5af0b569a2089fac6c.jpg',
+    'https://i.pinimg.com/474x/14/eb/3b/14eb3b0cccc6f6c7afc82e112dc6e1b0.jpg',
+    'https://i.pinimg.com/474x/52/d8/37/52d8379682554785260caa81954d8063.jpg',
+    'https://i.pinimg.com/474x/64/49/b1/6449b12a5936e6b68249c38e0cd16cb6.jpg',
+    'https://i.pinimg.com/474x/18/78/f8/1878f8ae7c2782b1dabf331e4909093b.jpg',
+    'https://i.pinimg.com/474x/55/b0/32/55b032f1303c62cc058e7d2b642bceeb.jpg'
+
+]
+
 const DrBarkers = (props) => {
 
 
@@ -214,6 +241,14 @@ const DrBarkers = (props) => {
                     <Subsection id='final-outcome' />
                     <Image className='right content-img' src='https://i.ibb.co/NVp1WpS/final.png' />
                     <p>For my final artist research outcome, I removed the extra hairs on his stomach, as I thought that it didn't look as similar as my reference photo. This is because my dog has quite smooth hair on the rest of his body, apart from his tummy</p>
+                    <p>I'm really happy with how it came out, and I think it represents Tonks' style very well.</p>
+                    <Spacer h='50%' />
+                </Section>
+                <Section id='infographics-and-logo' >
+                    <Subsection id='logo' />
+
+                    <p>I knew I wanted my logo to be very simple, but also quite striking. To do this, I created a moodboard of logos similar to what i desired.</p>
+                    <Gallery imgs={logoMoodboard} />
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
             </div>
