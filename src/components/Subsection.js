@@ -25,9 +25,23 @@ const Subsection = (props) => {
 
     const executeScroll = () => ref.current.scrollIntoView()
 
+    const generateTextFromId = (id) => {
+
+
+        const splitId = id.split('--')[1]
+
+        if (splitId) {
+            return titleCase(splitId.replace(new RegExp('-', 'g'), ' '))
+
+        } else {
+            return titleCase(id.replace(new RegExp('-', 'g'), ' '))
+        }
+
+    }
+
     return (
         // <section id={props.id} className='subsection'>
-        <a href={`#${props.id}`}><h2 ref={ref} id={`${props.id}`} className='subsection'>{titleCase(props.id.replace(new RegExp('-', 'g'), ' '))}</h2></a>
+        <a href={`#${props.id}`}><h2 ref={ref} id={`${props.id}`} className='subsection'>{generateTextFromId(props.id)}</h2></a>
         // </section>
     )
 

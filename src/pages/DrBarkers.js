@@ -245,10 +245,11 @@ const DrBarkers = (props) => {
                     <Spacer h='50%' />
                 </Section>
                 <Section id='infographics-and-logo' >
-                    <Subsection id='logo' />
-
-                    <p>I knew I wanted my logo to be very simple, but also quite striking. To do this, I created a moodboard of logos similar to what i desired.</p>
+                    <Subsection id='logo--moodboard' />
+                    <p>I knew I wanted my logo to be very simple, but also quite striking. To do this, I created a moodboard of logos similar to what i desired:</p>
                     <Gallery imgs={logoMoodboard} />
+                    <p>I love how they use clean lines and curves to create a very simple logo, but it is very clear what it demonstrates, and is instantly recognisable. I also like the use of negative space used by a lot of them. This further keeps them simple to view, but adds to the audience's viewing experience. I also love the very flat, two-tone style most of these designs embrace. I think it works really well with the simple lines, as though its emulating a pen stroke</p>
+                    <Subsection id='logo--digital-response' />
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
             </div>

@@ -49,6 +49,20 @@ const NavLinks = () => {
 
     }, [])
 
+    const generateTextFromId = (id) => {
+
+
+        const splitId = id.split('--')[1]
+
+        if (splitId) {
+            return titleCase(splitId.replace(new RegExp('-', 'g'), ' '))
+
+        } else {
+            return titleCase(id.replace(new RegExp('-', 'g'), ' '))
+        }
+
+    }
+
 
     return (
         <ul className='nav-links'>
@@ -76,7 +90,7 @@ const NavLinks = () => {
                                 <ul className='dropdown'>
                                     {subsections.map((item, i) => {
                                         // console.log(item)
-                                        return <li><a href={`#${item}`}>{titleCase(item.split('--')[0].replace(new RegExp('-', 'g'), ' '))}</a></li>
+                                        return <li><a href={`#${item}`}>{generateTextFromId(item)}</a></li>
                                     })}
                                 </ul>
                             </li>
