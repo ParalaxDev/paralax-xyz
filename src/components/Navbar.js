@@ -75,7 +75,7 @@ const NavLinks = () => {
                                 <a key={i} href={`#${item['section']}`}>{titleCase(item['section'].replace(new RegExp('-', 'g'), ' '))}</a>
                                 <ul className='dropdown'>
                                     {subsections.map((item, i) => {
-                                        console.log(item)
+                                        // console.log(item)
                                         return <li><a href={`#${item}`}>{titleCase(item.split('--')[0].replace(new RegExp('-', 'g'), ' '))}</a></li>
                                     })}
                                 </ul>
