@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { motion, useAnimation } from 'framer-motion'
+
 import '../styles/gallery.scss'
 
 const Modal = ({ selectedImage, setSelectedImage }) => {
@@ -18,7 +20,7 @@ const Image = ({ src, className, style }) => {
     return (
         <>
             {selectedImage ? <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage} /> : null}
-            <img className={className} style={style} src={src} onClick={() => { setSelectedImage(src); console.log('clicked'); }} />
+            <motion.img className={className} style={style} src={src} onClick={() => { setSelectedImage(src); console.log('clicked'); }} />
 
         </>
     )
