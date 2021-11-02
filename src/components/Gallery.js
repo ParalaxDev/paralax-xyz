@@ -59,6 +59,7 @@ const Gallery = ({ imgs }) => {
                     // console.log(item)
                     return <motion.img
                         variants={child}
+                        whileHover={{ scale: 0.9 }}
                         key={i} src={item} className='images' onClick={() => setSelectedImage(item)} />
                 })}
             </motion.div>
