@@ -21,6 +21,7 @@ import Kew from "./pages/Kew";
 import Typography from "./pages/Typography";
 import DrBarkers from "./pages/DrBarkers";
 import Navbar from "./components/Navbar";
+import Error404 from "./pages/Error404";
 // import NewHomepage from "./components/NewHomepage";
 
 const firebaseConfig = {
@@ -60,10 +61,7 @@ const App = () => {
 				<Route path="/projects/drbarkers" component={DrBarkers} />
 				<Route path="/projects" component={Projects} />
 				<Route exact path="/" component={Homepage} />
-				<Route path="/">
-					<h1>Error 404</h1>
-					<h4>This is not the page your looking for</h4>
-				</Route>
+				<Route path="/" component={Error404} />
 			</Switch>
 		</Router >
 	)
