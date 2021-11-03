@@ -367,8 +367,10 @@ const DrBarkers = (props) => {
                     <Spacer h='50%' dH='22vh' />
                     <h1>Infographics</h1>
                     <Subsection id='infographics--moodboard' />
+                    <p>To help with my development of my infographics, I created a moodboard of existing similar images to help inspire me:</p>
                     <Gallery imgs={infographicsMoodboard} />
 
+                    <p>When I started to create my Infographics, I knew I wanted to include it into my final package. To do this, I would include it in the box as a promotional piece</p>
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
             </div>
