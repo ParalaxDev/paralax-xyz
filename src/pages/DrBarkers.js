@@ -234,6 +234,22 @@ const logoMoodboard = [
     'https://i.pinimg.com/474x/64/49/b1/6449b12a5936e6b68249c38e0cd16cb6.jpg',
     'https://i.pinimg.com/474x/18/78/f8/1878f8ae7c2782b1dabf331e4909093b.jpg',
     'https://i.pinimg.com/474x/55/b0/32/55b032f1303c62cc058e7d2b642bceeb.jpg'
+]
+
+const infographicsMoodboard = [
+    'https://i.pinimg.com/474x/26/a5/23/26a523793fc9b5671ad8ff69902041b8.jpg',
+    'https://i.pinimg.com/474x/44/ee/b2/44eeb23fcb8c5991c409719680fa1be1.jpg',
+    'https://i.pinimg.com/474x/79/1b/92/791b92403b5d4dcd84091d96e301813a.jpg',
+    'https://i.pinimg.com/474x/ea/70/b4/ea70b4b9ce47f2644ed440f36dbe084c.jpg',
+    'https://i.pinimg.com/474x/cd/9c/65/cd9c653991c0c5d15d7f18f6b68fe9ed.jpg',
+    'https://i.pinimg.com/474x/b7/da/1b/b7da1b5431bf38540ebff44b88d3b6e7.jpg',
+    'https://i.pinimg.com/474x/cd/54/28/cd5428fac98dc1aa12efc0a39f67a35c.jpg',
+    'https://i.pinimg.com/474x/2e/62/ae/2e62ae55ba56a98b1678fdf1e1a8e3f7.jpg',
+    'https://i.pinimg.com/474x/eb/5e/8c/eb5e8c764fcd8408350e18bbc081ab43.jpg',
+    'https://i.pinimg.com/474x/5c/84/23/5c8423750828ca53a08e973e60a1a2c4.jpg',
+    'https://i.pinimg.com/474x/00/c5/e1/00c5e1a214b37fc22f1fe211df0bf64b.jpg',
+    'https://i.pinimg.com/474x/db/2d/87/db2d87e38df30a7130c7f0f6d537a08a.jpg',
+    'https://i.pinimg.com/474x/de/ab/e1/deabe10f21f07a42d5acd4865e917b65.jpg'
 
 ]
 
@@ -330,6 +346,7 @@ const DrBarkers = (props) => {
                     <Spacer h='50%' dH='40vh' />
                 </Section>
                 <Section id='infographics-and-logo' >
+                    <h1>Logo</h1>
                     <Subsection id='logo--moodboard' />
                     <p>I knew I wanted my logo to be very simple, but also quite striking. To do this, I created a moodboard of logos similar to what i desired:</p>
                     <Gallery imgs={logoMoodboard} />
@@ -339,7 +356,7 @@ const DrBarkers = (props) => {
                     https://i.ibb.co/XjVHzmP/2.png
                     https://i.ibb.co/Qn9jtFb/3.png
                     https://i.ibb.co/ctFnCmt/4.png
-                    https://i.ibb.co/7275D2P/5.png */}
+                https://i.ibb.co/7275D2P/5.png */}
                     <Image className='inline content-img' style={{ marginRight: '20px' }} src='https://i.ibb.co/Z8SJcbV/1.png' />
                     <Image className='inline content-img' src='https://i.ibb.co/XjVHzmP/2.png' />
 
@@ -348,6 +365,9 @@ const DrBarkers = (props) => {
                     <Image className='left content-img' src='https://i.ibb.co/1fCGPd8/logo.png' />
                     <p>This is the design I finally came up with. It was originally just black and white, but didn't like the very harsh result it gave. To fix this, I switched the colour to be a more friendly. I like how the ear breaks up the consistent linework and adds variety to the logo. I also like how the text wraps around the logo, giving it a more traditional style, similar to those like the old Starbucks logo.</p>
                     <Spacer h='50%' dH='22vh' />
+                    <h1>Infographics</h1>
+                    <Subsection id='infographics--moodboard' />
+                    <Gallery imgs={infographicsMoodboard} />
 
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
