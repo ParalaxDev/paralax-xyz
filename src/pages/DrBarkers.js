@@ -327,7 +327,7 @@ const DrBarkers = (props) => {
                     <Image className='right content-img' src='https://i.ibb.co/NVp1WpS/final.png' />
                     <p>For my final artist research outcome, I removed the extra hairs on his stomach, as I thought that it didn't look as similar as my reference photo. This is because my dog has quite smooth hair on the rest of his body, apart from his tummy</p>
                     <p>I'm really happy with how it came out, and I think it represents Tonks' style very well.</p>
-                    <Spacer h='50%' />
+                    <Spacer h='50%' dH='40vh' />
                 </Section>
                 <Section id='infographics-and-logo' >
                     <Subsection id='logo--moodboard' />
@@ -335,6 +335,20 @@ const DrBarkers = (props) => {
                     <Gallery imgs={logoMoodboard} />
                     <p>I love how they use clean lines and curves to create a very simple logo, but it is very clear what it demonstrates, and is instantly recognisable. I also like the use of negative space used by a lot of them. This further keeps them simple to view, but adds to the audience's viewing experience. I also love the very flat, two-tone style most of these designs embrace. I think it works really well with the simple lines, as though its emulating a pen stroke</p>
                     <Subsection id='logo--digital-response' />
+                    {/* https://i.ibb.co/Z8SJcbV/1.png
+                    https://i.ibb.co/XjVHzmP/2.png
+                    https://i.ibb.co/Qn9jtFb/3.png
+                    https://i.ibb.co/ctFnCmt/4.png
+                    https://i.ibb.co/7275D2P/5.png */}
+                    <Image className='inline content-img' style={{ marginRight: '20px' }} src='https://i.ibb.co/Z8SJcbV/1.png' />
+                    <Image className='inline content-img' src='https://i.ibb.co/XjVHzmP/2.png' />
+
+                    <Image className='inline content-img' style={{ marginRight: '20px' }} src='https://i.ibb.co/Qn9jtFb/3.png' />
+                    <Image className='inline content-img' src='https://i.ibb.co/ctFnCmt/4.png' />
+                    <Image className='left content-img' src='https://i.ibb.co/1fCGPd8/logo.png' />
+                    <p>This is the design I finally came up with. It was originally just black and white, but didn't like the very harsh result it gave. To fix this, I switched the colour to be a more friendly. I like how the ear breaks up the consistent linework and adds variety to the logo. I also like how the text wraps around the logo, giving it a more traditional style, similar to those like the old Starbucks logo.</p>
+                    <Spacer h='50%' dH='22vh' />
+
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
             </div>
