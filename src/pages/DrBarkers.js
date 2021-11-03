@@ -87,6 +87,90 @@ const primarySourcePhotos = [
     'https://i.ibb.co/wLPgThG/IMG-20210530-WA0001.jpg'
 ]
 
+const packagingPrimarySourcePhotos = [
+    'https://i.ibb.co/hFQXzq0/20211025-134125.jpg',
+    'https://i.ibb.co/br67DWV/20211025-134138.jpg',
+    'https://i.ibb.co/SJFGXmW/20211025-134142.jpg',
+    'https://i.ibb.co/Jj3RHHS/20211025-134150.jpg',
+    'https://i.ibb.co/PYPh1gZ/20211025-134156.jpg',
+    'https://i.ibb.co/c1v7Qzq/20211025-134210.jpg',
+    'https://i.ibb.co/5WT9WjC/20211025-134215.jpg',
+    'https://i.ibb.co/LnQZz7z/20211025-134228.jpg',
+    'https://i.ibb.co/wzpfqx6/20211025-134231.jpg',
+    'https://i.ibb.co/njp35Nk/20211025-134317.jpg',
+    'https://i.ibb.co/C87Vtjy/20211025-134325.jpg',
+    'https://i.ibb.co/TWr6t3t/20211025-134334.jpg',
+    'https://i.ibb.co/8YJVjD5/20211025-134345.jpg',
+    'https://i.ibb.co/0C59K3y/20211025-134405.jpg',
+    'https://i.ibb.co/K7234Xx/20211025-134739.jpg',
+    'https://i.ibb.co/zbqtzCG/20211025-140206.jpg',
+    'https://i.ibb.co/C6PyxqS/20211025-140220.jpg',
+    'https://i.ibb.co/wwNRW96/20211025-140233.jpg',
+    'https://i.ibb.co/YXjDT0W/20211025-140239.jpg',
+    'https://i.ibb.co/vH7LqQ5/20211025-140247.jpg',
+    'https://i.ibb.co/HTkyBC4/20211025-140259.jpg',
+    'https://i.ibb.co/0D3K15g/20211025-140307.jpg',
+    'https://i.ibb.co/nDQj94p/20211025-140322.jpg',
+    'https://i.ibb.co/JjWLBHY/20211025-140326.jpg',
+    'https://i.ibb.co/jbypBrw/20211025-140329.jpg',
+    'https://i.ibb.co/RpR7zX9/20211025-140338.jpg',
+    'https://i.ibb.co/0Bj4Nhv/20211025-140350.jpg',
+    'https://i.ibb.co/gW2mzqj/20211025-140357.jpg',
+    'https://i.ibb.co/PxRLNSN/20211025-140419.jpg',
+    'https://i.ibb.co/7NKdnxf/20211025-140422.jpg',
+    'https://i.ibb.co/mqHYMhF/20211025-140425.jpg',
+    'https://i.ibb.co/Xppr7cz/20211025-140437.jpg',
+    'https://i.ibb.co/hK02LCg/20211025-140439.jpg',
+    'https://i.ibb.co/wJRXTBZ/20211025-140446.jpg',
+    'https://i.ibb.co/BwBRBG9/20211025-140455.jpg',
+    'https://i.ibb.co/0YzW4Qj/20211025-140507.jpg',
+    'https://i.ibb.co/8zmGRfp/20211025-140514.jpg',
+    'https://i.ibb.co/HxBnSmf/20211025-140518.jpg',
+    'https://i.ibb.co/vHCj4rv/20211025-140522.jpg',
+    'https://i.ibb.co/LdRMTqj/20211025-140532.jpg',
+    'https://i.ibb.co/31jkP56/20211025-140540.jpg',
+    'https://i.ibb.co/qDQN0Cv/20211025-140556.jpg',
+    'https://i.ibb.co/5BdL2MS/20211025-140607.jpg',
+    'https://i.ibb.co/JFNHk0B/20211025-140616.jpg',
+    'https://i.ibb.co/d5MYmzB/20211025-140624.jpg',
+    'https://i.ibb.co/92jB1NG/20211025-140643.jpg',
+    'https://i.ibb.co/G3b1Xv0/20211025-140645.jpg',
+    'https://i.ibb.co/h7nVsfz/20211025-140648.jpg',
+    'https://i.ibb.co/PxBTWzs/20211025-140653.jpg',
+    'https://i.ibb.co/mFZrj53/20211025-140655.jpg',
+    'https://i.ibb.co/ssgdMR0/20211025-140704.jpg',
+    'https://i.ibb.co/C98ZRWG/20211025-140714.jpg',
+    'https://i.ibb.co/87hhShN/20211025-140722.jpg',
+    'https://i.ibb.co/sC9j8nX/20211025-140739.jpg',
+    'https://i.ibb.co/PQYbJQz/20211025-140754.jpg',
+    'https://i.ibb.co/hWsmwkK/20211025-140803.jpg',
+    'https://i.ibb.co/mz6Vn6Q/20211025-140815.jpg',
+    'https://i.ibb.co/Rz7V2nJ/20211025-140832.jpg',
+    'https://i.ibb.co/w4Z2Gc9/20211025-140834.jpg',
+    'https://i.ibb.co/6XghPhS/20211025-140843.jpg',
+    'https://i.ibb.co/tbKxzqS/20211025-140848.jpg',
+    'https://i.ibb.co/1fj6FDV/20211025-140853.jpg',
+    'https://i.ibb.co/DRJymd3/20211025-140902.jpg',
+    'https://i.ibb.co/2hKg6Np/20211025-140911.jpg',
+    'https://i.ibb.co/qjDrDL0/20211025-140922.jpg',
+    'https://i.ibb.co/ftWNycy/20211025-140932.jpg',
+    'https://i.ibb.co/KVkvGnc/20211025-140938.jpg',
+    'https://i.ibb.co/5htGtYP/20211025-140943.jpg',
+    'https://i.ibb.co/WHy7Qqm/20211025-140950.jpg',
+    'https://i.ibb.co/DbqM8zC/20211025-140959.jpg',
+    'https://i.ibb.co/3cdQ3xC/20211025-141001.jpg',
+    'https://i.ibb.co/SXB25Lx/20211025-141029.jpg',
+    'https://i.ibb.co/7YTHw7R/20211025-141031.jpg',
+    'https://i.ibb.co/yF5LXVX/20211025-141152.jpg',
+    'https://i.ibb.co/2yNqSS3/20211025-141229.jpg',
+    'https://i.ibb.co/Y27m8XC/20211025-141254.jpg',
+    'https://i.ibb.co/nDb7XbN/20211025-141258.jpg',
+    'https://i.ibb.co/F0t7Fvg/20211025-141307.jpg',
+    'https://i.ibb.co/syGRNMR/20211025-141310.jpg',
+    'https://i.ibb.co/MnRk5Sh/20211025-141317.jpg',
+    'https://i.ibb.co/4YM1g2W/20211025-141320.jpg'
+]
+
 const artistResearchMediaExperiment = [
     'https://i.ibb.co/dmQGW6n/20211011-123356.jpg',
     'https://i.ibb.co/4tv316z/20211011-123848.jpg',
@@ -150,6 +234,22 @@ const logoMoodboard = [
     'https://i.pinimg.com/474x/64/49/b1/6449b12a5936e6b68249c38e0cd16cb6.jpg',
     'https://i.pinimg.com/474x/18/78/f8/1878f8ae7c2782b1dabf331e4909093b.jpg',
     'https://i.pinimg.com/474x/55/b0/32/55b032f1303c62cc058e7d2b642bceeb.jpg'
+]
+
+const infographicsMoodboard = [
+    'https://i.pinimg.com/474x/26/a5/23/26a523793fc9b5671ad8ff69902041b8.jpg',
+    'https://i.pinimg.com/474x/44/ee/b2/44eeb23fcb8c5991c409719680fa1be1.jpg',
+    'https://i.pinimg.com/474x/79/1b/92/791b92403b5d4dcd84091d96e301813a.jpg',
+    'https://i.pinimg.com/474x/ea/70/b4/ea70b4b9ce47f2644ed440f36dbe084c.jpg',
+    'https://i.pinimg.com/474x/cd/9c/65/cd9c653991c0c5d15d7f18f6b68fe9ed.jpg',
+    'https://i.pinimg.com/474x/b7/da/1b/b7da1b5431bf38540ebff44b88d3b6e7.jpg',
+    'https://i.pinimg.com/474x/cd/54/28/cd5428fac98dc1aa12efc0a39f67a35c.jpg',
+    'https://i.pinimg.com/474x/2e/62/ae/2e62ae55ba56a98b1678fdf1e1a8e3f7.jpg',
+    'https://i.pinimg.com/474x/eb/5e/8c/eb5e8c764fcd8408350e18bbc081ab43.jpg',
+    'https://i.pinimg.com/474x/5c/84/23/5c8423750828ca53a08e973e60a1a2c4.jpg',
+    'https://i.pinimg.com/474x/00/c5/e1/00c5e1a214b37fc22f1fe211df0bf64b.jpg',
+    'https://i.pinimg.com/474x/db/2d/87/db2d87e38df30a7130c7f0f6d537a08a.jpg',
+    'https://i.pinimg.com/474x/de/ab/e1/deabe10f21f07a42d5acd4865e917b65.jpg'
 
 ]
 
@@ -209,6 +309,7 @@ const DrBarkers = (props) => {
                     <Subsection id='photos-of-my-dog' />
                     <Gallery imgs={primarySourcePhotos} />
                     <Subsection id='photos-of-dog-food-packaging' />
+                    <Gallery imgs={packagingPrimarySourcePhotos} />
                     {/* <h2>Photos of Dog Food Packaging</h2> */}
                 </Section>
                 <Section id='artist-research' >
@@ -242,14 +343,34 @@ const DrBarkers = (props) => {
                     <Image className='right content-img' src='https://i.ibb.co/NVp1WpS/final.png' />
                     <p>For my final artist research outcome, I removed the extra hairs on his stomach, as I thought that it didn't look as similar as my reference photo. This is because my dog has quite smooth hair on the rest of his body, apart from his tummy</p>
                     <p>I'm really happy with how it came out, and I think it represents Tonks' style very well.</p>
-                    <Spacer h='50%' />
+                    <Spacer h='50%' dH='40vh' />
                 </Section>
                 <Section id='infographics-and-logo' >
+                    <h1>Logo</h1>
                     <Subsection id='logo--moodboard' />
                     <p>I knew I wanted my logo to be very simple, but also quite striking. To do this, I created a moodboard of logos similar to what i desired:</p>
                     <Gallery imgs={logoMoodboard} />
                     <p>I love how they use clean lines and curves to create a very simple logo, but it is very clear what it demonstrates, and is instantly recognisable. I also like the use of negative space used by a lot of them. This further keeps them simple to view, but adds to the audience's viewing experience. I also love the very flat, two-tone style most of these designs embrace. I think it works really well with the simple lines, as though its emulating a pen stroke</p>
                     <Subsection id='logo--digital-response' />
+                    {/* https://i.ibb.co/Z8SJcbV/1.png
+                    https://i.ibb.co/XjVHzmP/2.png
+                    https://i.ibb.co/Qn9jtFb/3.png
+                    https://i.ibb.co/ctFnCmt/4.png
+                https://i.ibb.co/7275D2P/5.png */}
+                    <Image className='inline content-img' style={{ marginRight: '20px' }} src='https://i.ibb.co/Z8SJcbV/1.png' />
+                    <Image className='inline content-img' src='https://i.ibb.co/XjVHzmP/2.png' />
+
+                    <Image className='inline content-img' style={{ marginRight: '20px' }} src='https://i.ibb.co/Qn9jtFb/3.png' />
+                    <Image className='inline content-img' src='https://i.ibb.co/ctFnCmt/4.png' />
+                    <Image className='left content-img' src='https://i.ibb.co/1fCGPd8/logo.png' />
+                    <p>This is the design I finally came up with. It was originally just black and white, but didn't like the very harsh result it gave. To fix this, I switched the colour to be a more friendly. I like how the ear breaks up the consistent linework and adds variety to the logo. I also like how the text wraps around the logo, giving it a more traditional style, similar to those like the old Starbucks logo.</p>
+                    <Spacer h='50%' dH='22vh' />
+                    <h1>Infographics</h1>
+                    <Subsection id='infographics--moodboard' />
+                    <p>To help with my development of my infographics, I created a moodboard of existing similar images to help inspire me:</p>
+                    <Gallery imgs={infographicsMoodboard} />
+
+                    <p>When I started to create my Infographics, I knew I wanted to include it into my final package. To do this, I would include it in the box as a promotional piece</p>
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
             </div>
