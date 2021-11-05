@@ -27,8 +27,8 @@
   }
   h2 {
     font-size: 2rem;
-    margin-bottom: 30px;
-    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-top: 40px;
     // margin-top: 10px;
   }
   p {
@@ -126,7 +126,8 @@
     }
     h2 {
       font-size: 1.5rem;
-      margin-bottom: 12.5px;
+      margin-top: 20px;
+      margin-bottom: 7.5px;
     }
     p {
       font-size: 0.8rem;
@@ -147,23 +148,5 @@
       width: 100%;
       cursor: pointer;
     }
-  }
-}
-
-@-webkit-keyframes slide-up {
-  0% {
-    transform: translateY(100px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes slide-up {
-  0% {
-    transform: translateY(100px);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
