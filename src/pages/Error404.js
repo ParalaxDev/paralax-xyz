@@ -1,46 +1,21 @@
 import { useEffect, useState } from 'react';
 import '../styles/error404.scss'
 
-const LENGTH = 14
 
-// const Message = () => {
-//     var rows = [];
-
-//     var x = 0
-//     var y = 0
-
-//     for (var i = 0; i < LENGTH; i++) {
-
-
-//         rows.push(<img className='error-message' style={{ top: `${x}%`, left: `${y}%` }} src='/assets/images/404/error.png' id={`error-message-${i}`} key={i} />);
-//         x += 7.5
-//         y += 3.75
-//     }
-//     return <div className='error-page'>{rows}</div>;
-// }
 
 const Error404 = () => {
 
-    // const [playing, toggle] = useAudio('/assets/sounds/404/error.mp3');
-    // const [audio] = useState(typeof Audio !== "undefined" && new Audio('/assets/sounds/404/error.mp3'))
-
-    // useEffect(() => {
-    //     for (let i = 0; i < LENGTH; i++) {
-    //         setTimeout(() => {
-
-    //             audio.play()
-    //             const m = document.getElementById(`error-message-${i}`)
-    //             m.style.visibility = 'visible'
-    //         }, 50 * i)
-
-    //     }
-    // }, [])
 
     return (
         <div className='error-page'>
-            <video width={window.innerWidth} height={window.innerHeight} autoPlay>
-                <source src="/assets/videos/error.mp4" type="video/mp4" />
-            </video>
+            <h1>Error 404</h1>
+            <h2>The page is missing or was never written. You can wait and see if it becomes available again, or you can restart your computer.</h2>
+            <ul>
+                <li>Send us an e-mail to notify this and try it later</li>
+                <li>Press CTRL+ALT+DEL to restart you're computer. You will lose any unsaved information in any programs that are running.</li>
+                <li>Return to a previous page and continue from there.</li>
+            </ul>
+            <a href='/'>home</a>
         </div>
     )
 }
