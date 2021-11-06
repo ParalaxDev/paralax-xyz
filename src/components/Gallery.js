@@ -12,7 +12,7 @@ const Modal = ({ selectedImage, setSelectedImage }) => {
     )
 }
 
-const Gallery = ({ imgs }) => {
+const Gallery = ({ imgs, columnOverride }) => {
 
     const [selectedImage, setSelectedImage] = useState(null)
     const [ref, inView] = useInView()
@@ -54,6 +54,7 @@ const Gallery = ({ imgs }) => {
                 // animate="visible"
                 ref={ref}
                 animate={controls}
+                style={{ columnCount: columnOverride ? columnOverride : '' }}
             >
                 {imgs.map((item, i) => {
                     // console.log(item)
