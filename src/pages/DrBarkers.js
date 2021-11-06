@@ -253,6 +253,9 @@ const infographicsMoodboard = [
 
 ]
 
+const infographicsExperiments = ['https://i.ibb.co/WGw7V7h/2.png', 'https://i.ibb.co/rd7v5Th/3.png', 'https://i.ibb.co/3vMHb3F/4.png', 'https://i.ibb.co/CP6SZQQ/5.png', 'https://i.ibb.co/ypJcVkB/6.png', 'https://i.ibb.co/R6rq2qm/7.png', 'https://i.ibb.co/KFq5BX8/8.png', 'https://i.ibb.co/Y35Lwwm/9.png', 'https://i.ibb.co/r7GFVd2/10.png', 'https://i.ibb.co/7jtFqGj/11.png', 'https://i.ibb.co/WkBbW8c/12.png', 'https://i.ibb.co/0KJ1fzy/13.png']
+
+
 const DrBarkers = (props) => {
 
 
@@ -372,6 +375,8 @@ const DrBarkers = (props) => {
                     <Gallery imgs={infographicsMoodboard} />
 
                     <p>When I started to create my Infographics, I knew I wanted to include it into my final package. To do this, I would include it in the box as a promotional piece</p>
+                    <Subsection id='infographics--final-outcome' />
+                    <Gallery imgs={infographicsExperiments} columnOverride='2' />
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
             </div>
