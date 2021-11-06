@@ -262,7 +262,7 @@ const DrBarkers = (props) => {
             {/* <Navbar /> */}
             {/* <Index />  */}
             <div className='text-container'>
-                <Section id='brief' >
+                <Section id='the-brief' >
                     {/* <h1>The Brief</h1> */}
                     <p>A manufacturer requires graphics for a new brand of pet food named 'Dr Barker's'. You might consider approaches such branding and packaging or advertising material. Examples can be seen in packaging designs and in advertising for pet food by Ideas that Kick, 29 Agency, Seymourpowell Ltd, and Break Packaging and Design. When producing your response, carefully consider shelf presence and the target market.</p>
                     <Image className='divider-img' src='https://2.bp.blogspot.com/-ErxBjsRqob8/Xkzmc_awSiI/AAAAAAAGkSI/QO6G4ypy3KUpSaw239LII9459E0cxeEoACLcBGAsYHQ/s1600/2.Pawmona1.jpg' />
@@ -276,39 +276,40 @@ const DrBarkers = (props) => {
                 <Section id='ideas' >
                     {/* <h1>Ideas</h1> */}
                     {/* <h2>The Company</h2> */}
-                    <Subsection id='the-company' />
+                    <Subsection id='ideas--the-company' />
                     <p>I wanted to represent Dr Barker's as a family friendly, premium, fun dog food company. I wanted its packaging to be organic, environmentally friendly, and eye catching. To do this, I wanted to primarily use paper bags, and sustainable resources, as the environment is a big aspect to the customer.</p>
                     <p>I chose to use subscriptions boxes as a way to deliver my smaller packages to the customer, allowing more control over the customer experience, and how they view the products. In addition to this, I realised that there is no existing product for this, however there are similar for meal planning such as <a href='https://www.gousto.co.uk/'>Gousto</a> and <a href='https://www.hellofresh.co.uk/'>Hello Fresh</a>, and wanted to base my business off of this. I saw this as a way to deliver to dog owners who want a more personal and customised experience, but don't have the time to go visiting Pet Stores. I wanted to make the shopping experience very convenient for the customer, so it encourages them to shop again.</p>
                     <p>I want Dr Barker's to cater to all types of Dog, from Puppies to Older dogs, and to be nutritious and healthy. I wanted fun looking treats, so it would be fun for a small child to enjoy feeding their dog, but also making it an interesting shape, so its an experience for the dog to eat it.</p>
 
                     <Image className='divider-img' src='https://ucarecdn.com/538b6797-3bc8-4c85-9852-5c3c2ad2a464/-/quality/lighter/-/format/auto/-/scale_crop/1920x1080/center/' />
-                    <Subsection id='the-packaging' />
+                    <Subsection id='ideas--the-packaging' />
                     {/* <h2>The Packaging</h2> */}
                     <Image className='left content-img' src='https://www.petfoodprocessing.net/ext/resources/030921_Packaging-trends_Lead-Srcrangizzz.jpg?t=1615230590&width=1080' />
                     <p>For me, I knew I wanted the packaging to be aesthetic, and environmentally friendly. I knew this would mean using sustainable cardboard, and recycled plastic. As well as this, I wanted to make the treat, dog biscuit and kibble bags all resealable, making it very convenient for the customer to refill, further adding to the environmental aspect. I wanted the packaging very colourful and use saturated colours, making it fun for the customer to view. To further use the subscription boxes to my advantage, I want to change the design every month, making it an experience for the customer to open.</p>
                     <p>I also want the packaging to be functional, by making the treat bag into a reusable holder, acting as advertising for when the customer uses out and about, further reducing its environmental impact. I would shape my packaging to give me as much space as possible, giving me more real estate to advertise the brand. I want to make sure the packaging is capable of keeping in the odour and freshness contained, making it more pleasurable to keep in the house.</p>
 
                     {/* <h2>The Advertising</h2> */}
-                    <Subsection id='the-advertising' />
+                    <Subsection id='ideas--the-advertising' />
                     <Image className='right content-img' src='https://i.pinimg.com/474x/85/aa/5f/85aa5f4ca8fa523e27fc61caa93b0df0.jpg' />
                     <p>For the advertising campaign I knew I want to do it via Social Media. In this case I chose Instagram, for its simple advertising style. Instagram uses square images or videos to distribute to the customer in their feed. As well as this, it uses tracking to give the user customised adverts based on their interests. This is useful for me, as it will prioritise sending adverts to dog owners, or people interested in dogs, increasing traffic to the website.</p>
                     <p>I want to make a range of adverts, some displaying the actual subscription, some displaying the individual products, and some using just standard graphics, similar to the artwork I will be using on the packaging. As well as this, I will be creating a series of video adverts, demonstrating all the products, and giving some examples using my own dog. It will also give an example of the experience I want to give to the user.</p>
-                    <br />
-                    <br />
-                    <br />
-                </Section>
-                <Section id='moodboard' >
-                    {/* <h1>Moodboard</h1> */}
                     <p>For my moodboard, I created a Pinterest board full of ideas and styles that I love, and want to introduce into my final outcomes. I especially adore the very simple and flat illustrated styles, more specifically from the artist <a href='https://georgetonks.com/'>George Tonks</a>.</p>
+                    <Subsection id='ideas--moodboard' />
                     <Gallery imgs={moodboardImages} />
                     <p>I love the very simple and illustrative style, often associated with big tech companies. I particularly love the playful way of using the packaging to display the product, such as with a small perspex window, and the very saturated colours that are used in packaging, as it represents a playful product, which is exactly what I want Dr Barker's to represent. </p>
                     <p>In addition to this, I also like the simple geometric shapes that are used, implying to the customer that the food itself is fuss free and simple, encouraging them to try it out.</p>
+                    <br />
+                    <br />
+                    <br />
                 </Section>
+                {/* <Section id='moodboard' > */}
+                {/* <h1>Moodboard</h1> */}
+                {/* </Section> */}
                 <Section id='primary-source-photos'  >
                     {/* <h2>Photos of My Dog</h2> */}
-                    <Subsection id='photos-of-my-dog' />
+                    <Subsection id='primary-source-photos--my-dog' />
                     <Gallery imgs={primarySourcePhotos} />
-                    <Subsection id='photos-of-dog-food-packaging' />
+                    <Subsection id='primary-source-photos--packaging' />
                     <Gallery imgs={packagingPrimarySourcePhotos} />
                     {/* <h2>Photos of Dog Food Packaging</h2> */}
                 </Section>
@@ -325,21 +326,21 @@ const DrBarkers = (props) => {
                     <p>In addition to this, he also uses saturated colours, suggesting a very friendly design, which i think matches what I want to represent. He also uses a very flat illustrative style, which has become very popular recently. This is partly why I have chosen this style, as it is something that the audience can relate with, making it more approachable. </p>
                     <Image className='divider-img' src='https://mir-s3-cdn-cf.behance.net/project_modules/1400/07bffa96340871.5eac0a49cf33f.png' />
                     {/* <h2>My Response</h2> */}
-                    <Subsection id='my-response' />
+                    <Subsection id='artist-research--my-response' />
                     <p>For my Response to my artist, I decided to create a visually similar image, but using this picture of my dog as a reference.</p>
                     <Image className='right content-img' src='https://i.ibb.co/wLPgThG/IMG-20210530-WA0001.jpg' />
                     <Image className='inline content-img' src='https://mir-s3-cdn-cf.behance.net/project_modules/1400/29197c96340871.5eac0a49ce5fa.jpg' />
                     {/* <h2>Non Digital Response</h2> */}
-                    <Subsection id='non-digital-response' />
+                    <Subsection id='artist-research--non-digital-response' />
                     <p>I first decided to make a non digital collage as it would best represent the simple and flat shapes and colours Tonks uses in his own work, and to help give me an idea of what i wanted to do digitally. </p>
                     <Gallery imgs={artistResearchMediaExperiment} />
                     <p>I started off my cutting out the rough shapes of my dog, and placing them together. I used a contrasting colour for the nose and eyes, to further define its shape, and to add to the recognisability of the dog. I then added some grass and leaves behind him, to add variety to the image. I then added pupils and lines on the nose, to add realism, and to make it more recognisable</p>
                     <Image className='divider-img' src='https://i.ibb.co/hX910Rn/20211013-133938.jpg' />
                     {/* <h2>Digital Response</h2> */}
-                    <Subsection id='digital-response' />
+                    <Subsection id='artist-research--digital-response' />
                     <Gallery imgs={artistResearchDigitalOutcomes} />
                     {/* <h2>Final Outcome</h2> */}
-                    <Subsection id='final-outcome' />
+                    <Subsection id='artist-research--final-outcome' />
                     <Image className='right content-img' src='https://i.ibb.co/NVp1WpS/final.png' />
                     <p>For my final artist research outcome, I removed the extra hairs on his stomach, as I thought that it didn't look as similar as my reference photo. This is because my dog has quite smooth hair on the rest of his body, apart from his tummy</p>
                     <p>I'm really happy with how it came out, and I think it represents Tonks' style very well.</p>
