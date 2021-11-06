@@ -41,10 +41,12 @@ const Homepage = () => {
             <section id='landing-page'>
                 {/* <TorusKnot style={{ position: 'absolute', top: '0', left: '0', overflowX: 'hidden' }} /> */}
                 <TextLogo className='text-logo' />
-                <a href='#work'>
+                <a href='#work' className='scroll-indicator'>
                     <motion.img
                         initial={{ scale: 0.9, opacity: 0 }}
                         animate={{ opacity: 1, scale: 1 }}
+                        className='arrow'
+                        whileHover={{ y: -20 }}
                         // animate={{ y: [0, 20, 0] }}
                         // transition={{ duration: 1, repeat: Infinity }}
                         transition={{
@@ -54,7 +56,7 @@ const Homepage = () => {
                             delay: 2
                         }}
                         // draggable='false'
-                        src='assets/images/icons/scroll.png' className='scroll-indicator' />
+                        src='assets/images/icons/scroll.png' />
                 </a>
             </section>
             <section id='work' className='content-container'>
