@@ -59,8 +59,8 @@ const Gallery = ({ imgs, columnOverride }) => {
                 {imgs.map((item, i) => {
                     // console.log(item)
                     return <motion.img
-                        variants={child}
-                        whileHover={{ y: -5 }}
+                        // variants={child}
+                        whileHover={{ y: -7.5, boxShadow: '0px 10px 28px 15px rgba(0,0,0,0.18)' }}
                         key={i} src={item} className='images' onClick={() => setSelectedImage(item)} />
                 })}
             </motion.div>
