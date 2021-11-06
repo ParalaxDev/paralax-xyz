@@ -51,15 +51,30 @@ html {
 }
 
 .scroll-indicator {
-  width: 30px;
+  z-index: 100;
   // margin: auto 10px;
+  width: 40px;
   position: relative;
-  top: -40px;
-  // webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  user-select: none;
+  top: -45px;
+  transition: all 0.25s;
+  .arrow {
+    width: 30px;
+  }
+}
+.scroll-indicator:hover {
+  top: -25px;
+  // background-color: red;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #d9d7e0;
+  background: #6196cc;
+}
+
+::selection {
+  color: #d9d7e0;
+  background: #6196cc;
 }
 
 // .navbar {

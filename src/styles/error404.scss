@@ -1,12 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@500;700&display=swap");
+
 .error-page {
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: #0000ff;
+    color: #fff;
     overflow: clip;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Red Hat Mono", monospace;
 
-.error-message {
-    position: absolute;
-    visibility: hidden;
-    // visibility: ;
+    h1 {
+        background-color: white;
+        color: #0000ff;
+        font-size: 1.5rem;
+        padding: 0px 5px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        margin-bottom: 20px;
+        font-size: 1rem;
+        width: 50%;
+    }
+    ul {
+        margin-bottom: 20px;
+        width: 50%;
+        // font-size: 1.5rem;
+    }
 }
