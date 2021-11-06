@@ -30,7 +30,7 @@ $imageWidth: 35vw;
   }
   h1 {
     font-weight: 500;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     // top: 0.25vw;
     // position: relative;
   }
@@ -38,21 +38,22 @@ $imageWidth: 35vw;
   h2 {
     font-weight: 500;
     color: #6196cc;
-    font-size: 1vw;
+    font-size: 0.9rem;
+    // top: -10px;
   }
 
   .inset {
     position: relative;
-    left: 5vw;
-    top: -2.5vw;
+    top: -37px;
+    left: 50px;
   }
 
   .arrow {
-    filter: invert(73%) sepia(11%) saturate(5224%) hue-rotate(182deg)
-      brightness(82%) contrast(93%);
-    width: 0.9vw;
+    filter: invert(73%) sepia(11%) saturate(5224%) hue-rotate(182deg) brightness(82%) contrast(93%);
+    width: 0.8rem;
+    top: 1px;
     position: relative;
-    top: 0.1vw;
+    // top: 0.1vw;
     left: 0.25vw;
   }
 }

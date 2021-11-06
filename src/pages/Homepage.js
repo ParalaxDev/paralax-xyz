@@ -1,5 +1,6 @@
 import TorusKnot from "../components/TorusKnot"
 import '../styles/newHomepage.scss'
+import { motion } from "framer-motion";
 import smoothscroll from 'smoothscroll-polyfill';
 import { useEffect, useState } from "react";
 import Cursor from "../components/Cursor";
@@ -40,6 +41,21 @@ const Homepage = () => {
             <section id='landing-page'>
                 {/* <TorusKnot style={{ position: 'absolute', top: '0', left: '0', overflowX: 'hidden' }} /> */}
                 <TextLogo className='text-logo' />
+                <a href='#work'>
+                    <motion.img
+                        initial={{ scale: 0.9, opacity: 0 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        // animate={{ y: [0, 20, 0] }}
+                        // transition={{ duration: 1, repeat: Infinity }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 50,
+                            damping: 20,
+                            delay: 2
+                        }}
+                        // draggable='false'
+                        src='assets/images/icons/scroll.png' className='scroll-indicator' />
+                </a>
             </section>
             <section id='work' className='content-container'>
                 <Heading title='WORK' subtitle='FEATURED PROJECTS' />

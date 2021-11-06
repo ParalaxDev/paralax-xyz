@@ -12,7 +12,7 @@ const Modal = ({ selectedImage, setSelectedImage }) => {
     )
 }
 
-const Gallery = ({ imgs }) => {
+const Gallery = ({ imgs, columnOverride }) => {
 
     const [selectedImage, setSelectedImage] = useState(null)
     const [ref, inView] = useInView()
@@ -38,9 +38,9 @@ const Gallery = ({ imgs }) => {
     }
 
     const child = {
-        hidden: { y: 20, opacity: 0 },
+        hidden: { opacity: 0 },
         visible: {
-            y: 0,
+            // y: 0,
             opacity: 1
         }
     }
@@ -54,12 +54,13 @@ const Gallery = ({ imgs }) => {
                 // animate="visible"
                 ref={ref}
                 animate={controls}
+                style={{ columnCount: columnOverride ? columnOverride : '' }}
             >
                 {imgs.map((item, i) => {
                     // console.log(item)
                     return <motion.img
                         variants={child}
-                        whileHover={{ scale: 0.9 }}
+                        whileHover={{ y: -7.5, boxShadow: '0px 10px 28px 15px rgba(0,0,0,0.18)' }}
                         key={i} src={item} className='images' onClick={() => setSelectedImage(item)} />
                 })}
             </motion.div>
