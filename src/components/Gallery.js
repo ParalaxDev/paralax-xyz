@@ -38,9 +38,9 @@ const Gallery = ({ imgs, columnOverride }) => {
     }
 
     const child = {
-        hidden: { y: 5, opacity: 0 },
+        hidden: { opacity: 0 },
         visible: {
-            y: 0,
+            // y: 0,
             opacity: 1
         }
     }
@@ -59,7 +59,7 @@ const Gallery = ({ imgs, columnOverride }) => {
                 {imgs.map((item, i) => {
                     // console.log(item)
                     return <motion.img
-                        // variants={child}
+                        variants={child}
                         whileHover={{ y: -7.5, boxShadow: '0px 10px 28px 15px rgba(0,0,0,0.18)' }}
                         key={i} src={item} className='images' onClick={() => setSelectedImage(item)} />
                 })}
