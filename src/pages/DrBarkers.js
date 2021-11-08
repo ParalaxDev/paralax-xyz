@@ -253,6 +253,21 @@ const infographicsMoodboard = [
 
 ]
 
+const stickersMoodboard = [
+    'https://i.pinimg.com/474x/11/28/46/112846fda0a7a67488bcbf924993a107.jpg',
+    'https://i.pinimg.com/474x/51/a4/0d/51a40d60a164613d663feb1ead5398e5.jpg',
+    'https://i.pinimg.com/474x/7a/37/cf/7a37cfb071761b36d624d6013a531f3a.jpg',
+    'https://i.pinimg.com/474x/4a/ef/c9/4aefc976272a5cb49ace165210bc583a.jpg',
+    'https://i.pinimg.com/474x/a3/8e/0f/a38e0f494d37982204062cd016dc364d.jpg',
+    'https://i.pinimg.com/474x/5a/5a/d4/5a5ad436f0dd7ae8189eb6e315493b4c.jpg',
+    'https://i.pinimg.com/736x/63/95/32/639532ae48c5cf3ff5fe1590eb15026e.jpg',
+    'https://www.organising-chaos.com/ekmps/shops/fa10da/images/juice-box-holographic-sticker-1890-p.jpg',
+    'https://i.etsystatic.com/15845023/r/il/cef57e/2843786250/il_570xN.2843786250_7l3v.jpg',
+    'https://ih1.redbubble.net/image.255399151.8071/st,small,507x507-pad,600x600,f8f8f8.u4.jpg',
+    'https://i.etsystatic.com/22641803/r/il/1584e2/2516612888/il_570xN.2516612888_149r.jpg',
+    // 'https://i.etsystatic.com/22641803/r/il/1584e2/2516612888/il_570xN.2516612888_149r.jpg',
+]
+
 const infographicsExperiments = ['https://i.ibb.co/WGw7V7h/2.png', 'https://i.ibb.co/rd7v5Th/3.png', 'https://i.ibb.co/3vMHb3F/4.png', 'https://i.ibb.co/CP6SZQQ/5.png', 'https://i.ibb.co/ypJcVkB/6.png', 'https://i.ibb.co/R6rq2qm/7.png', 'https://i.ibb.co/KFq5BX8/8.png', 'https://i.ibb.co/Y35Lwwm/9.png', 'https://i.ibb.co/r7GFVd2/10.png', 'https://i.ibb.co/7jtFqGj/11.png', 'https://i.ibb.co/WkBbW8c/12.png', 'https://i.ibb.co/0KJ1fzy/13.png']
 
 
@@ -349,7 +364,7 @@ const DrBarkers = (props) => {
                     <p>I'm really happy with how it came out, and I think it represents Tonks' style very well.</p>
                     <Spacer h='50%' dH='40vh' />
                 </Section>
-                <Section id='infographics-and-logo' >
+                <Section id='infographics,-logo-and-stickers' >
                     <h1>Logo</h1>
                     <Subsection id='logo--logo-moodboard' />
                     <p>I knew I wanted my logo to be very simple, but also quite striking. To do this, I created a moodboard of logos similar to what i desired:</p>
@@ -384,6 +399,9 @@ const DrBarkers = (props) => {
                     <p>To create a vibrant red, I changed the hue of the beige, to link them, and to keep my work consistent. I used this red colour sparingly, to give it more impact. For example, when I want to highlight important information and statistics. When I chose additional colours, I also based them off of the original red colour, but selected them to ensure that they would provide sufficient contrast to the background. </p>
                     <p>I chose the font <a href='https://fonts.google.com/specimen/Inter'>Inter</a>, as it is very easy to read, making it accessible for everyone to read. This is very important for my Infographics, as there is a lot of text, so I wanted to reduce eye strain by using a very legible font.</p>
                     <p>I added the textured background last, as I thought they infographics as a whole looked very empty. I had hoped that it would help to tie all the other elements together, and to fill empty space. Initially it was a far too similar colour to the text, making it very disrupting. To help with this, I lowered the opacity, and made the text far easier to read.</p>
+                    <h1>Stickers</h1>
+                    <Subsection id='stickers--stickers-moodboard' />
+                    <Gallery imgs={stickersMoodboard} />
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
             </div>
