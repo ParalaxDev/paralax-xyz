@@ -227,7 +227,7 @@ const logoMoodboard = [
     'https://i.pinimg.com/474x/60/05/62/600562d6b161b6a181174672ea6ea8ab.jpg',
     'https://i.pinimg.com/474x/b1/e6/37/b1e63781c8c297a1fdf8835196cf6b46.jpg',
     'https://i.pinimg.com/474x/d0/f8/71/d0f871a01d5a6e0e61d4bb3d1833921b.jpg',
-    'https://i.pinimg.com/474x/a1/62/a8/a162a8cfb16e89376ccc2c8c662e1eb5.jpg',
+    // 'https://i.pinimg.com/474x/a1/62/a8/a162a8cfb16e89376ccc2c8c662e1eb5.jpg',
     'https://i.pinimg.com/474x/75/41/b1/7541b1dd8a301b5af0b569a2089fac6c.jpg',
     'https://i.pinimg.com/474x/14/eb/3b/14eb3b0cccc6f6c7afc82e112dc6e1b0.jpg',
     'https://i.pinimg.com/474x/52/d8/37/52d8379682554785260caa81954d8063.jpg',
@@ -351,11 +351,14 @@ const DrBarkers = (props) => {
                 </Section>
                 <Section id='infographics-and-logo' >
                     <h1>Logo</h1>
-                    <Subsection id='logo--moodboard' />
+                    <Subsection id='logo--logo-moodboard' />
                     <p>I knew I wanted my logo to be very simple, but also quite striking. To do this, I created a moodboard of logos similar to what i desired:</p>
                     <Gallery imgs={logoMoodboard} />
                     <p>I love how they use clean lines and curves to create a very simple logo, but it is very clear what it demonstrates, and is instantly recognisable. I also like the use of negative space used by a lot of them. This further keeps them simple to view, but adds to the audience's viewing experience. I also love the very flat, two-tone style most of these designs embrace. I think it works really well with the simple lines, as though its emulating a pen stroke</p>
-                    <Subsection id='logo--digital-response' />
+                    <p>I knew I wanted to create a logo, to help emphasise brand identity and recognition. It is very important for any company to create an icon, a range of colours, a font, or a distinct style, to help separate itself from its competitors. To do this for Dr Barkers, I knew I would have to separate my brand from the thousands of other independent dog food companies.</p>
+                    <p>I wanted my logo to be a circle because I want to later create a stamp out of it. I would use this stamp (along with wax) to seal the box and various packages inside. This is firstly great for the environment as instead of using sellotape, which is made of single use plastic, I would be using wax, which is good for the environment as it can easily decompose, and is sustainable. As well as this, it also gives a more handmade feel, and makes the purchaser feel as though they are helping a niche and small business.</p>
+                    <p>A primary way to do this is to create a logo to be associated with. I love the very simple logos as they clearly display what the brand is, and what the audience can expect from it, and so set out to create something similar:</p>
+                    <Subsection id='logo--logo-digital-response' />
                     {/* https://i.ibb.co/Z8SJcbV/1.png
                     https://i.ibb.co/XjVHzmP/2.png
                     https://i.ibb.co/Qn9jtFb/3.png
@@ -370,13 +373,17 @@ const DrBarkers = (props) => {
                     <p>This is the design I finally came up with. It was originally just black and white, but didn't like the very harsh result it gave. To fix this, I switched the colour to be a more friendly. I like how the ear breaks up the consistent linework and adds variety to the logo. I also like how the text wraps around the logo, giving it a more traditional style, similar to those like the old Starbucks logo.</p>
                     <Spacer h='50%' dH='22vh' />
                     <h1>Infographics</h1>
-                    <Subsection id='infographics--moodboard' />
+                    <Subsection id='infographics--infographics-moodboard' />
                     <p>To help with my development of my infographics, I created a moodboard of existing similar images to help inspire me:</p>
                     <Gallery imgs={infographicsMoodboard} />
-
-                    <p>When I started to create my Infographics, I knew I wanted to include it into my final package. To do this, I would include it in the box as a promotional piece</p>
-                    <Subsection id='infographics--final-outcome' />
+                    <p>When I started to create my Infographics, I knew I wanted to include it into my final package. To do this, I would include it in the box as a promotional piece. To do this, I wanted to keep it in a 1:1.4142 or a tradition A4 size, similar to the size of my box. This differentiates it from existing Infographics as they are in the portrait format. </p>
+                    <p>I like how some of the images in my moodboard have faint patterned background, using icons of paw prints or similar. I really like this as it breaks up the otherwise plain background. They also all have very distinct titles to separate the sections. This makes it easy for the audience to discern the different parts, allowing them to find their particular information far quicker. I also love how they display information using pie charts and and tables, making it more engaging for the audience.</p>
+                    <Subsection id='infographics--infographics-digital-response' />
                     <Gallery imgs={infographicsExperiments} columnOverride='2' />
+                    <p>I created my final design in <a href='https://affinity.serif.com/en-gb/'>Affinity Designer</a> on my laptop. I wanted to have a very neutral beige colour for my background, to keep it from being very bland and boring. It also better represents a natural, recycled card look, which is ultimately what I want to do. To keep continuity, I also coloured the font a similar darker beige, to add contrast, but to also keep it more interesting, than if I used back and white.</p>
+                    <p>To create a vibrant red, I changed the hue of the beige, to link them, and to keep my work consistent. I used this red colour sparingly, to give it more impact. For example, when I want to highlight important information and statistics. When I chose additional colours, I also based them off of the original red colour, but selected them to ensure that they would provide sufficient contrast to the background. </p>
+                    <p>I chose the font <a href='https://fonts.google.com/specimen/Inter'>Inter</a>, as it is very easy to read, making it accessible for everyone to read. This is very important for my Infographics, as there is a lot of text, so I wanted to reduce eye strain by using a very legible font.</p>
+                    <p>I added the textured background last, as I thought they infographics as a whole looked very empty. I had hoped that it would help to tie all the other elements together, and to fill empty space. Initially it was a far too similar colour to the text, making it very disrupting. To help with this, I lowered the opacity, and made the text far easier to read.</p>
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
             </div>
