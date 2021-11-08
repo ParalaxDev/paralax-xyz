@@ -401,7 +401,12 @@ const DrBarkers = (props) => {
                     <p>I added the textured background last, as I thought they infographics as a whole looked very empty. I had hoped that it would help to tie all the other elements together, and to fill empty space. Initially it was a far too similar colour to the text, making it very disrupting. To help with this, I lowered the opacity, and made the text far easier to read.</p>
                     <h1>Stickers</h1>
                     <Subsection id='stickers--stickers-moodboard' />
+                    <p>My Dad originally suggested to me that I include stickers in the box, similar to how Apple do with their products. I thought that it was a great idea to give the customer a little extra, as a gift for choosing Dr Barkers. I had seen similar dog brands include stickers as well, so thought that it would be a great thing to include.</p>
+                    <p>I then created this small moodboard to help influence my design:</p>
                     <Gallery imgs={stickersMoodboard} />
+                    <Subsection id='stickers--stickers-digital-outcomes' />
+                    <Subsection id='stickers--stickers-non-digital-outcomes' />
+
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
             </div>
