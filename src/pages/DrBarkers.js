@@ -227,7 +227,7 @@ const logoMoodboard = [
     'https://i.pinimg.com/474x/60/05/62/600562d6b161b6a181174672ea6ea8ab.jpg',
     'https://i.pinimg.com/474x/b1/e6/37/b1e63781c8c297a1fdf8835196cf6b46.jpg',
     'https://i.pinimg.com/474x/d0/f8/71/d0f871a01d5a6e0e61d4bb3d1833921b.jpg',
-    'https://i.pinimg.com/474x/a1/62/a8/a162a8cfb16e89376ccc2c8c662e1eb5.jpg',
+    // 'https://i.pinimg.com/474x/a1/62/a8/a162a8cfb16e89376ccc2c8c662e1eb5.jpg',
     'https://i.pinimg.com/474x/75/41/b1/7541b1dd8a301b5af0b569a2089fac6c.jpg',
     'https://i.pinimg.com/474x/14/eb/3b/14eb3b0cccc6f6c7afc82e112dc6e1b0.jpg',
     'https://i.pinimg.com/474x/52/d8/37/52d8379682554785260caa81954d8063.jpg',
@@ -356,6 +356,7 @@ const DrBarkers = (props) => {
                     <Gallery imgs={logoMoodboard} />
                     <p>I love how they use clean lines and curves to create a very simple logo, but it is very clear what it demonstrates, and is instantly recognisable. I also like the use of negative space used by a lot of them. This further keeps them simple to view, but adds to the audience's viewing experience. I also love the very flat, two-tone style most of these designs embrace. I think it works really well with the simple lines, as though its emulating a pen stroke</p>
                     <p>I knew I wanted to create a logo, to help emphasise brand identity and recognition. It is very important for any company to create an icon, a range of colours, a font, or a distinct style, to help separate itself from its competitors. To do this for Dr Barkers, I knew I would have to separate my brand from the thousands of other independent dog food companies.</p>
+                    <p>I wanted my logo to be a circle because I want to later create a stamp out of it. I would use this stamp (along with wax) to seal the box and various packages inside. This is firstly great for the environment as instead of using sellotape, which is made of single use plastic, I would be using wax, which is good for the environment as it can easily decompose, and is sustainable. As well as this, it also gives a more handmade feel, and makes the purchaser feel as though they are helping a niche and small business.</p>
                     <p>A primary way to do this is to create a logo to be associated with. I love the very simple logos as they clearly display what the brand is, and what the audience can expect from it, and so set out to create something similar:</p>
                     <Subsection id='logo--logo-digital-response' />
                     {/* https://i.ibb.co/Z8SJcbV/1.png
