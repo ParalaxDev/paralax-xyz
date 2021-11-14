@@ -374,11 +374,7 @@ const DrBarkers = (props) => {
                     <p>I wanted my logo to be a circle because I want to later create a stamp out of it. I would use this stamp (along with wax) to seal the box and various packages inside. This is firstly great for the environment as instead of using sellotape, which is made of single use plastic, I would be using wax, which is good for the environment as it can easily decompose, and is sustainable. As well as this, it also gives a more handmade feel, and makes the purchaser feel as though they are helping a niche and small business.</p>
                     <p>A primary way to do this is to create a logo to be associated with. I love the very simple logos as they clearly display what the brand is, and what the audience can expect from it, and so set out to create something similar:</p>
                     <Subsection id='logo--logo-digital-response' />
-                    {/* https://i.ibb.co/Z8SJcbV/1.png
-                    https://i.ibb.co/XjVHzmP/2.png
-                    https://i.ibb.co/Qn9jtFb/3.png
-                    https://i.ibb.co/ctFnCmt/4.png
-                https://i.ibb.co/7275D2P/5.png */}
+
                     <Image className='inline content-img' style={{ marginRight: '20px' }} src='https://i.ibb.co/Z8SJcbV/1.png' />
                     <Image className='inline content-img' src='https://i.ibb.co/XjVHzmP/2.png' />
 
