@@ -1,18 +1,13 @@
-import TorusKnot from "../components/TorusKnot"
 import '../styles/newHomepage.scss'
 import { motion } from "framer-motion";
 import smoothscroll from 'smoothscroll-polyfill';
 import { useEffect, useState } from "react";
-import Cursor from "../components/Cursor";
-import SmoothScroll from "../components/SmoothScroll";
 import Heading from "../components/Heading";
 import ImageCard from "../components/ImageCard";
 import Button from "../components/Button";
 import '../styles/basicStyling.scss'
 import { isMobile } from "react-device-detect";
 
-import test_image_1 from '../images/test_image_1.png'
-import test_image_2 from '../images/test_image_2.png'
 import test_image_3 from '../images/test_image_3.png'
 import drbarkers from '../images/drbarkers.png'
 import TextLogo from "../components/TextLogo";
@@ -36,7 +31,8 @@ const Homepage = () => {
 
     return (
         <div style={{ overflowX: 'hidden' }}>
-            {/* <Cursor tooltip={tooltip} /> */}
+            <div className='bg' />
+
             {/* <div className='wrapper'> */}
             <section id='landing-page'>
                 {/* <TorusKnot style={{ position: 'absolute', top: '0', left: '0', overflowX: 'hidden' }} /> */}

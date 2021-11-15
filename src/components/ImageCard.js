@@ -2,7 +2,6 @@ import luxy from 'luxy.js'
 import { useEffect, useState } from 'react'
 import arrow from '../images/arrow.svg'
 import { Link } from "react-router-dom";
-import { toggleTooltip } from './Cursor'
 
 import '../styles/imagecard.scss'
 

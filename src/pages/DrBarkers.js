@@ -9,9 +9,7 @@ import '../styles/gallery.scss'
 
 
 import titleThumbnail from '../images/drbarkers.png'
-import Collapseable from '../components/Collapseable';
 import Section from '../components/Section';
-import Index from '../components/Index';
 import Image from '../components/Image';
 import Navbar from '../components/Navbar';
 import Spacer from '../components/Spacer'
