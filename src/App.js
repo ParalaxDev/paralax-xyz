@@ -21,7 +21,7 @@ const App = () => {
 	return (
 		<Router>
 			{/* {window.location.href.split('/')[3] === 'projects' ? <Navbar /> : null} */}
-			<Navbar />
+			{/* <Navbar /> */}
 			<Switch>
 				{/* <Route exact path="/projects/:name" component={Project} /> */}
 				{/* <Route path="/projects/:name/:subpage" component={SubProject} /> */}

@@ -5,7 +5,7 @@ import React, { useEffect } from 'react'
 import Gallery from '../components/Gallery';
 import Subsection from '../components/Subsection'
 
-import '../styles/basicStyling.scss'
+// import '../styles/basicStyling.scss'
 import '../styles/gallery.scss'
 
 

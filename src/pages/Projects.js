@@ -1,7 +1,7 @@
 import Heading from '../components/Heading'
 import ListObject from '../components/ListObject'
 
-import '../styles/basicStyling.scss'
+// import '../styles/basicStyling.scss'
 
 
 
