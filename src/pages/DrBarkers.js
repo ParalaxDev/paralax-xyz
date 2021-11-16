@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 // import React from 'react'
 import Gallery from '../components/Gallery';
 
-// import '../styles/basicStyling.scss'
+import '../styles/general.scss'
 import '../styles/gallery.scss'
 
 

@@ -16,6 +16,8 @@ const ContourMap = (props) => (
                 fillRule: "evenodd",
                 strokeLinecap: "round",
                 strokeLinejoin: "round",
+                opacity: 0.1
+                // overflow: 'hidden',
             }}
             transform="translate(-1081 -1078)"
         >
