@@ -11,17 +11,36 @@ If you have any features or bugs you'd like to report, please feel free to open 
 
 This also applies to any of the actual projects on my website. Whilst some of the projects have been marked, it will all be taken back into consideration, as there is no 2022 exam for graphics due to the pandemic.
 
-# Todo
+# Exam
 
-- Redo landing graphic
-- Redo main page
-- Adding interesting Graphics to make the individual project pages more unique and engaging
-- Make the project list mobile friendly and engaging
-- Add previous graphics modules
-- Add previous programming projects
-- Add about me and contact me sections to main page
-- Add a contact form in the page
-- Animations
+_This should be done before the exam_ **[2 weeks time]**
+
+## Day 1 **[5h]**
+
+- Box:
+  - Box, any branding, barcodes, etc for cardboard box
+  - Box Sleeve, dimensions
+  - Filler, shredded cardboard, why i'm not using packing peanuts, etc
+  - Stickers to include, any additional items as extra branding
+  - Polish infographics, finalise size, etc
+
+## Day 2 **[5h]**
+
+- Wet food pouch:
+  - Dimensions
+  - Colours
+  - Examples
+  - Design
+  - Mockups
+- Treat Bag/Holder:
+  - Examples
+  - Reuseablility
+  - Holders
+  - Dimensions
+  - Design
+  - Mockups
+- Write up all of this
+
 
 # Usage
 
