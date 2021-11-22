@@ -270,6 +270,15 @@ const stickersMoodboard = [
 
 const infographicsExperiments = ['https://i.ibb.co/WGw7V7h/2.png', 'https://i.ibb.co/rd7v5Th/3.png', 'https://i.ibb.co/3vMHb3F/4.png', 'https://i.ibb.co/CP6SZQQ/5.png', 'https://i.ibb.co/ypJcVkB/6.png', 'https://i.ibb.co/R6rq2qm/7.png', 'https://i.ibb.co/KFq5BX8/8.png', 'https://i.ibb.co/Y35Lwwm/9.png', 'https://i.ibb.co/r7GFVd2/10.png', 'https://i.ibb.co/7jtFqGj/11.png', 'https://i.ibb.co/WkBbW8c/12.png', 'https://i.ibb.co/0KJ1fzy/13.png']
 
+const stickerVariants = ['https://i.ibb.co/jwJGQ7q/0-1.png', 'https://i.ibb.co/gJCy84R/2.png', 'https://i.ibb.co/fGgV27x/3.png', 'https://i.ibb.co/vqmHsYJ/4.png', 'https://i.ibb.co/XttY8vh/5-1.png', 'https://i.ibb.co/mcsZw1F/5.png', 'https://i.ibb.co/D9TPmV2/6-1.png', 'https://i.ibb.co/fQgbKJ8/6.png']
+
+
+
+// https://i.ibb.co/jwJGQ7q/0-1.png
+// https://i.ibb.co/XttY8vh/5-1.png
+// https://i.ibb.co/D9TPmV2/6-1.png
+
+
 
 const DrBarkers = (props) => {
 
@@ -401,6 +410,8 @@ const DrBarkers = (props) => {
                     <p>I then created this small moodboard to help influence my design:</p>
                     <Gallery imgs={stickersMoodboard} />
                     <Subsection id='stickers--stickers-digital-outcomes' />
+                    <Gallery imgs={stickerVariants} />
+                    <p>In the end, I created 3 different stickers to include in my box, in addition to the products. One of them contained just the logo, one with the surrounding text, and finally an inverted icon. I used <a href='https://affinity.serif.com/en-gb/'>Affinity Designer</a> to create these, and used a mixture of raidial gradients (for the colours), and two concial gradients with screen and difference opacity effects to make it look realistic, and to make it look reflective.</p>
                     <Subsection id='stickers--stickers-non-digital-outcomes' />
 
                 </Section>
