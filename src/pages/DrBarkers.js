@@ -415,6 +415,33 @@ const DrBarkers = (props) => {
                     <Subsection id='stickers--stickers-non-digital-outcomes' />
 
                 </Section>
+                <Section id='the-box' >
+                    <p>I knew that the Box would be a major factor for the overall experience of the customer. To help with this, I conducted research on a variety of box types, to see which ones would suit best for my ideals. These varied from boxes with pull tabs and lids. I found a website called <a href='https://www.templatemaker.nl'>templatemaker.nl</a>, that I used to generate all of my box nets.</p>
+                    <p>I decided on using a box with a lid. This was partly due to an easier and smaller footprint, allowing me to utilise more cardboard, and thus have a bigger box. This was good as I didn't have any large sizes of cardboard. It also gives a more premium feel, as people associate the opening experience with far more premium products that use the same box type, for example the iPhone and iPad.  </p>
+                    <p>However, upon creating a prototype of the box, I found that the lid wasn't staying securely to the base. I originally thought to make the lid smaller, but realised that I don't have the tolerances of smaller card, like Apple do. To compensate for this, I came up with the idea of a sleeve. This would help keep the two elements together, as well as act as a place for me to print branding on, as printing to cardboard in colour is very difficult.</p>
+
+                    <Subsection id='sleeve--the-sleeve' />
+                    <Image className='left content-img' src='/assets/images/dr-barkers/cardboard material.png' />
+                    <p>I originally experimented with creating a full length sleeve, but later realised that it covered up too much of the organic cardboard underneath, undermining the companies ideals for an environmentally friendly company. I wanted it to be visible from the first moment that we cared for the environment, and upon showing rustic cardboard, the customers instantly understand this.</p>
+                    <p>To allow for rapid prototype of box sizes, and sleeve designs, without having to create a new box every time, I setup a <a href='https://blender.org'>Blender</a> workspace, and 3d modelling a box for me to edit. I aimed to make it as realistic as possible, by using the Cycles X render engine, and a custom procedural cardboard material.</p>
+                    <Subsection id='sleeve--the-sleeve-design' />
+                    <Image className='left content-img' src='/assets/images/dr-barkers/original design.png' />
+                    <p>I created the original design in <a href='https://affinity.serif.com/en-gb/'>Affinity Designer</a>, and then UV mapped it onto the sleeve in Blender. The proportions didn't exactly match up, so I had to correct for some distortion, but eventually got it working. </p>
+                    <p>I originally had the idea to have the large logo in the center with the tagline below, and the bone pattern underneath. However, after some iterating, I found that the bone pattern was 1) no visible enough on the actual design, but 2) also interfered with the other elements. </p>
+                    <p>To help with this, I removed the pattern on the from side, and increased the contrast on the remaining sides. This had the desired effect, by making the front more legible, but also keeping the link to my <a href='#infographics--infographics-digital-response'>Infographics</a>, helping to create a well-rounded experience for the entire product.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <Image className='right content-img' src='/assets/images/dr-barkers/edited design.png' />
+                    <p>I then experimented with introducing another element, a small banner stating the tier of the box. This further elevates the premium feel, and makes the customer feel more posh. I used the same colours, and overall style from my infographics, to further solidify the link between them. I also experimented with introducing my <a href='http://localhost:3000/projects/drbarkers#artist-research--digital-response'>Artist Response</a> into the design. At first, I thought that the colours looked way too saturated, but when I placed it on the mockup, it looked slightly less saturated, making it fit well. </p>
+                    <p>I also shrunk the logo slightly, helping to make the composition less crowded, but this resulted in their being far too much empty space, so I later repositioned the composition.</p>
+                    <Image className='left content-img' src='/assets/images/dr-barkers/redesign.png' />
+                    <p>I then experimented with moving the logo up to the top corner, and shrinking it. This help to shift the focus off of the brand, which I think helps a lot, as it can be very distracting, but I still made sure to keep the logo relevant, as it is incredibly important for brand recognition. </p>
+                    <p>This then gave me lots of empty space in the middle, allowing me to reintroduce the illustration of the dog, helping to demonstrate what the box contains, further pushing the brand to the customer, in a subtle way. </p>
+                    <Image className='right content-img' src='/assets/images/dr-barkers/final design.png' />
+
+
+                </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
             </div>
         </>
