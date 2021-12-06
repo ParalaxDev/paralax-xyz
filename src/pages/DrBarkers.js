@@ -439,6 +439,12 @@ const DrBarkers = (props) => {
                     <p>I then experimented with moving the logo up to the top corner, and shrinking it. This help to shift the focus off of the brand, which I think helps a lot, as it can be very distracting, but I still made sure to keep the logo relevant, as it is incredibly important for brand recognition. </p>
                     <p>This then gave me lots of empty space in the middle, allowing me to reintroduce the illustration of the dog, helping to demonstrate what the box contains, further pushing the brand to the customer, in a subtle way. </p>
                     <Image className='right content-img' src='/assets/images/dr-barkers/final design.png' />
+                    <p>For the final design, I added some leaves at the base of the Dog, to add some colour, as without it, it was very bland and monotone. I also think that it really helps to add a sense of playfulness to the design. Before, he was just a dog standing very upright, as though he was on guard. Now, however, he looks as though he is playing in the leaves, and makes the customer more confident that my product will make their dog happy.</p>
+                    <p>I also made some small quality changes, such as shifting the bones on the side to stop it from clipping with the edge. I also increased the contrast between some of the and the background</p>
+                    <p> I then created some final renders of the box mockup:</p>
+                    <Image className='divider-img' src='/assets/images/dr-barkers/final box.png' />
+                    <Image className='divider-img' src='/assets/images/dr-barkers/final top box.png' />
+
 
 
                 </Section>
