@@ -435,10 +435,10 @@ const DrBarkers = (props) => {
                     <Image className='right content-img' src='/assets/images/dr-barkers/edited design.png' />
                     <p>I then experimented with introducing another element, a small banner stating the tier of the box. This further elevates the premium feel, and makes the customer feel more posh. I used the same colours, and overall style from my infographics, to further solidify the link between them. I also experimented with introducing my <a href='http://localhost:3000/projects/drbarkers#artist-research--digital-response'>Artist Response</a> into the design. At first, I thought that the colours looked way too saturated, but when I placed it on the mockup, it looked slightly less saturated, making it fit well. </p>
                     <p>I also shrunk the logo slightly, helping to make the composition less crowded, but this resulted in their being far too much empty space, so I later repositioned the composition.</p>
-                    <Image className='left content-img' src='/assets/images/dr-barkers/redesign.png' />
+                    {/* <Image className='left content-img' src='/assets/images/dr-barkers/redesign.png' /> */}
+                    <Image className='left content-img' src='/assets/images/dr-barkers/final design.png' />
                     <p>I then experimented with moving the logo up to the top corner, and shrinking it. This help to shift the focus off of the brand, which I think helps a lot, as it can be very distracting, but I still made sure to keep the logo relevant, as it is incredibly important for brand recognition. </p>
                     <p>This then gave me lots of empty space in the middle, allowing me to reintroduce the illustration of the dog, helping to demonstrate what the box contains, further pushing the brand to the customer, in a subtle way. </p>
-                    <Image className='right content-img' src='/assets/images/dr-barkers/final design.png' />
                     <p>For the final design, I added some leaves at the base of the Dog, to add some colour, as without it, it was very bland and monotone. I also think that it really helps to add a sense of playfulness to the design. Before, he was just a dog standing very upright, as though he was on guard. Now, however, he looks as though he is playing in the leaves, and makes the customer more confident that my product will make their dog happy.</p>
                     <p>I also made some small quality changes, such as shifting the bones on the side to stop it from clipping with the edge. I also increased the contrast between some of the text and the background. I also experimented with centring the text, and making the artwork bigger, to further promote the illustration</p>
                     <p> I then created some final renders of the box mockup:</p>
@@ -476,6 +476,22 @@ const DrBarkers = (props) => {
                     <Image className='divider-img' src='/assets/images/dr-barkers/biscuit-box/final top.png' />
                     <Image className='divider-img' src='/assets/images/dr-barkers/biscuit-box/final bottom.png' />
 
+                    <Subsection id='kibble-bag--the-kibble-bag' />
+
+                    <h2>The Bag</h2>
+
+
+                    <Image className='left content-img' src='/assets/images/dr-barkers/kibble-bag/photoscan.jpg' />
+
+                    <p>I wanted to make a kibble bag, as its a staple for most dog's diets. As well as being nutritious and healthy, it is also highly convenient, and this is something my brand strives to be. However, I couldn't find any free models of a kibble bag to superimpose my design onto. To help with this, I decided that Flour bags and Kibble bags look very similar, in the way they bulge and are folded, and so decided to experiment with photogrammetry to help capture the organic shape.</p>
+                    <p>Photogrammetry is the process of taking loads of photos of your item, from various angles, and using a piece of software to process these images and create a model from them. In this case, I places the flour on my table, in a well lit condition, and took approximate 150 photos, and transferred them to my computer for processing</p>
+                    <p>I originally used a program called <a href='https://alicevision.org/#meshroom'>Meshroom</a>, but later found out that due to my computer's specs, it was not able to create a depth map without a GPU. to help with this, I found a program with OpenCL support called <a href='https://www.agisoft.com/'>Agisoft Metahape</a>.</p>
+                    <Image className='divider-img' src='/assets/images/dr-barkers/kibble-bag/metashape 1.png' />
+                    <p>It works by estimating where the photo was taken in 3D space, and then creating a point cloud based off of the locations of the photos. It then samples some points to create a depth map, where it estimates roughly how far away the item is. The more of these you sample, the more accurate, but it can take ages due to CPU intense calculations. It then stitches the photos together to create a high-res texture, however I would be replacing this later, so this was unimportant. I then took the model into <a href='https://github.com/wjakob/instant-meshes'>Instant Meshes</a> to create a more uniform vertex topology, and then into Blender to remove excess geometry like the table. I finally UV unwrapped it, and I was ready to start designing the packaging.</p>
+
+                    <Image className='divider-img' src='/assets/images/dr-barkers/kibble-bag/metashape 2.png' />
+
+                    <h2>The Design</h2>
 
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
