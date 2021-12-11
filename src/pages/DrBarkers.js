@@ -492,6 +492,13 @@ const DrBarkers = (props) => {
                     <Image className='divider-img' src='/assets/images/dr-barkers/kibble-bag/metashape 2.png' />
 
                     <h2>The Design</h2>
+                    <Image className='left content-img' src='/assets/images/dr-barkers/kibble-bag/1.png' />
+                    <Image className='right content-img' src='/assets/images/dr-barkers/kibble-bag/2.png' />
+                    <Image className='left content-img' src='/assets/images/dr-barkers/kibble-bag/3.png' />
+
+                    <Image className='left content-img' style={{ width: '25%', marginTop: '2.5px' }} src='/assets/images/dr-barkers/kibble-bag/4.png' />
+                    <Image className='left content-img' style={{ width: '25%', marginTop: '2.5px' }} src='/assets/images/dr-barkers/kibble-bag/5.png' />
+
 
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
