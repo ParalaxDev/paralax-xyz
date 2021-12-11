@@ -460,14 +460,21 @@ const DrBarkers = (props) => {
                     <p>For the second iteration, i experimented with including the banners as seen in <a href='#box--the-box'>My Box</a> and <a href='#infographics--infographics-digital-response'>Infographics</a>. However I didn't particularly like this, as it made it very boring, and far too similar to the other products I had already made.</p>
                     <p>As well as this, the banners were too small, making it hard to read, but also resulting in a lot of whitespace around the main content. This felt very distracting to me, and resulted in a very plain and boring box. To help with this, I tried increasing the size of the logo and banners, but that didn't help at all, and instead made the packaging look clumsy, instead of the very professional and sleek look I wanted. </p>
 
-                    <Image className='left content-img' src='/assets/images/dr-barkers/biscuit-box/4.png' />
+                    <Image className='left content-img' src='/assets/images/dr-barkers/biscuit-box/3.png' />
 
                     <p>For this iteration, I decided to mix the two previous designs, to help create a coherent design. This is in part due to how the information is displayed to the customer. I made sure that the more important information (the flavour) was in the red banner, as it is incredibly bright and vibrant, attracting the eye immediately. This key, as most dog owners will decide on treats that they find interesting and appetising for themselves.</p>
                     <p>I then included the secondary information (the actual product), in a more subtle colour, and in a way that takes advantage of the uniquely circular box. I then increased the text size, to increase legibility.</p>
 
-                    <Image className='left content-img' src='/assets/images/dr-barkers/biscuit-box/4.png' />
+                    <Image className='right content-img' src='/assets/images/dr-barkers/biscuit-box/4.png' />
 
+                    <p>I then added some nutritional information on the back of the box. I used a table system similar to that used in my Infographics. I then added a solid background, and increased text contrast to help with legibility. I also added a banner to display the title, to make it eye catching, as it is very important to make the owner aware of this information.</p>
+                    <p>I then added a thin, matching red strip along the side of the container, to help breakup the otherwise boring sides. When I create the actual designs, however, I will replace this with a red ribbon, to further emphasise the premium products that the company sells.</p>
+                    <br />
+                    <p>I finally made some final renders to advertise the product:</p>
 
+                    <Image className='divider-img' src='/assets/images/dr-barkers/biscuit-box/final.png' />
+                    <Image className='divider-img' src='/assets/images/dr-barkers/biscuit-box/final top.png' />
+                    <Image className='divider-img' src='/assets/images/dr-barkers/biscuit-box/final bottom.png' />
 
 
                 </Section>
