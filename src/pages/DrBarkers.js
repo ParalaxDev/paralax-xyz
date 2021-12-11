@@ -415,16 +415,16 @@ const DrBarkers = (props) => {
                     <Subsection id='stickers--stickers-non-digital-outcomes' />
 
                 </Section>
-                <Section id='the-box' >
+                <Section id='the-exam' >
+                    <Subsection id='box--the-box' />
                     <p>I knew that the Box would be a major factor for the overall experience of the customer. To help with this, I conducted research on a variety of box types, to see which ones would suit best for my ideals. These varied from boxes with pull tabs and lids. I found a website called <a href='https://www.templatemaker.nl'>templatemaker.nl</a>, that I used to generate all of my box nets.</p>
                     <p>I decided on using a box with a lid. This was partly due to an easier and smaller footprint, allowing me to utilise more cardboard, and thus have a bigger box. This was good as I didn't have any large sizes of cardboard. It also gives a more premium feel, as people associate the opening experience with far more premium products that use the same box type, for example the iPhone and iPad.  </p>
                     <p>However, upon creating a prototype of the box, I found that the lid wasn't staying securely to the base. I originally thought to make the lid smaller, but realised that I don't have the tolerances of smaller card, like Apple do. To compensate for this, I came up with the idea of a sleeve. This would help keep the two elements together, as well as act as a place for me to print branding on, as printing to cardboard in colour is very difficult.</p>
 
-                    <Subsection id='sleeve--the-sleeve' />
                     <Image className='left content-img' src='/assets/images/dr-barkers/cardboard material.png' />
                     <p>I originally experimented with creating a full length sleeve, but later realised that it covered up too much of the organic cardboard underneath, undermining the companies ideals for an environmentally friendly company. I wanted it to be visible from the first moment that we cared for the environment, and upon showing rustic cardboard, the customers instantly understand this.</p>
                     <p>To allow for rapid prototype of box sizes, and sleeve designs, without having to create a new box every time, I setup a <a href='https://blender.org'>Blender</a> workspace, and 3d modelling a box for me to edit. I aimed to make it as realistic as possible, by using the Cycles X render engine, and a custom procedural cardboard material.</p>
-                    <Subsection id='sleeve--the-sleeve-design' />
+                    <Subsection id='box--the-sleeve-design' />
                     <Image className='left content-img' src='/assets/images/dr-barkers/original design.png' />
                     <p>I created the original design in <a href='https://affinity.serif.com/en-gb/'>Affinity Designer</a>, and then UV mapped it onto the sleeve in Blender. The proportions didn't exactly match up, so I had to correct for some distortion, but eventually got it working. </p>
                     <p>I originally had the idea to have the large logo in the center with the tagline below, and the bone pattern underneath. However, after some iterating, I found that the bone pattern was 1) no visible enough on the actual design, but 2) also interfered with the other elements. </p>
@@ -440,10 +440,33 @@ const DrBarkers = (props) => {
                     <p>This then gave me lots of empty space in the middle, allowing me to reintroduce the illustration of the dog, helping to demonstrate what the box contains, further pushing the brand to the customer, in a subtle way. </p>
                     <Image className='right content-img' src='/assets/images/dr-barkers/final design.png' />
                     <p>For the final design, I added some leaves at the base of the Dog, to add some colour, as without it, it was very bland and monotone. I also think that it really helps to add a sense of playfulness to the design. Before, he was just a dog standing very upright, as though he was on guard. Now, however, he looks as though he is playing in the leaves, and makes the customer more confident that my product will make their dog happy.</p>
-                    <p>I also made some small quality changes, such as shifting the bones on the side to stop it from clipping with the edge. I also increased the contrast between some of the and the background</p>
+                    <p>I also made some small quality changes, such as shifting the bones on the side to stop it from clipping with the edge. I also increased the contrast between some of the text and the background. I also experimented with centring the text, and making the artwork bigger, to further promote the illustration</p>
                     <p> I then created some final renders of the box mockup:</p>
                     <Image className='divider-img' src='/assets/images/dr-barkers/final box.png' />
                     <Image className='divider-img' src='/assets/images/dr-barkers/final top box.png' />
+
+                    <Subsection id='biscuit-tub--the-biscuit-tub' />
+
+
+                    <p>I knew from the start that I wanted to include dog biscuits. My dog loves them, and they are a great way to reward puppies, without overfeeding them with treats. However, I wanted to include them in a unique way, as I knew that a more traditional goodie bag would fit better for the treats, and I didn't want it to become too repetitive. That's when I came up with the idea for a circular tub. I thought that as well as producing an interesting outcome, the customer could also use it as a reusable carry case for biscuits, helping to reduce its environmental footprint.</p>
+                    <p>For the design of the box, I drew inspiration from the original box, by using a similar lid system. This was to help keep the box sturdy for repeated use, and so it doesn't wear out easily. It also keeps a sense of consistency between the two products.</p>
+
+                    <h2>The Design</h2>
+                    <Image className='left content-img' src='/assets/images/dr-barkers/biscuit-box/1.png' />
+                    <p>I started off by creating a basic UV map in <a href='https://affinity.serif.com/en-gb/'>Affinity Designer</a>, to allow me to map pixels on the artwork, to vertices on the model. This was particularly hard, due to the elliptical shape of the lid. </p>
+                    <p>The first iteration had the brand logo in the middle, with the flavour and product wrapped around it in a circle. At first, the text was very hard to read, due to the bones being a very similar colour. I first tried fixing this by increasing the disparity of the text, but this just made the text murky and unpleasant, due to how much I would have had to increase the contrast. To try to negate this, I instead increased the contrast slightly, and added a plain ring around the text with no pattern, helping to make it more legible.</p>
+
+                    <Image className='right content-img' src='/assets/images/dr-barkers/biscuit-box/2.png' />
+                    <p>For the second iteration, i experimented with including the banners as seen in <a href='#box--the-box'>My Box</a> and <a href='#infographics--infographics-digital-response'>Infographics</a>. However I didn't particularly like this, as it made it very boring, and far too similar to the other products I had already made.</p>
+                    <p>As well as this, the banners were too small, making it hard to read, but also resulting in a lot of whitespace around the main content. This felt very distracting to me, and resulted in a very plain and boring box. To help with this, I tried increasing the size of the logo and banners, but that didn't help at all, and instead made the packaging look clumsy, instead of the very professional and sleek look I wanted. </p>
+
+                    <Image className='left content-img' src='/assets/images/dr-barkers/biscuit-box/4.png' />
+
+                    <p>For this iteration, I decided to mix the two previous designs, to help create a coherent design. This is in part due to how the information is displayed to the customer. I made sure that the more important information (the flavour) was in the red banner, as it is incredibly bright and vibrant, attracting the eye immediately. This key, as most dog owners will decide on treats that they find interesting and appetising for themselves.</p>
+                    <p>I then included the secondary information (the actual product), in a more subtle colour, and in a way that takes advantage of the uniquely circular box. I then increased the text size, to increase legibility.</p>
+
+                    <Image className='left content-img' src='/assets/images/dr-barkers/biscuit-box/4.png' />
+
 
 
 
