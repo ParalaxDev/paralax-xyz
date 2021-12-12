@@ -498,13 +498,21 @@ const DrBarkers = (props) => {
                     <Spacer h='30vh' />
                     <Image className='right content-img' src='/assets/images/dr-barkers/kibble-bag/2.png' />
                     {/* <Image className='inline content-img' src='/assets/images/dr-barkers/kibble-bag/2.1.png' /> */}
-                    <p>To replace the logo, I added the Illustration I used on the box. I thought this dramatically helped by adding some vibrant colour, rather than the otherwise very duotone colour scheme, and helped to balance the design, making a far more well rounded product </p>
-                    <p>As well as this, by including him in multiple designs, it was suggested that he became mascot for Dr Barkers. I think that this was a great idea, as it creates a friendly and more vibrant image to associate with Dr Barkers, other than the more traditional monotone logo</p>
+                    <p>To replace the logo, I added the Illustration I used on the box. I thought this dramatically helped by adding some vibrant colour, rather than the otherwise very duotone colour scheme, and helped to balance the design, making a far more well rounded product. </p>
+                    <p>As well as this, by including him in multiple designs, it was suggested that he became mascot for Dr Barkers. I think that this was a great idea, as it creates a friendly and more vibrant image to associate with Dr Barkers, other than the more traditional monotone logo.</p>
+                    <Spacer h='40vh' />
                     <Image className='left content-img' src='/assets/images/dr-barkers/kibble-bag/3.png' />
+                    <p>For the nutritional and ingredients sections I decided to place it on the side rather than on the back. This was because there was far too much empty space, and that its overall size fitted far better on a slimmer footprint. I think that this was definitely a good decision, as many people view this information as quite tedious and boring, so making it fit on the back would have been unattractive for the brand.</p>
+                    <p>I also used a similar layout and style to represent this information, to keep consistency across the various shapes and sizes of packaging.</p>
+                    <Spacer h='40vh' />
 
-                    <Image className='right content-img' src='/assets/images/dr-barkers/kibble-bag/4.png' />
-                    <Image className='inline content-img' src='/assets/images/dr-barkers/kibble-bag/5.png' />
-
+                    <Image className='right content-img' src='/assets/images/dr-barkers/kibble-bag/5.png' />
+                    <Image className='inline content-img' src='/assets/images/dr-barkers/kibble-bag/4.png' />
+                    <p>I then experimented with different background patterns, as I thought that the bones were becoming too repetitive and boring. I first experimented with creating a grid with a simplified design of the Mascot, but found this to be quite similar to the bones, and didn't seem overly different from a distance. To help with this, I instead tried alternating between a filled and outlined variant, which I think helped to create a far more interesting and engaging pattern, that is visibly different from the previous.</p>
+                    <p>I finally made some final renders of the Kibble Bag Mockup:</p>
+                    <Image className='divider-img' src='/assets/images/dr-barkers/kibble-bag/final.png' />
+                    <Image className='divider-img' src='/assets/images/dr-barkers/kibble-bag/final front.png' />
+                    <Image className='divider-img' src='/assets/images/dr-barkers/kibble-bag/final side.png' />
 
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
