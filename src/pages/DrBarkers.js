@@ -522,6 +522,12 @@ const DrBarkers = (props) => {
                     <Image className='divider-img' src='/assets/images/dr-barkers/wet-food-pouch/final front.png' />
                     <Image className='divider-img' src='/assets/images/dr-barkers/wet-food-pouch/final back.png' />
 
+                    <Subsection id='group-renders--the-final-group-renders' />
+                    <p>I then created a final composition, including all of the mockups I made during the exam:</p>
+
+                    <Image className='divider-img' src='/assets/images/dr-barkers/final-group-renders/final high res.png' />
+                    <Image className='divider-img' src='/assets/images/dr-barkers/final-group-renders/final top.png' />
+
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
             </div>
