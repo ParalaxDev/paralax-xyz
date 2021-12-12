@@ -493,11 +493,17 @@ const DrBarkers = (props) => {
 
                     <h2>The Design</h2>
                     <Image className='left content-img' src='/assets/images/dr-barkers/kibble-bag/1.png' />
+                    <p>For the first Iteration, I used a similar styling as the <a href='#biscuit-tub--the-biscuit-tub'>Biscuit Box</a>, with the flavour in the banner, and the product in the less prevalent secondary text. In addition to this, I also reused the same bone pattern that could be seen in the other products, although I later switched this out, as it looked far too repetitive. This was to help keep a sense of consistency that is often seen in premium products, and to not confuse or overwhelm the customer with a very contrasting design.</p>
+                    <p>However, I didn't like how prevalent the logo was, and how it didn't help to identify the product you were receiving. Instead of just removing the Logo, I moved it to one of the unused sides, to still represent the brand, but in more of a subtle way. </p>
+                    <Spacer h='30vh' />
                     <Image className='right content-img' src='/assets/images/dr-barkers/kibble-bag/2.png' />
+                    {/* <Image className='inline content-img' src='/assets/images/dr-barkers/kibble-bag/2.1.png' /> */}
+                    <p>To replace the logo, I added the Illustration I used on the box. I thought this dramatically helped by adding some vibrant colour, rather than the otherwise very duotone colour scheme, and helped to balance the design, making a far more well rounded product </p>
+                    <p>As well as this, by including him in multiple designs, it was suggested that he became mascot for Dr Barkers. I think that this was a great idea, as it creates a friendly and more vibrant image to associate with Dr Barkers, other than the more traditional monotone logo</p>
                     <Image className='left content-img' src='/assets/images/dr-barkers/kibble-bag/3.png' />
 
-                    <Image className='left content-img' style={{ width: '25%', marginTop: '2.5px' }} src='/assets/images/dr-barkers/kibble-bag/4.png' />
-                    <Image className='left content-img' style={{ width: '25%', marginTop: '2.5px' }} src='/assets/images/dr-barkers/kibble-bag/5.png' />
+                    <Image className='right content-img' src='/assets/images/dr-barkers/kibble-bag/4.png' />
+                    <Image className='inline content-img' src='/assets/images/dr-barkers/kibble-bag/5.png' />
 
 
                 </Section>
