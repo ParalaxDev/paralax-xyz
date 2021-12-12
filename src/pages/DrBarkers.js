@@ -514,6 +514,14 @@ const DrBarkers = (props) => {
                     <Image className='divider-img' src='/assets/images/dr-barkers/kibble-bag/final front.png' />
                     <Image className='divider-img' src='/assets/images/dr-barkers/kibble-bag/final side.png' />
 
+                    <Subsection id='wet-pouch--the-wet-food-pouch' />
+                    <p>My dog can sometimes be a picky eater, and so we often mix wet food in with the kibble. This gives the food a far more enticing taste and smell, encouraging him to finish it. It also contains many more nutrients that are lacking in dry food, and so I thought that it would be an interesting product to include.</p>
+
+                    <p>The Pouch's design is very similar to the kibble bag, with very few changes, so here are the final renders:</p>
+                    <Image className='divider-img' src='/assets/images/dr-barkers/wet-food-pouch/final.png' />
+                    <Image className='divider-img' src='/assets/images/dr-barkers/wet-food-pouch/final front.png' />
+                    <Image className='divider-img' src='/assets/images/dr-barkers/wet-food-pouch/final back.png' />
+
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
             </div>
