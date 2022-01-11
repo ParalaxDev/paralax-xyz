@@ -11,9 +11,9 @@ import Projects from "./pages/Projects";
 import Kew from "./pages/Kew";
 import Typography from "./pages/Typography";
 import DrBarkers from "./pages/DrBarkers";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import Error404 from "./pages/Error404";
-
+import './App.scss'
 
 const App = () => {
 
@@ -25,8 +25,8 @@ const App = () => {
 			<Switch>
 				{/* <Route exact path="/projects/:name" component={Project} /> */}
 				{/* <Route path="/projects/:name/:subpage" component={SubProject} /> */}
-				<Route path="/projects/kew" component={Kew} />
-				<Route path="/projects/typography" component={Typography} />
+				{/* <Route path="/projects/kew" component={Kew} /> */}
+				{/* <Route path="/projects/typography" component={Typography} /> */}
 				<Route path="/projects/drbarkers" component={DrBarkers} />
 				<Route path="/projects" component={Projects} exact />
 				<Route exact path="/" component={Homepage} />

@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { motion, useAnimation } from 'framer-motion'
 
-import '../styles/gallery.scss'
+// import '../styles/gallery.scss'
 
 const Modal = ({ selectedImage, setSelectedImage }) => {
     return (

@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { useScroll } from "../hooks/useScroll";
-import '../styles/navbar.scss'
+// import '../styles/navbar.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faPinterest, faDiscord, faYoutube } from '@fortawesome/free-brands-svg-icons';

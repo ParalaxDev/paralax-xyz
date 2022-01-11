@@ -1,9 +1,9 @@
 import luxy from 'luxy.js'
 import { useEffect, useState } from 'react'
-import arrow from '../images/arrow.svg'
+// import arrow from '../images/arrow.svg'
 import { Link } from "react-router-dom";
 
-import '../styles/imagecard.scss'
+// import '../styles/imagecard.scss'
 
 const ImageCard = ({ position, image, number, title, description, parentCallback, link }) => {
 

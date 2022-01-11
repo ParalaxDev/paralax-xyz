@@ -1,4 +1,4 @@
-import '../styles/scrollingheader.scss'
+// import '../styles/scrollingheader.scss'
 import { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion'
 

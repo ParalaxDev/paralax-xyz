@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import '../styles/error404.scss'
+// import '../styles/error404.scss'
 
 
 

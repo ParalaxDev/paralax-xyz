@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import '../styles/gallery.scss'
+// import '../styles/gallery.scss'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 

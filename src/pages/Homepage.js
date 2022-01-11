@@ -1,23 +1,20 @@
-import ContourMap from '../components/ContourMap';
-import '../styles/general.scss'
-import '../styles/homepage.scss'
+// import ContourMap from '../components/ContourMap';
+// import '../styles/general.scss'
+// import '../styles/homepage.scss'
 
 
 
 const Homepage = () => {
 
     return (
-        <>
-            <div className='contourmap-overlay' />
-            <ContourMap className='contour-map' />
-            <div className='top left absolute'>
-                <h2>Portfolio</h2>
-                <h2>20 — 21</h2>
+        <div id="landing-page">
+            <div className='vertical-center'>
+                {/* <div className="text-group"> */}
+                <h1 className='primary-colour'>Paralax</h1>
+                <h3 className='secondary-colour'>Graphic Design <span className='primary-colour'>//</span> Programming</h3>
+                {/* </div> */}
             </div>
-            <div className='center' >
-                <h1>Paralax</h1>
-            </div>
-        </>
+        </div>
     )
 }
 

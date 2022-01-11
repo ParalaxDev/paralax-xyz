@@ -1,4 +1,4 @@
-import '../styles/heading.scss'
+// import '../styles/heading.scss'
 
 const Heading = (props) => {
 

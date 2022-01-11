@@ -2,10 +2,10 @@ import ScrollingHeader from '../components/ScrollingHeader'
 // import Heading from '../components/Heading'
 import React, { useEffect } from 'react'
 // import React from 'react'
-// import Gallery from '../components/Gallery';
+import Gallery from '../components/Gallery';
 
 // import '../styles/basicStyling.scss'
-import '../styles/gallery.scss'
+// import '../styles/gallery.scss'
 
 
 import titleThumbnail from '../images/drbarkers.png'

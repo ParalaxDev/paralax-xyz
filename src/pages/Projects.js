@@ -1,5 +1,5 @@
-import Heading from '../components/Heading'
-import ListObject from '../components/ListObject'
+// import Heading from '../components/Heading'
+// import ListObject from '../components/ListObject'
 
 // import '../styles/basicStyling.scss'
 

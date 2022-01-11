@@ -1,4 +1,4 @@
-import '../styles/listobject.scss'
+// import '../styles/listobject.scss'
 import arrow from '../images/arrow.svg'
 import { Link } from "react-router-dom";
 

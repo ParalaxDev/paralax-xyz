@@ -1,5 +1,5 @@
-import '../styles/button.scss'
-import arrow from '../images/arrow.svg'
+// import '../styles/button.scss'
+// import arrow from '../images/arrow.svg'
 
 const Button = (props) => {
     return (
