@@ -5,12 +5,24 @@
     src: url("./fonts/TungstenBold.otf") format("opentype");
 }
 
+@font-face {
+    font-family: DIN-D;
+    src: url("./fonts/DIN-D.otf") format("opentype");
+}
+
 * {
-    background-color: $background-colour;
-    width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
+    // width: 100%;
+    // height: 100%;
+}
+
+html {
+    background-color: $background-colour;
+    // width: 100%;
+    height: 100%;
+    margin: 20px;
+    overflow-x: hidden;
 }
 
 .primary-colour {
@@ -22,15 +34,67 @@
 }
 
 .vertical-center {
-    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
 }
 
 #landing-page {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    user-select: none;
 
     h1 {
         font-family: Tungsten;
+        font-size: 17.5rem;
+        line-height: 14rem;
+        letter-spacing: 0.025em;
+        // color: white;
+        // -webkit-box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.27);
+        // text-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.27);
     }
+    h3 {
+        position: relative;
+        left: 5px;
+        font-family: DIN-D;
+    }
+}
+
+#bg-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+
+    .video-center {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+.video-overlay {
+    background-color: $background-colour;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.bg-image {
+    background-image: url("./test.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
