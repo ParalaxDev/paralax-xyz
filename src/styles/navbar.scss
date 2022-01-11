@@ -26,12 +26,15 @@ header {
     }
 
     .dropdown {
-        background-color: #1b191f;
+        background-color: #201e25;
         padding: 1em 0;
         position: absolute; /*WITH RESPECT TO PARENT*/
         display: none;
+        min-width: 100%;
         // border-radius: 8px;
         top: 30px;
+        left: 0;
+        // width: 100%;
         list-style: none;
         // width: 100%;
         // display: block;
@@ -40,9 +43,10 @@ header {
 
         li {
             padding: 0.5em 1em;
-            width: 8em;
+            // min-width: 100%;
             // overflow: visible;
             // text-align: center;
+            text-align: center;
             list-style: none;
         }
     }
@@ -118,9 +122,9 @@ input[type="checkbox"] {
         display: block;
     }
     .dropdown {
-        left: 50%;
-        top: 30px;
-        transform: translateX(35%);
+        // left: 50%;
+        // top: 30px;
+        // transform: translateX(35%);
         // z-index: 1000;
     }
     .dropdown li:hover {
