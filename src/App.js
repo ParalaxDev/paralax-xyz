@@ -19,6 +19,7 @@ import Homepage from "./pages/Homepage";
 import Projects from "./pages/Projects";
 import Kew from "./pages/Kew";
 import Typography from "./pages/Typography";
+import TateModern from "./pages/TateModern";
 import DrBarkers from "./pages/DrBarkers";
 import Navbar from "./components/Navbar";
 import Error404 from "./pages/Error404";
@@ -59,6 +60,7 @@ const App = () => {
 				<Route path="/projects/kew" component={Kew} />
 				<Route path="/projects/typography" component={Typography} />
 				<Route path="/projects/drbarkers" component={DrBarkers} />
+				<Route path="/projects/tatemodern" component={TateModern} />
 				<Route path="/projects" component={Projects} exact />
 				<Route exact path="/" component={Homepage} />
 				<Route path="/" component={Error404} />
