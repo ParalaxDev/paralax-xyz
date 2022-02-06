@@ -77,7 +77,7 @@ const TextLogo = (props) => {
     useEffect(() => {
         setTimeout(() => {
             setAnimationType('general')
-        }, 600)
+        }, 650)
     }, [])
 
 

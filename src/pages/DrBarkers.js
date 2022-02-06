@@ -253,7 +253,31 @@ const infographicsMoodboard = [
 
 ]
 
+const stickersMoodboard = [
+    'https://i.pinimg.com/474x/11/28/46/112846fda0a7a67488bcbf924993a107.jpg',
+    'https://i.pinimg.com/474x/51/a4/0d/51a40d60a164613d663feb1ead5398e5.jpg',
+    'https://i.pinimg.com/474x/7a/37/cf/7a37cfb071761b36d624d6013a531f3a.jpg',
+    'https://i.pinimg.com/474x/4a/ef/c9/4aefc976272a5cb49ace165210bc583a.jpg',
+    'https://i.pinimg.com/474x/a3/8e/0f/a38e0f494d37982204062cd016dc364d.jpg',
+    'https://i.pinimg.com/474x/5a/5a/d4/5a5ad436f0dd7ae8189eb6e315493b4c.jpg',
+    'https://i.pinimg.com/736x/63/95/32/639532ae48c5cf3ff5fe1590eb15026e.jpg',
+    'https://www.organising-chaos.com/ekmps/shops/fa10da/images/juice-box-holographic-sticker-1890-p.jpg',
+    'https://i.etsystatic.com/15845023/r/il/cef57e/2843786250/il_570xN.2843786250_7l3v.jpg',
+    'https://ih1.redbubble.net/image.255399151.8071/st,small,507x507-pad,600x600,f8f8f8.u4.jpg',
+    'https://i.etsystatic.com/22641803/r/il/1584e2/2516612888/il_570xN.2516612888_149r.jpg',
+    // 'https://i.etsystatic.com/22641803/r/il/1584e2/2516612888/il_570xN.2516612888_149r.jpg',
+]
+
 const infographicsExperiments = ['https://i.ibb.co/WGw7V7h/2.png', 'https://i.ibb.co/rd7v5Th/3.png', 'https://i.ibb.co/3vMHb3F/4.png', 'https://i.ibb.co/CP6SZQQ/5.png', 'https://i.ibb.co/ypJcVkB/6.png', 'https://i.ibb.co/R6rq2qm/7.png', 'https://i.ibb.co/KFq5BX8/8.png', 'https://i.ibb.co/Y35Lwwm/9.png', 'https://i.ibb.co/r7GFVd2/10.png', 'https://i.ibb.co/7jtFqGj/11.png', 'https://i.ibb.co/WkBbW8c/12.png', 'https://i.ibb.co/0KJ1fzy/13.png']
+
+const stickerVariants = ['https://i.ibb.co/jwJGQ7q/0-1.png', 'https://i.ibb.co/gJCy84R/2.png', 'https://i.ibb.co/fGgV27x/3.png', 'https://i.ibb.co/vqmHsYJ/4.png', 'https://i.ibb.co/XttY8vh/5-1.png', 'https://i.ibb.co/mcsZw1F/5.png', 'https://i.ibb.co/D9TPmV2/6-1.png', 'https://i.ibb.co/fQgbKJ8/6.png']
+
+
+
+// https://i.ibb.co/jwJGQ7q/0-1.png
+// https://i.ibb.co/XttY8vh/5-1.png
+// https://i.ibb.co/D9TPmV2/6-1.png
+
 
 
 const DrBarkers = (props) => {
@@ -349,7 +373,7 @@ const DrBarkers = (props) => {
                     <p>I'm really happy with how it came out, and I think it represents Tonks' style very well.</p>
                     <Spacer h='50%' dH='40vh' />
                 </Section>
-                <Section id='infographics-and-logo' >
+                <Section id='infographics,-logo-and-stickers' >
                     <h1>Logo</h1>
                     <Subsection id='logo--logo-moodboard' />
                     <p>I knew I wanted my logo to be very simple, but also quite striking. To do this, I created a moodboard of logos similar to what i desired:</p>
@@ -359,11 +383,7 @@ const DrBarkers = (props) => {
                     <p>I wanted my logo to be a circle because I want to later create a stamp out of it. I would use this stamp (along with wax) to seal the box and various packages inside. This is firstly great for the environment as instead of using sellotape, which is made of single use plastic, I would be using wax, which is good for the environment as it can easily decompose, and is sustainable. As well as this, it also gives a more handmade feel, and makes the purchaser feel as though they are helping a niche and small business.</p>
                     <p>A primary way to do this is to create a logo to be associated with. I love the very simple logos as they clearly display what the brand is, and what the audience can expect from it, and so set out to create something similar:</p>
                     <Subsection id='logo--logo-digital-response' />
-                    {/* https://i.ibb.co/Z8SJcbV/1.png
-                    https://i.ibb.co/XjVHzmP/2.png
-                    https://i.ibb.co/Qn9jtFb/3.png
-                    https://i.ibb.co/ctFnCmt/4.png
-                https://i.ibb.co/7275D2P/5.png */}
+
                     <Image className='inline content-img' style={{ marginRight: '20px' }} src='https://i.ibb.co/Z8SJcbV/1.png' />
                     <Image className='inline content-img' src='https://i.ibb.co/XjVHzmP/2.png' />
 
@@ -384,6 +404,130 @@ const DrBarkers = (props) => {
                     <p>To create a vibrant red, I changed the hue of the beige, to link them, and to keep my work consistent. I used this red colour sparingly, to give it more impact. For example, when I want to highlight important information and statistics. When I chose additional colours, I also based them off of the original red colour, but selected them to ensure that they would provide sufficient contrast to the background. </p>
                     <p>I chose the font <a href='https://fonts.google.com/specimen/Inter'>Inter</a>, as it is very easy to read, making it accessible for everyone to read. This is very important for my Infographics, as there is a lot of text, so I wanted to reduce eye strain by using a very legible font.</p>
                     <p>I added the textured background last, as I thought they infographics as a whole looked very empty. I had hoped that it would help to tie all the other elements together, and to fill empty space. Initially it was a far too similar colour to the text, making it very disrupting. To help with this, I lowered the opacity, and made the text far easier to read.</p>
+                    <h1>Stickers</h1>
+                    <Subsection id='stickers--stickers-moodboard' />
+                    <p>My Dad originally suggested to me that I include stickers in the box, similar to how Apple do with their products. I thought that it was a great idea to give the customer a little extra, as a gift for choosing Dr Barkers. I had seen similar dog brands include stickers as well, so thought that it would be a great thing to include.</p>
+                    <p>I then created this small moodboard to help influence my design:</p>
+                    <Gallery imgs={stickersMoodboard} />
+                    <Subsection id='stickers--stickers-digital-outcomes' />
+                    <Gallery imgs={stickerVariants} />
+                    <p>In the end, I created 3 different stickers to include in my box, in addition to the products. One of them contained just the logo, one with the surrounding text, and finally an inverted icon. I used <a href='https://affinity.serif.com/en-gb/'>Affinity Designer</a> to create these, and used a mixture of raidial gradients (for the colours), and two concial gradients with screen and difference opacity effects to make it look realistic, and to make it look reflective.</p>
+                    <Subsection id='stickers--stickers-non-digital-outcomes' />
+
+                </Section>
+                <Section id='the-exam' >
+                    <Subsection id='box--the-box' />
+                    <p>I knew that the Box would be a major factor for the overall experience of the customer. To help with this, I conducted research on a variety of box types, to see which ones would suit best for my ideals. These varied from boxes with pull tabs and lids. I found a website called <a href='https://www.templatemaker.nl'>templatemaker.nl</a>, that I used to generate all of my box nets.</p>
+                    <p>I decided on using a box with a lid. This was partly due to an easier and smaller footprint, allowing me to utilise more cardboard, and thus have a bigger box. This was good as I didn't have any large sizes of cardboard. It also gives a more premium feel, as people associate the opening experience with far more premium products that use the same box type, for example the iPhone and iPad.  </p>
+                    <p>However, upon creating a prototype of the box, I found that the lid wasn't staying securely to the base. I originally thought to make the lid smaller, but realised that I don't have the tolerances of smaller card, like Apple do. To compensate for this, I came up with the idea of a sleeve. This would help keep the two elements together, as well as act as a place for me to print branding on, as printing to cardboard in colour is very difficult.</p>
+
+                    <Image className='left content-img' src='/assets/images/dr-barkers/cardboard material.png' />
+                    <p>I originally experimented with creating a full length sleeve, but later realised that it covered up too much of the organic cardboard underneath, undermining the companies ideals for an environmentally friendly company. I wanted it to be visible from the first moment that we cared for the environment, and upon showing rustic cardboard, the customers instantly understand this.</p>
+                    <p>To allow for rapid prototype of box sizes, and sleeve designs, without having to create a new box every time, I setup a <a href='https://blender.org'>Blender</a> workspace, and 3d modelling a box for me to edit. I aimed to make it as realistic as possible, by using the Cycles X render engine, and a custom procedural cardboard material.</p>
+                    <Subsection id='box--the-sleeve-design' />
+                    <Image className='left content-img' src='/assets/images/dr-barkers/original design.png' />
+                    <p>I created the original design in <a href='https://affinity.serif.com/en-gb/'>Affinity Designer</a>, and then UV mapped it onto the sleeve in Blender. The proportions didn't exactly match up, so I had to correct for some distortion, but eventually got it working. </p>
+                    <p>I originally had the idea to have the large logo in the center with the tagline below, and the bone pattern underneath. However, after some iterating, I found that the bone pattern was 1) no visible enough on the actual design, but 2) also interfered with the other elements. </p>
+                    <p>To help with this, I removed the pattern on the from side, and increased the contrast on the remaining sides. This had the desired effect, by making the front more legible, but also keeping the link to my <a href='#infographics--infographics-digital-response'>Infographics</a>, helping to create a well-rounded experience for the entire product.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <Image className='right content-img' src='/assets/images/dr-barkers/edited design.png' />
+                    <p>I then experimented with introducing another element, a small banner stating the tier of the box. This further elevates the premium feel, and makes the customer feel more posh. I used the same colours, and overall style from my infographics, to further solidify the link between them. I also experimented with introducing my <a href='http://localhost:3000/projects/drbarkers#artist-research--digital-response'>Artist Response</a> into the design. At first, I thought that the colours looked way too saturated, but when I placed it on the mockup, it looked slightly less saturated, making it fit well. </p>
+                    <p>I also shrunk the logo slightly, helping to make the composition less crowded, but this resulted in their being far too much empty space, so I later repositioned the composition.</p>
+                    {/* <Image className='left content-img' src='/assets/images/dr-barkers/redesign.png' /> */}
+                    <Image className='left content-img' src='/assets/images/dr-barkers/final design.png' />
+                    <p>I then experimented with moving the logo up to the top corner, and shrinking it. This help to shift the focus off of the brand, which I think helps a lot, as it can be very distracting, but I still made sure to keep the logo relevant, as it is incredibly important for brand recognition. </p>
+                    <p>This then gave me lots of empty space in the middle, allowing me to reintroduce the illustration of the dog, helping to demonstrate what the box contains, further pushing the brand to the customer, in a subtle way. </p>
+                    <p>For the final design, I added some leaves at the base of the Dog, to add some colour, as without it, it was very bland and monotone. I also think that it really helps to add a sense of playfulness to the design. Before, he was just a dog standing very upright, as though he was on guard. Now, however, he looks as though he is playing in the leaves, and makes the customer more confident that my product will make their dog happy.</p>
+                    <p>I also made some small quality changes, such as shifting the bones on the side to stop it from clipping with the edge. I also increased the contrast between some of the text and the background. I also experimented with centring the text, and making the artwork bigger, to further promote the illustration</p>
+                    <p> I then created some final renders of the box mockup:</p>
+                    <Image className='divider-img' src='/assets/images/dr-barkers/final box.png' />
+                    <Image className='divider-img' src='/assets/images/dr-barkers/final top box.png' />
+
+                    <Subsection id='biscuit-tub--the-biscuit-tub' />
+
+
+                    <p>I knew from the start that I wanted to include dog biscuits. My dog loves them, and they are a great way to reward puppies, without overfeeding them with treats. However, I wanted to include them in a unique way, as I knew that a more traditional goodie bag would fit better for the treats, and I didn't want it to become too repetitive. That's when I came up with the idea for a circular tub. I thought that as well as producing an interesting outcome, the customer could also use it as a reusable carry case for biscuits, helping to reduce its environmental footprint.</p>
+                    <p>For the design of the box, I drew inspiration from the original box, by using a similar lid system. This was to help keep the box sturdy for repeated use, and so it doesn't wear out easily. It also keeps a sense of consistency between the two products.</p>
+
+                    <h2>The Design</h2>
+                    <Image className='left content-img' src='/assets/images/dr-barkers/biscuit-box/1.png' />
+                    <p>I started off by creating a basic UV map in <a href='https://affinity.serif.com/en-gb/'>Affinity Designer</a>, to allow me to map pixels on the artwork, to vertices on the model. This was particularly hard, due to the elliptical shape of the lid. </p>
+                    <p>The first iteration had the brand logo in the middle, with the flavour and product wrapped around it in a circle. At first, the text was very hard to read, due to the bones being a very similar colour. I first tried fixing this by increasing the disparity of the text, but this just made the text murky and unpleasant, due to how much I would have had to increase the contrast. To try to negate this, I instead increased the contrast slightly, and added a plain ring around the text with no pattern, helping to make it more legible.</p>
+
+                    <Image className='right content-img' src='/assets/images/dr-barkers/biscuit-box/2.png' />
+                    <p>For the second iteration, i experimented with including the banners as seen in <a href='#box--the-box'>My Box</a> and <a href='#infographics--infographics-digital-response'>Infographics</a>. However I didn't particularly like this, as it made it very boring, and far too similar to the other products I had already made.</p>
+                    <p>As well as this, the banners were too small, making it hard to read, but also resulting in a lot of whitespace around the main content. This felt very distracting to me, and resulted in a very plain and boring box. To help with this, I tried increasing the size of the logo and banners, but that didn't help at all, and instead made the packaging look clumsy, instead of the very professional and sleek look I wanted. </p>
+
+                    <Image className='left content-img' src='/assets/images/dr-barkers/biscuit-box/3.png' />
+
+                    <p>For this iteration, I decided to mix the two previous designs, to help create a coherent design. This is in part due to how the information is displayed to the customer. I made sure that the more important information (the flavour) was in the red banner, as it is incredibly bright and vibrant, attracting the eye immediately. This key, as most dog owners will decide on treats that they find interesting and appetising for themselves.</p>
+                    <p>I then included the secondary information (the actual product), in a more subtle colour, and in a way that takes advantage of the uniquely circular box. I then increased the text size, to increase legibility.</p>
+
+                    <Image className='right content-img' src='/assets/images/dr-barkers/biscuit-box/4.png' />
+
+                    <p>I then added some nutritional information on the back of the box. I used a table system similar to that used in my Infographics. I then added a solid background, and increased text contrast to help with legibility. I also added a banner to display the title, to make it eye catching, as it is very important to make the owner aware of this information.</p>
+                    <p>I then added a thin, matching red strip along the side of the container, to help breakup the otherwise boring sides. When I create the actual designs, however, I will replace this with a red ribbon, to further emphasise the premium products that the company sells.</p>
+                    <br />
+                    <p>I finally made some final renders to advertise the product:</p>
+
+                    <Image className='divider-img' src='/assets/images/dr-barkers/biscuit-box/final.png' />
+                    <Image className='divider-img' src='/assets/images/dr-barkers/biscuit-box/final top.png' />
+                    <Image className='divider-img' src='/assets/images/dr-barkers/biscuit-box/final bottom.png' />
+
+                    <Subsection id='kibble-bag--the-kibble-bag' />
+
+                    <h2>The Bag</h2>
+
+
+                    <Image className='left content-img' src='/assets/images/dr-barkers/kibble-bag/photoscan.jpg' />
+
+                    <p>I wanted to make a kibble bag, as its a staple for most dog's diets. As well as being nutritious and healthy, it is also highly convenient, and this is something my brand strives to be. However, I couldn't find any free models of a kibble bag to superimpose my design onto. To help with this, I decided that Flour bags and Kibble bags look very similar, in the way they bulge and are folded, and so decided to experiment with photogrammetry to help capture the organic shape.</p>
+                    <p>Photogrammetry is the process of taking loads of photos of your item, from various angles, and using a piece of software to process these images and create a model from them. In this case, I places the flour on my table, in a well lit condition, and took approximate 150 photos, and transferred them to my computer for processing</p>
+                    <p>I originally used a program called <a href='https://alicevision.org/#meshroom'>Meshroom</a>, but later found out that due to my computer's specs, it was not able to create a depth map without a GPU. to help with this, I found a program with OpenCL support called <a href='https://www.agisoft.com/'>Agisoft Metahape</a>.</p>
+                    <Image className='divider-img' src='/assets/images/dr-barkers/kibble-bag/metashape 1.png' />
+                    <p>It works by estimating where the photo was taken in 3D space, and then creating a point cloud based off of the locations of the photos. It then samples some points to create a depth map, where it estimates roughly how far away the item is. The more of these you sample, the more accurate, but it can take ages due to CPU intense calculations. It then stitches the photos together to create a high-res texture, however I would be replacing this later, so this was unimportant. I then took the model into <a href='https://github.com/wjakob/instant-meshes'>Instant Meshes</a> to create a more uniform vertex topology, and then into Blender to remove excess geometry like the table. I finally UV unwrapped it, and I was ready to start designing the packaging.</p>
+
+                    <Image className='divider-img' src='/assets/images/dr-barkers/kibble-bag/metashape 2.png' />
+
+                    <h2>The Design</h2>
+                    <Image className='left content-img' src='/assets/images/dr-barkers/kibble-bag/1.png' />
+                    <p>For the first Iteration, I used a similar styling as the <a href='#biscuit-tub--the-biscuit-tub'>Biscuit Box</a>, with the flavour in the banner, and the product in the less prevalent secondary text. In addition to this, I also reused the same bone pattern that could be seen in the other products, although I later switched this out, as it looked far too repetitive. This was to help keep a sense of consistency that is often seen in premium products, and to not confuse or overwhelm the customer with a very contrasting design.</p>
+                    <p>However, I didn't like how prevalent the logo was, and how it didn't help to identify the product you were receiving. Instead of just removing the Logo, I moved it to one of the unused sides, to still represent the brand, but in more of a subtle way. </p>
+                    <Spacer h='30vh' />
+                    <Image className='right content-img' src='/assets/images/dr-barkers/kibble-bag/2.png' />
+                    {/* <Image className='inline content-img' src='/assets/images/dr-barkers/kibble-bag/2.1.png' /> */}
+                    <p>To replace the logo, I added the Illustration I used on the box. I thought this dramatically helped by adding some vibrant colour, rather than the otherwise very duotone colour scheme, and helped to balance the design, making a far more well rounded product. </p>
+                    <p>As well as this, by including him in multiple designs, it was suggested that he became mascot for Dr Barkers. I think that this was a great idea, as it creates a friendly and more vibrant image to associate with Dr Barkers, other than the more traditional monotone logo.</p>
+                    <Spacer h='40vh' />
+                    <Image className='left content-img' src='/assets/images/dr-barkers/kibble-bag/3.png' />
+                    <p>For the nutritional and ingredients sections I decided to place it on the side rather than on the back. This was because there was far too much empty space, and that its overall size fitted far better on a slimmer footprint. I think that this was definitely a good decision, as many people view this information as quite tedious and boring, so making it fit on the back would have been unattractive for the brand.</p>
+                    <p>I also used a similar layout and style to represent this information, to keep consistency across the various shapes and sizes of packaging.</p>
+                    <Spacer h='40vh' />
+
+                    <Image className='right content-img' src='/assets/images/dr-barkers/kibble-bag/5.png' />
+                    <Image className='inline content-img' src='/assets/images/dr-barkers/kibble-bag/4.png' />
+                    <p>I then experimented with different background patterns, as I thought that the bones were becoming too repetitive and boring. I first experimented with creating a grid with a simplified design of the Mascot, but found this to be quite similar to the bones, and didn't seem overly different from a distance. To help with this, I instead tried alternating between a filled and outlined variant, which I think helped to create a far more interesting and engaging pattern, that is visibly different from the previous.</p>
+                    <p>I finally made some final renders of the Kibble Bag Mockup:</p>
+                    <Image className='divider-img' src='/assets/images/dr-barkers/kibble-bag/final.png' />
+                    <Image className='divider-img' src='/assets/images/dr-barkers/kibble-bag/final front.png' />
+                    <Image className='divider-img' src='/assets/images/dr-barkers/kibble-bag/final side.png' />
+
+                    <Subsection id='wet-pouch--the-wet-food-pouch' />
+                    <p>My dog can sometimes be a picky eater, and so we often mix wet food in with the kibble. This gives the food a far more enticing taste and smell, encouraging him to finish it. It also contains many more nutrients that are lacking in dry food, and so I thought that it would be an interesting product to include.</p>
+
+                    <p>The Pouch's design is very similar to the kibble bag, with very few changes, so here are the final renders:</p>
+                    <Image className='divider-img' src='/assets/images/dr-barkers/wet-food-pouch/final.png' />
+                    <Image className='divider-img' src='/assets/images/dr-barkers/wet-food-pouch/final front.png' />
+                    <Image className='divider-img' src='/assets/images/dr-barkers/wet-food-pouch/final back.png' />
+
+                    <Subsection id='group-renders--the-final-group-renders' />
+                    <p>I then created a final composition, including all of the mockups I made during the exam:</p>
+
+                    <Image className='divider-img' src='/assets/images/dr-barkers/final-group-renders/final high res.png' />
+                    <Image className='divider-img' src='/assets/images/dr-barkers/final-group-renders/final top.png' />
+
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
             </div>
