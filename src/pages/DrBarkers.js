@@ -281,8 +281,8 @@ const stickerVariants = ['https://i.ibb.co/jwJGQ7q/0-1.png', 'https://i.ibb.co/g
 
 
 const DrBarkers = (props) => {
-
-
+    
+    
     return (
         <>
             <ScrollingHeader title='DR BARKERS' image={titleThumbnail} />
@@ -340,12 +340,13 @@ const DrBarkers = (props) => {
                     <Gallery imgs={packagingPrimarySourcePhotos} />
                     {/* <h2>Photos of Dog Food Packaging</h2> */}
                 </Section>
-                <Section id='artist-research' >
+                <Section id='george-tonks' >
                     {/* <h1>Artist Research</h1> */}
                     <Image className='right content-img' src='https://pro2-bar-s3-cdn-cf5.myportfolio.com/a21db12f-3a56-4739-a144-6dc87aa0a368/6fd06295-f196-40c0-a589-8380b0be898f_rw_3840.jpg?h=05a9377a7a4fbad4b8e56a42d352d026' />
                     {/* <p>I chose George Tonks to research for his colourful and approchable art style, which I think represents what I want my brand to be perfectly</p> */}
                     <p>For my Artist Research I chose to look at <a href='https://georgetonks.com/'>George Tonks</a>, an artist who uses digital illustrations to create colourful and inciting designs by combining his passion of the outdoors and wildlife. He uses a very geometric approach to exaggerate their shape and form to show off their diversity. He is 28, and was born in the Cotswolds and has a 1st class BA Hons degree in Illustration from the University of Arts in Bournemouth.</p>
-                    <Image className='left content-img' src='https://mir-s3-cdn-cf.behance.net/project_modules/1400/29197c96340871.5eac0a49ce5fa.jpg' />
+                    {/* <Image className='left content-img' src='https://mir-s3-cdn-cf.behance.net/project_modules/1400/29197c96340871.5eac0a49ce5fa.jpg' /> */}
+                    <Image className='left content-img' src='/assets/images/dr-barkers/instagram.png' />
                     <p>He primarily uses Procreate for sketches and illustrator where he refines the line work, and adds colours and textures. However, in his final year project, a short film called <a href='https://www.youtube.com/watch?v=g7vEjF0lebE'>N-Orbit</a> where he uses Blender.</p>
                     <p>I got in touch with him via his Instagram, where he told me that his primary goal is to provide awareness towards local wildlife. He does this by including snippets of interesting information and facts with each piece of art. As well as this, he sells prints and t-shirts of his work, where the product materials are sustainably sourced.</p>
                     <p>His inspiration primarily comes from wildlife which stems from his childhood love of Steve Irwin and documentaries by David Attenborough.</p>
@@ -353,21 +354,21 @@ const DrBarkers = (props) => {
                     <p>In addition to this, he also uses saturated colours, suggesting a very friendly design, which i think matches what I want to represent. He also uses a very flat illustrative style, which has become very popular recently. This is partly why I have chosen this style, as it is something that the audience can relate with, making it more approachable. </p>
                     <Image className='divider-img' src='https://mir-s3-cdn-cf.behance.net/project_modules/1400/07bffa96340871.5eac0a49cf33f.png' />
                     {/* <h2>My Response</h2> */}
-                    <Subsection id='artist-research--my-response' />
+                    <Subsection id='geroge-tonks--my-response' />
                     <p>For my Response to my artist, I decided to create a visually similar image, but using this picture of my dog as a reference.</p>
                     <Image className='right content-img' src='https://i.ibb.co/wLPgThG/IMG-20210530-WA0001.jpg' />
                     <Image className='inline content-img' src='https://mir-s3-cdn-cf.behance.net/project_modules/1400/29197c96340871.5eac0a49ce5fa.jpg' />
                     {/* <h2>Non Digital Response</h2> */}
-                    <Subsection id='artist-research--non-digital-response' />
+                    <Subsection id='geroge-tonks--non-digital-response' />
                     <p>I first decided to make a non digital collage as it would best represent the simple and flat shapes and colours Tonks uses in his own work, and to help give me an idea of what i wanted to do digitally. </p>
                     <Gallery imgs={artistResearchMediaExperiment} />
                     <p>I started off my cutting out the rough shapes of my dog, and placing them together. I used a contrasting colour for the nose and eyes, to further define its shape, and to add to the recognisability of the dog. I then added some grass and leaves behind him, to add variety to the image. I then added pupils and lines on the nose, to add realism, and to make it more recognisable</p>
                     <Image className='divider-img' src='https://i.ibb.co/hX910Rn/20211013-133938.jpg' />
                     {/* <h2>Digital Response</h2> */}
-                    <Subsection id='artist-research--digital-response' />
+                    <Subsection id='geroge-tonks--digital-response' />
                     <Gallery imgs={artistResearchDigitalOutcomes} />
                     {/* <h2>Final Outcome</h2> */}
-                    <Subsection id='artist-research--final-outcome' />
+                    <Subsection id='geroge-tonks--final-outcome' />
                     <Image className='right content-img' src='https://i.ibb.co/NVp1WpS/final.png' />
                     <p>For my final artist research outcome, I removed the extra hairs on his stomach, as I thought that it didn't look as similar as my reference photo. This is because my dog has quite smooth hair on the rest of his body, apart from his tummy</p>
                     <p>I'm really happy with how it came out, and I think it represents Tonks' style very well.</p>
@@ -433,7 +434,7 @@ const DrBarkers = (props) => {
                     <br />
                     <br />
                     <Image className='right content-img' src='/assets/images/dr-barkers/edited design.png' />
-                    <p>I then experimented with introducing another element, a small banner stating the tier of the box. This further elevates the premium feel, and makes the customer feel more posh. I used the same colours, and overall style from my infographics, to further solidify the link between them. I also experimented with introducing my <a href='http://localhost:3000/projects/drbarkers#artist-research--digital-response'>Artist Response</a> into the design. At first, I thought that the colours looked way too saturated, but when I placed it on the mockup, it looked slightly less saturated, making it fit well. </p>
+                    <p>I then experimented with introducing another element, a small banner stating the tier of the box. This further elevates the premium feel, and makes the customer feel more posh. I used the same colours, and overall style from my infographics, to further solidify the link between them. I also experimented with introducing my <a href='http://localhost:3000/projects/drbarkers#geroge-tonks--digital-response'>Artist Response</a> into the design. At first, I thought that the colours looked way too saturated, but when I placed it on the mockup, it looked slightly less saturated, making it fit well. </p>
                     <p>I also shrunk the logo slightly, helping to make the composition less crowded, but this resulted in their being far too much empty space, so I later repositioned the composition.</p>
                     {/* <Image className='left content-img' src='/assets/images/dr-barkers/redesign.png' /> */}
                     <Image className='left content-img' src='/assets/images/dr-barkers/final design.png' />
@@ -528,6 +529,13 @@ const DrBarkers = (props) => {
                     <Image className='divider-img' src='/assets/images/dr-barkers/final-group-renders/final high res.png' />
                     <Image className='divider-img' src='/assets/images/dr-barkers/final-group-renders/final top.png' />
 
+                </Section>
+                <Section id='lucas-zarebinski' >
+                    <p>For my second Artist Research, I decided on <a href='https://www.lucaszarebinski.com/'>Lucas Zarebinski</a>. This is because, as I previously stated, that I wanted to delve more into the social media marketing for my company. I would do this through a mixture of mediums including stills of products, and animations.</p>
+                    <Image className='left content-img' src='/assets/images/dr-barkers/lucas-zarebinski/nuggets.jpg' />
+                    <p>Lucas Zarebinski is a Polish Still Life photographer who specialises in Food, Beauty, Cosmetics and Product Photography. After studying Fine Arts and Photography in Michigan, he moved to New York, where he now creates Product Photography for companies such as Sony, IBM, Target and Pepsi</p>
+                    <p>He always wanted to be an artist, as he wanted to encapsulate his creative visions, but he struggled with the more traditional physical mediums. However, his girlfriend introduced him to photography, when he then found out about his skill of still life photography. This allowed him to create stunning photos full of colour and personality, without the need for time being able to draw. He also loves the instantaneous results that a camera gives, allowing him to see if a certain angle or element works, without having to spend hours to create an outcome.</p>
+                    <p>He prefers a minimal and clean style, allowing him to create concise images that clearly display the given product. He often uses vibrant colours to help encapsulate and intrigue the audience.</p>
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
             </div>
