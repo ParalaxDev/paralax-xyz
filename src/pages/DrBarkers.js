@@ -289,17 +289,17 @@ const DrBarkers = (props) => {
             {/* <Navbar /> */}
             {/* <Index />  */}
             <div className='text-container'>
-                <Section id='the-brief' >
-                    {/* <h1>The Brief</h1> */}
+                {/* <Section id='the-brief' > */}
+                    <h1>The Brief</h1>
                     <p>A manufacturer requires graphics for a new brand of pet food named 'Dr Barker's'. You might consider approaches such branding and packaging or advertising material. Examples can be seen in packaging designs and in advertising for pet food by Ideas that Kick, 29 Agency, Seymourpowell Ltd, and Break Packaging and Design. When producing your response, carefully consider shelf presence and the target market.</p>
                     <Image className='divider-img' src='https://2.bp.blogspot.com/-ErxBjsRqob8/Xkzmc_awSiI/AAAAAAAGkSI/QO6G4ypy3KUpSaw239LII9459E0cxeEoACLcBGAsYHQ/s1600/2.Pawmona1.jpg' />
-                </Section>
-                <Section id='statement-of-intent' >
-                    {/* <h2>Statement of Intent</h2> */}
+                {/* </Section> */}
+                {/* <Section id='statement-of-intent' > */}
+                    <h1>Statement of Intent</h1>
                     <Image className='left content-img' src='https://1.bp.blogspot.com/-uIq3xvvK1z0/YC4IJ90bkzI/AAAAAAAHnsw/IEllq4G3BPUJGQd21LWgl7KBH8GabIDrwCLcBGAsYHQ/s1600/1-JOMO-Packaging1.jpg' />
                     <p>I chose the Dog Food Brief, as i thought that it related to me far more than any of the others. Whilst I have loved space for a while, and will continue to, I thought that by choosing to make packaging for Dog Food, I would be able to combine by love for my Dog, Milo, and my graphical ability. I also chose it, as upon seeing it, I instantly had loads of ideas (that you can see below), for what I wanted the company and packaging to be. As well as this, I also thought that it would give me the most individual elements to demonstrate my artistic and graphical ability.</p>
                     <br />
-                </Section>
+                {/* </Section> */}
                 <Section id='ideas' >
                     {/* <h1>Ideas</h1> */}
                     {/* <h2>The Company</h2> */}
@@ -536,6 +536,46 @@ const DrBarkers = (props) => {
                     <p>Lucas Zarebinski is a Polish Still Life photographer who specialises in Food, Beauty, Cosmetics and Product Photography. After studying Fine Arts and Photography in Michigan, he moved to New York, where he now creates Product Photography for companies such as Sony, IBM, Target and Pepsi</p>
                     <p>He always wanted to be an artist, as he wanted to encapsulate his creative visions, but he struggled with the more traditional physical mediums. However, his girlfriend introduced him to photography, when he then found out about his skill of still life photography. This allowed him to create stunning photos full of colour and personality, without the need for time being able to draw. He also loves the instantaneous results that a camera gives, allowing him to see if a certain angle or element works, without having to spend hours to create an outcome.</p>
                     <p>He prefers a minimal and clean style, allowing him to create concise images that clearly display the given product. He often uses vibrant colours to help encapsulate and intrigue the audience.</p>
+                    <Spacer h='10vh' />
+                </Section>
+                <Section id='product-animation' >
+                    <p>For my final outcome, I wanted to create a more dynamic outcome, as previously, all my other final results have been static renders or posters. To try and remedy this, I wanted to stick with the idea of creating an Instagram advert, but instead create a 3D animation in Blender.</p>
+                    <p>I was greatly inspired by Zarebinski's style of sing gravity to advertise the product. To create an interesting spin on this idea, I decided to create a small box of biscuits, which would then open up to release a volcano of doggy treats. To start, I first created a very simple box in Blender, and textured it in Affinity Designer. This process was very similar to what I did for these boxes <a href='#the-exam'>here</a>.</p>
+                    <p>I then began to animate the Box. I knew from the beginning that I wanted it to be very playful to help bring the animation to life. To do this, I implemented Squash and Stretch to the box. This would help make it seem far less rigid and stiff, and give it some flexibility. I was able to achieve this using a mixture of keyframes, animation curves and shape keys.</p>
+
+                    <iframe className='embed-video' width="100%" height="500px" src="https://www.youtube.com/embed/rZR9KqcjJPE?loop=1&playlist=rZR9KqcjJPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    <p>I knew that I wanted the biscuits to fly out at then end of the boxes jump, so I added some shake to the box, as though it was anticipating the eruption of snacks:</p>
+
+                    <iframe className='embed-video' width="100%" height="500px" src="https://www.youtube.com/embed/MV0PMAAkXRg?loop=1&playlist=MV0PMAAkXRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    <p>I then added a particle effect that produces the biscuits, and opened up the top of the box. I also added some squash to the box, as though it was compressing under the force of the biscuits exploding out:</p>
+
+                    <iframe className='embed-video' width="100%" height="500px" src="https://www.youtube.com/embed/O_D-6m83qOk?loop=1&playlist=O_D-6m83qOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    <p>I then adjusted the camera angle so the audience has a clearer view of the front of the box, and adjusted the particles to allow them to land on the floor:</p>
+
+                    <iframe className='embed-video' width="100%" height="500px" src="https://www.youtube.com/embed/FnOIRNh2600?loop=1&playlist=FnOIRNh2600" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    <p>To fix the buggy physics that blender simulates with particles, I added a second load of biscuits to replace the particle system at the right time. This gave me much more control over where they landed, and allowed me to edit any biscuits that would land in weird spots.</p>
+                    
+                    <iframe className='embed-video' width="100%" height="500px" src="https://www.youtube.com/embed/E3yQ03HmWuM?loop=1&playlist=E3yQ03HmWuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    <p>I then proceeded to start work on the second part of the animation. For this part, I wanted to give one of the one of the biscuits more character, and to make it jump up, look around, and then jump off to the side. Originally, I would have also animated the rest of the biscuits to follow him, but I was unable to due to time constraints. I continued to use squash and squeeze to further solidify his character, and to make the animation more friendly:</p>
+                
+                    <iframe className='embed-video' width="100%" height="500px" src="https://www.youtube.com/embed/kMJF1-8fyzI?loop=1&playlist=kMJF1-8fyzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                    <p>I then combined these two parts, and animated the biscuit to look around before jumping away. I also fixed some bugs with the shadows of the </p>
+
+                    <iframe className='embed-video' width="100%" height="500px" src="https://www.youtube.com/embed/vXyWaYdIZ1I?loop=1&playlist=vXyWaYdIZ1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    <p>I then experimented with using different background colours, and by adding an ending with the companies mascot. This would be the final animation that I would use, with only small changes being made.</p>
+                    
+                    <iframe className='embed-video' width="100%" height="500px" src="https://www.youtube.com/embed/Ef-ZOyv_eeA?loop=1&playlist=Ef-ZOyv_eeA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                
+                    <p>Up until now, I had been using Blender's eevee render engine, which prioritises speed for accuracy. Whilst this was good to see what a certain composition would look like, it's not the best for creating final videos. to help with this, I switched to Blender's cycles render engine, which accurately calculates thousands of light bounces. However, this takes much longer wih the render below taking 3 hours compared to the 5 minutes of the previous animations.</p>
+                    <p>In addition to this, Youtube applies lots of compression, and lowers the resolution depending on your internet bandwidth. To view the animations in the best quality, change the quality to 1080p</p>
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
             </div>

@@ -19,7 +19,7 @@
     "framer-motion": "^4.1.17",
     "load-bmfont": "^1.4.1",
     "luxy.js": "^0.1.0",
-    "marked": "^3.0.2",
+    "marked": "^4.0.12",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-device-detect": "^2.0.0",

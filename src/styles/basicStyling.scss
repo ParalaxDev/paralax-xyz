@@ -13,6 +13,10 @@
   font-family: "Inter", serif;
   // text-align: center;
 
+  .embed-video {
+    margin-bottom: 15px;
+  }
+
   h1 {
     font-size: 3.25rem;
     margin-bottom: 20px;
@@ -110,6 +114,9 @@
       font-size: 0.9rem;
       margin-bottom: 12.5px;
     }
+    .embed-video {
+        margin-bottom: 12.5px;
+      }
   }
 }
 
@@ -133,6 +140,9 @@
       font-size: 0.8rem;
       margin-bottom: 12.5px;
     }
+    .embed-video {
+        margin-bottom: 12.5px;
+      }
     .left {
       margin: 10px;
       margin-left: 0;
