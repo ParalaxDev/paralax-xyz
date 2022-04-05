@@ -574,8 +574,15 @@ const DrBarkers = (props) => {
                     <iframe className='embed-video' width="100%" height="500px" src="https://www.youtube.com/embed/Ef-ZOyv_eeA?loop=1&playlist=Ef-ZOyv_eeA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 
                 
-                    <p>Up until now, I had been using Blender's eevee render engine, which prioritises speed for accuracy. Whilst this was good to see what a certain composition would look like, it's not the best for creating final videos. to help with this, I switched to Blender's cycles render engine, which accurately calculates thousands of light bounces. However, this takes much longer wih the render below taking 3 hours compared to the 5 minutes of the previous animations.</p>
-                    <p>In addition to this, Youtube applies lots of compression, and lowers the resolution depending on your internet bandwidth. To view the animations in the best quality, change the quality to 1080p</p>
+                    <p>Up until now, I had been using Blender's Eevee render engine, which prioritises speed for accuracy. Whilst this was good to see what a certain composition would look like, it's not the best for creating final videos. to help with this, I switched to Blender's cycles render engine, which accurately calculates thousands of light bounces. However, this takes much longer wih the render below taking 3 hours compared to the 5 minutes of the previous animations.</p>
+                    <p>In addition to this, Youtube applies lots of compression, and lowers the resolution depending on your internet bandwidth. To view the animations in the best quality, change the quality to 1080p. You can find the playlist full of all the processes <a href='https://www.youtube.com/watch?v=rZR9KqcjJPE&list=PLJHlF1wziMY4jcUkOiZHgzQs_d10eCEUJ'>here</a></p>
+                    
+                    <h1>Final Render</h1>
+                    
+                    <iframe className='embed-video' width="100%" height="500px" src="https://www.youtube.com/embed/00OrYSd5Tqk?loop=1&playlist=00OrYSd5Tqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                    
+                
                 </Section>
                 {/* <div style={{ height: '1000vh' }} /> */}
             </div>
