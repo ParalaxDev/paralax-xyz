@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { getStorage, ref, getDownloadURL, list, listAll } from "firebase/storage";
 import marked from "marked";
 import { collection, doc, setDoc, getFirestore, getDocs, addDoc, getDoc, query, where } from "firebase/firestore";
-import '../styles/generalStyles.scss'
+// import '../styles/generalStyles.scss'
 // import '../styles/notion.css'
 
 // import 'bootstrap/dist/css/bootstrap.min.css';

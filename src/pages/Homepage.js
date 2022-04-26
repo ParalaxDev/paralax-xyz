@@ -62,10 +62,11 @@ const Homepage = () => {
             <section id='work' className='content-container'>
                 <Heading title='WORK' subtitle='FEATURED PROJECTS' />
                 <div className='image-list-center'>
-                    {isMobile ? null : <Button text='See All Projects' link='/projects' />}
-                    <ImageCard image='/assets/images/tate/thumbnail.jpg' number='1' title='Tate Modern' description='Short Project' link='/projects/tatemodern' position='left' parentCallback={parentCallback} />
-                    <ImageCard image={drbarkers} number='1' title='Dr Barkers' description='GCSE Brief' link='/projects/drbarkers' position='right' parentCallback={parentCallback} />
-                    <ImageCard image={test_image_3} number='2' title='Kew Gardens' description='GCSE Brief' link='/projects/kew' position='left' parentCallback={parentCallback} />
+                    {/* {isMobile ? null : <Button text='See All Projects' link='/projects' />} */}
+                    {/* <ImageCard image='/assets/images/tate/thumbnail.jpg' number='1' title='Tate Modern' description='Short Project' link='/projects/tatemodern' position='left' parentCallback={parentCallback} /> */}
+                    <ImageCard image={drbarkers} number='1' title='Dr Barkers' description='GCSE Brief' link='/projects/drbarkers' position='left' parentCallback={parentCallback} />
+                    <ImageCard image={test_image_3} number='2' title='Kew Gardens' description='GCSE Brief' link='/projects/kew' position='right' parentCallback={parentCallback} />
+                    <ImageCard image='/assets/images/typography/ripped/1.jpg' number='3' title='Typography' description='GCSE Workshop' link='/projects/typography' position='left' parentCallback={parentCallback} />
                 </div>
             </section>
             <section id='about' className='content-container'>
