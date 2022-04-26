@@ -1,6 +1,9 @@
 # insert image links in a input
 
 import re
+import os
+from pathlib import Path
+
 
 type = input('links to json [L] or imgbb bulk links to json [B]\n> ')
 
@@ -30,10 +33,22 @@ elif type == 'B':
         except EOFError:
             break
         imageList.append(line)
-        
 
+elif type == 'F':
+    dirname = os.path.dirname(__file__)
+    print(__file__)
+    inp = input('Enter the relative path of the folder \n> ')
+    filename = os.path.join(dirname, inp)
+    imageList = []
+
+    for path in Path(filename).iterdir():
+        # print(f'{inp.split("public")[1].replace(os.sep, "/")}/{path.name}')
+        imageList.append(f'{inp.split("public")[1].replace(os.sep, "/")}/{path.name}')
+
+    # os.listdir(filename)
+        
+    print(imageList)
     
 
     # imageList = imageList.split()
 
-    print(imageList)
