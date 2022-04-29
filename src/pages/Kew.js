@@ -77,11 +77,44 @@ const Kew = () => {
                 <p><span style={{ color: 'GrayText' }}>4. </span>I love how the Swiss cheese plant creates such a captivating design, with its very distinct holes, allowing light to create very interesting and unique shadows. I also like the very vibrant colour it has, creating a similar look to Tom Abbiss Smith.</p>
             
                 <Subsection id='inspiration--non-digital-outcomes'/>
+
+                <p>For my mixed media interpretations, I chose to do 1 in white pastel, on black paper, 2 water colour, a continuous line drawing and finally a pastel drawing. I was happy with how the white pastel, blue tulip and continuous line drawing turned out. I feel like I could have blended the pastels on the rose a bit better, as it looks a bit odd with the harsh lines, but the oil pastels that I were using made it quite hard for me to blend</p>
+
+                <Image style={{paddingRight: '20px'}} className='inline content-img' src='/assets/images/kew/digital-editing/image46.jpg' />
+                <Image className='inline content-img' src='/assets/images/kew/digital-editing/image47.jpg' />
+                <Image style={{paddingRight: '20px'}} className='inline content-img' src='/assets/images/kew/digital-editing/image48.jpg' />
+                <Image className='inline content-img' src='/assets/images/kew/digital-editing/image49.jpg' />
+                <Image className='inline content-img' src='/assets/images/kew/digital-editing/image50.jpg' />
+
+                <Subsection id='inspiration--digital-editing'/>
             
+                <Image className='line content-img' src='/assets/images/kew/digital-editing/flower-1/image51.jpg' />
+                <Image className='line content-img' src='/assets/images/kew/digital-editing/flower-1/image52.png' />
+                <Image className='line content-img' src='/assets/images/kew/digital-editing/flower-1/image53.png' />
+                <Image className='line content-img' src='/assets/images/kew/digital-editing/flower-1/image54.png' />
+                <p>Here is another mixed media drawing that I made, and the later edited in GIMP. I started by cutting out my sketch, and replacing the background with a gradient I found at UI Gradients. I then created a clipping mask of the flower, and overlayed a flipped version of the gradient. To make this stand out more, I then added a drop shadow, and a thin outline to it.</p>
+                
+                <Image className='line content-img' src='/assets/images/kew/digital-editing/flower-2/image55.png' />
+                <Image className='line content-img' src='/assets/images/kew/digital-editing/flower-2/image56.png' />
+                <Image className='line content-img' src='/assets/images/kew/digital-editing/flower-2/image57.png' />
+                <Image className='line content-img' src='/assets/images/kew/digital-editing/flower-2/image58.png' />
+                <p>For this edited photo, I first cut around the rose that I drew and then colour in pastels. I then saturated the image slightly, as the lighting when I took the image wasn’t perfect. I then added a coloured background, before then adding a gradient map on top,. I then shifted the hue to something I preferred.</p>
             
-            
-            
-            
+                <Subsection id='inspiration--cyanotypes'/>
+                <p>For this secondary source, I used Cyanotypes. This is a chemical process that was used to create things such as blueprints. It does this with exposure to UV, curing the chemical making it a vibrant blue. The area that had been covered up by, in this case, some foliage, blocks sunlight from it, and therefore keeping it white.</p>
+                <Image className='line content-img' src='/assets/images/kew/digital-editing/cyanotypes/image59.jpeg' />
+                <Image className='line content-img' src='/assets/images/kew/digital-editing/cyanotypes/image60.jpeg' />
+                <Image className='line content-img' src='/assets/images/kew/digital-editing/cyanotypes/image61.jpg' />
+                <Image className='line content-img' src='/assets/images/kew/digital-editing/cyanotypes/image65.jpg' />
+
+                <Image className='line content-img' src='/assets/images/kew/digital-editing/cyanotypes/image62.jpg' />
+                <Image className='line content-img' src='/assets/images/kew/digital-editing/cyanotypes/image63.jpg' />
+                <Image className='line content-img' src='/assets/images/kew/digital-editing/cyanotypes/image64.jpg' />
+                <Image className='line content-img' src='/assets/images/kew/digital-editing/cyanotypes/image66.jpg' />
+
+
+
+
             </Section>
             </div>
         </>
