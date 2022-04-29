@@ -111,10 +111,29 @@ const Kew = () => {
                 <Image className='line content-img' src='/assets/images/kew/digital-editing/cyanotypes/image63.jpg' />
                 <Image className='line content-img' src='/assets/images/kew/digital-editing/cyanotypes/image64.jpg' />
                 <Image className='line content-img' src='/assets/images/kew/digital-editing/cyanotypes/image66.jpg' />
+            </Section>
+            <Section id='infographics'>
+                <p>As part of our Kew Gardens project, we had to make an infographic on them. I first created the Infographic you can see here, but due to the lockdown, I had no access to any professional art tools, and so made it in PowerPoint. Of course, I was not happy with this outcome, as it seemed very plain, and not attractive to the eye, so I created a new Infographic, that I far prefer.</p>
+                <p>Here is a small moodboard that I put together to help inspire my design:</p>
+                <Image style={{paddingRight: '20px'}} className='inline content-img' src='/assets/images/kew/infographics/moodboard-old/image69.png' />
+                <Image className='inline content-img' src='/assets/images/kew/infographics/moodboard-old/image71.jpg' />
+                <Image className='divider-img' src='/assets/images/kew/infographics/moodboard-old/image70.png' />
+                <p>My infographic:</p>
+                <Image style={{paddingRight: '20px'}} className='inline content-img' src='/assets/images/kew/infographics/moodboard-old/image66.png' />
+                <Image className='inline content-img' src='/assets/images/kew/infographics/moodboard-old/image67.png' />
 
+                <Subsection id='infographics--improved-infographic'/>
+                <p>For my revised Infographics, I wanted to keep it bold and bright, to help draw in the eye to the information. I also used the Leaves at the top, and the tree line at the bottom, to help create a natural border around the poster. I added the banded sky to te background, to help break up the plain colour I originally used. I also did this to increase contrast of the flowers at the top, as it was hard to see them on the pale blue I had picked.</p>
+                <Image className='line content-img' src='/assets/images/kew/infographics/revised-version/image79.png' />
+                <Image className='line content-img' src='/assets/images/kew/infographics/revised-version/image72.png' />
+                <Image className='line content-img' src='/assets/images/kew/infographics/revised-version/image73.png' />
+                <Image className='line content-img' src='/assets/images/kew/infographics/revised-version/image74.png' />
 
-
-
+                <Image className='line content-img' src='/assets/images/kew/infographics/revised-version/image75.png' />
+                <Image className='line content-img' src='/assets/images/kew/infographics/revised-version/image80.png' />
+                <Image className='line content-img' src='/assets/images/kew/infographics/revised-version/image76.png' />
+                <Image className='line content-img' src='/assets/images/kew/infographics/revised-version/image77.png' />
+                <Image className='divider-img' src='/assets/images/kew/infographics/revised-version/image78.png' />
             </Section>
             </div>
         </>
