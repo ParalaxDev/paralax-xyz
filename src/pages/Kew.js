@@ -25,6 +25,8 @@ const primarysources = [ '/assets/images/kew/primary-sources/image26.png', '/ass
 
 const moodboard2 = ['/assets/images/kew/moodboard-2/image100.png', '/assets/images/kew/moodboard-2/image101.jpeg', '/assets/images/kew/moodboard-2/image102.png', '/assets/images/kew/moodboard-2/image103.jpeg', '/assets/images/kew/moodboard-2/image104.jpeg', '/assets/images/kew/moodboard-2/image105.jpeg', '/assets/images/kew/moodboard-2/image106.jpeg', '/assets/images/kew/moodboard-2/image107.jpeg', '/assets/images/kew/moodboard-2/image108.jpeg', '/assets/images/kew/moodboard-2/image92.jpeg', '/assets/images/kew/moodboard-2/image95.png', '/assets/images/kew/moodboard-2/image97.png', '/assets/images/kew/moodboard-2/image98.png', '/assets/images/kew/moodboard-2/image99.png']
 
+const outcome1Inspiration = ['/assets/images/kew/outcome-1/inspiration/ (1).jpg', '/assets/images/kew/outcome-1/inspiration/ (2).jpg', '/assets/images/kew/outcome-1/inspiration/ (3).jpg', '/assets/images/kew/outcome-1/inspiration/ (4).jpg', '/assets/images/kew/outcome-1/inspiration/ (5).jpg', '/assets/images/kew/outcome-1/inspiration/ (6).jpg', '/assets/images/kew/outcome-1/inspiration/ (7).jpg', '/assets/images/kew/outcome-1/inspiration/image131.jpeg', '/assets/images/kew/outcome-1/inspiration/image132.png', '/assets/images/kew/outcome-1/inspiration/image133.png', '/assets/images/kew/outcome-1/inspiration/image134.png', '/assets/images/kew/outcome-1/inspiration/image24.png', '/assets/images/kew/outcome-1/inspiration/image42.jpeg', '/assets/images/kew/outcome-1/inspiration/image43.jpg']
+
 const Kew = () => {
     return (
         <>
@@ -237,6 +239,84 @@ const Kew = () => {
                     <p>I also experimented with the composition of the shapes. I wanted to create a sense of all the other flowers and leaves coming together to create a larger plant.</p>
                 </Section>
                 <Section id='outcome-1'>
+                    <Subsection id='outcome-1--inspiration' />
+                    <p>I used lots of my primary source photos to inspire my final design. For example, I primarily focused on finding various pictures of different shapes and sizes of cacti. I did this because I knew that I wanted to focus on the Princess of Wales Conservatory, and so a cactus would be vital to the design. I also found a image of the Swiss cheese plant, and I wanted to include its unique shape in my design. I then also found some cactus flowers, as I wanted to emulate the very warm colours that are found on them. I didn’t end up using the round cacti in my design, but I used them to heavily influence the typography and iconography in my design. I don’t have any cacti at home, and didn’t have the opportunity to go to Kew, so I found most of these images on unsplash.com, and pixabay.com</p>
+                    <Gallery imgs={outcome1Inspiration} />
+                    <Subsection id='outcome-1--processes' />
+                    <p>In the Exam, I used a mix of Affinity Pro Designer, for the vector shapes, and GIMP, for text box. I started by creating the cactus, which I wanted to be one of the main focus points. I used reference images from the primary source photos. I created it by using overlapping shapes, with brush strokes, to use as texture for the needles. I then created a flower for the cactus, petals and a Monstera Deliciosa (Swiss Cheese Plant), using similar methods, all referencing my primary images. I then created a cactus icon, and created the text box in GIMP. I then added the 50% off icon, and the underground icon.</p>
+
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-1/processes/image135.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-1/processes/image136.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-1/processes/image137.png' />
+
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-1/processes/image138.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-1/processes/image139.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-1/processes/image140.png' />
+
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-1/processes/image146.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-1/processes/image142.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-1/processes/image143.png' />
+
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-1/processes/image141.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-1/processes/image144.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-1/processes/image149.png' />
+
+                    <p>After the Exam, I first shrunk the 50% off icon, as it was the main focal point of the poster, and it detracted from the experience I wanted to give the viewer. I later then removed it entirely, as the vibrant red I used still caused it to be the centre of attention, and gave it an almost cheap look.</p>
+                
+                    <Image className='content-img' style={{float: 'left', paddingRight: '20px'}} src='/assets/images/kew/outcome-1/badge-experiments/image147.png' />
+                    <Image className='content-img' src='/assets/images/kew/outcome-1/badge-experiments/image148.png' />
+
+                    <Subsection id='outcome-1--typography' />
+                    <Image className='content-img' style={{float: 'left', paddingRight: '20px'}} src='/assets/images/kew/outcome-1/typography/image152.jpeg' />
+                    <p>To help represent my poster, I wanted the ‘260 Years At Kew’ to stand out, and to incite the audience into finding out more. To do this, I started by just experimenting with different ideas on paper. Most of these ideas are the numbers 260, with an icon of a flower, grass or cactus involved. This was to link both the 260 with the things the audience could find at Kew. I then took some of these ideas onto my computer to refine more. </p>
+                    <p>I knew the centre piece of my design was going to be of the Princess of Wales Conservatory, which primarily houses cacti, so it was the obvious choice for my icon. I experimented with it in different positions, and ended up using two of them.</p>
+
+                    <Spacer h='9' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-1/typography/image153.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-1/typography/image154.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-1/typography/image155.png' />
+
+                    <Subsection id='outcome-1--colour-experiments' />
+
+                    <p>Abbiss Smith’s work often feature colours very heavily in his work. Because of this, I wanted to try and capture the bright colours he uses, to captivate the audience.</p>
+                    <p>His work often features either very warm colours, or very cold colours, like is pictured. Therefore, I chose to mainly use warm colours in mine. This is primarily because the focal piece of my 1st outcome is a cactus, which suggests warm environments. </p>
+
+
+                    <Image className='content-img' style={{float: 'left', paddingRight: '20px'}} src='/assets/images/kew/outcome-1/colour-experiments/image109.jpg' />
+                    <Image className='content-img' src='/assets/images/kew/outcome-1/colour-experiments/image113.jpg' />
+
+                    <p>At first, I didn’t really consider this, so after the exam was over, I started to recolour my outcome, to help portray this more. I first started by shifting the hue of the colder and more green elements, towards red and orange. I really liked how the green leaf in the corner turned into a more dehydrated, and more desert orientated plant. Because of this change, I also decided to recolour the cactus, as the bright green colours where distracting, and offputting</p>
+
+                    <Image className='content-img' style={{float: 'left', paddingRight: '20px'}} src='/assets/images/kew/outcome-1/colour-experiments/image150.png' />
+                    <Image className='content-img' src='/assets/images/kew/outcome-1/colour-experiments/image151.png' />
+
+                    <Subsection id='outcome-1--layout-experiments' />
+                    <p>I then decided to expand upon the idea of the image being seen through the text, and decided to use it to give more information on Kew. I started by rearranging the icon, so it would flow better in a landscape format, and then added some dividing lines around it, to further draw the audiences attention to the title. I first experimented with making all text see-through, but this resulted in it being hard to read, and clunky. I made my subheading about a particular part of Kew – Princess of Wales Conservatory – slightly bolder in comparison to the other secondary text, to portray that it is more important than it. I then moved the Underground icon into the box, as it was somewhat constrained by the edge of the poster, and the edges of the box. Finally, I added some more foliage around the box, to make it seem part of its surroundings.</p>
+                    <Image className='divider-img' src='/assets/images/kew/outcome-1/layout-experiments/image156.png' />
+                    <p>Upon further discussion, it was decided that whilst the information sat well inside the box, it was covering up most of the artwork behind it. To stop this, I started by shrinking the box, and the information in it accordingly, and added a similar icon to the Underground, but with the postcode, etc.</p>
+                    <Image className='divider-img' src='/assets/images/kew/outcome-1/layout-experiments/image157.png' />
+                    <p>I further experimented with the positioning of the white boxes. For this experiment, I split the white box into 3 segments. I did this to help reveal more of the art work behind. To help this design work, I lessened the amount of information I was trying to show, and decided to only show the opening times. I then moved some of the overhanging items, to stop the obstruction of the text.</p>
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-1/layout-experiments/image159.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-1/layout-experiments/image160.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-1/layout-experiments/image158.png' />
+                    <Subsection id='outcome-1--final-outcome' />
+                    <Image className='divider-img' src='/assets/images/kew/outcome-1/finals/image162.png' />
+                    <Image className='divider-img' src='/assets/images/kew/outcome-1/finals/image161.png' />
+                </Section>
+                <Section id='outcome-2'>
+                    <Subsection id='outcome-2--inspiration' />
+                    <p>I took lots of images at Clivden, to help inspire my final design. I chose these particular photos due to their bright and vibrant colours, similar to what Tom Abbiss Smith uses in his own work. I also like the geometric patterns that the petals make, creating an enticing image for the audience. As well as this, I also love how different the flowers are, creating a diverse range of shapes and colours, from tall flowers with small petals to very geometric and precise flowers</p>
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-2/inspiration/image164.jpeg' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-2/inspiration/image165.jpeg' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-2/inspiration/image166.jpeg' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-2/inspiration/image167.jpeg' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-2/inspiration/image168.jpeg' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-2/inspiration/image169.jpeg' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-2/inspiration/image170.jpeg' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-2/inspiration/image171.jpeg' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-2/inspiration/image172.jpeg' />
+                    <Subsection id='outcome-2--processes' />
+
 
                 </Section>
             </div>
