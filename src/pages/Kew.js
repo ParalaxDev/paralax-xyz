@@ -29,6 +29,7 @@ const outcome1Inspiration = ['/assets/images/kew/outcome-1/inspiration/ (1).jpg'
 
 const outcome2Processes = ['/assets/images/kew/outcome-2/processes/image174.png', '/assets/images/kew/outcome-2/processes/image175.png', '/assets/images/kew/outcome-2/processes/image176.png', '/assets/images/kew/outcome-2/processes/image177.png', '/assets/images/kew/outcome-2/processes/image178.png', '/assets/images/kew/outcome-2/processes/image179.png', '/assets/images/kew/outcome-2/processes/image180.png', '/assets/images/kew/outcome-2/processes/image181.png', '/assets/images/kew/outcome-2/processes/image182.png', '/assets/images/kew/outcome-2/processes/image183.png', '/assets/images/kew/outcome-2/processes/image184.png', '/assets/images/kew/outcome-2/processes/image185.png']
 
+const outcome3Inspiration = ['/assets/images/kew/outcome-3/inspiration/d460282f3a4673025520e31bf7d7dc8c.jpg', '/assets/images/kew/outcome-3/inspiration/db5e7df30e165a7a32b5c63548564516.jpg', '/assets/images/kew/outcome-3/inspiration/dd8b5fd670e110c8aced32c41efc5dc2.jpg', '/assets/images/kew/outcome-3/inspiration/image202.jpeg', '/assets/images/kew/outcome-3/inspiration/image203.jpeg', '/assets/images/kew/outcome-3/inspiration/image204.jpeg', '/assets/images/kew/outcome-3/inspiration/image205.jpeg', '/assets/images/kew/outcome-3/inspiration/image206.jpeg', '/assets/images/kew/outcome-3/inspiration/image207.jpg', '/assets/images/kew/outcome-3/inspiration/image208jpg.jpg', '/assets/images/kew/outcome-3/inspiration/index.jpg', '/assets/images/kew/outcome-3/inspiration/specsavers-bus-wrap-ad-design1.jpg', '/assets/images/kew/outcome-3/inspiration/vidRTLH9S9vjamHagc6EmC-1200-80.jpg', '/assets/images/kew/outcome-3/inspiration/w524fmvzmqqzjfxz6gh7x8jw48_thumbnail.png']
 
 const Kew = () => {
     return (
@@ -347,7 +348,47 @@ const Kew = () => {
                     <Image className='threexline content-img' src='/assets/images/kew/outcome-2/finals/3d-outcomes/image199.jpg' />
                     <Image className='threexline content-img' src='/assets/images/kew/outcome-2/finals/3d-outcomes/image200.jpg' />
                 </Section>
-                
+                <Section id='outcome-3'>
+                    <Subsection id='outcome-3--inspiration' />
+                    <p>For my final outcome, I wanted to do something different, and came up with the idea of a Van wrap for Kew Gardens. I thought this would be a good idea because it allows Kew to advertise when they are on errands. I wanted the van to look immersed in nature, and to link back to my 2nd outcome, as I really love how it turned out.</p>
+                    <p>I chose to create a basic van, as it would give me the most space to work with.</p>
+                    <Gallery imgs={outcome3Inspiration} />
+                    <Subsection id='outcome-3--processes' />
+                    <p>I started off my creating a base for the van in Affinity Designer, and added some colour to it with mushrooms and grass. I originally used a 2d mock up, but decided to use a 3D model instead. I then created some text by clipping some leaves below it.</p>
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-3/processes/image209.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-3/processes/image209.5.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-3/processes/image210.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-3/processes/image211.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-3/processes/image212.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-3/processes/image213.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-3/processes/image214.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-3/processes/image215.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-3/processes/image216.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-3/processes/image217.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-3/processes/image218.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-3/processes/image219.png' />
+                    <Subsection id='outcome-3--experiments' />
+                    <p>To show some of my experiments, I will show my UV map, which is an image that gets mapped onto the 3D model, where it is much easy to view all the changes I made.</p>
+                    <p>I moved the text around a lot, experimenting with positioning, and sizing. One big change was the addition of the grill, and plastic bumpers. To add these, I had to find similar images of a Van, cut them out, and the adjust them to fit. I am however very happy I made this decision, as it makes the van look much more professional.</p>
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-3/experiments/image222.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-3/experiments/image220.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-3/experiments/image221.png' />
+                    <p>As well as this, I also experimented with moving the leaves on the back up and down, but settled with the current design as it transitioned well to the top of the van</p>
+                    <p>I experimented with adding another border of leaves to the top, to help frame it, and really liked how it turned out. I also experimented with adding a blue curve cutting through the middle. I then added some splashes of texture to it. I didn’t like it with the top border, as it made it far too crowded, and I didn’t mind it without the top header, but the text became quite hard to read, and it wasn’t easy to read from afar.</p>
+                    <Image className='content-img' src='/assets/images/kew/outcome-3/experiments/image224.png' />
+                    <Image className='content-img' style={{float: 'left', paddingRight: '20px'}} src='/assets/images/kew/outcome-3/experiments/image226.png' />
+                    <Subsection id='outcome-3--colour' />
+                    <p>I chose these colours as I wanted to go for a winter/magical theme. I picked similar turquoises, greens and blues to the ones in these images, and I also loved the mushrooms, and it inspired me to include some in my own design. I wanted colours for the mushrooms that would add contrast to the image, and to break up the very samey leaves along the bottom. To do this I picked somewhat subdued yellows, oranges and reds to help with this, and to not keep them from detracting from the focus, which is the text.</p>
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-3/colour-experiments/image229.jpeg' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-3/colour-experiments/image230.jpeg' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-3/colour-experiments/image231.jpeg' />
+                    <Subsection id='outcome-3--final-outcome' />
+                    <Image className='divider-img' src='/assets/images/kew/outcome-3/finals/image233.gif' />
+                    <Image className='divider-img' src='/assets/images/kew/outcome-3/finals/image235.png' />
+                    <Image className='divider-img' src='/assets/images/kew/outcome-3/finals/image236.png' />
+                    <Image className='divider-img' src='/assets/images/kew/outcome-3/finals/image237.png' />
+                </Section>
+
             </div>
         </>
     )
