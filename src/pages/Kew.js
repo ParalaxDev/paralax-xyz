@@ -27,6 +27,9 @@ const moodboard2 = ['/assets/images/kew/moodboard-2/image100.png', '/assets/imag
 
 const outcome1Inspiration = ['/assets/images/kew/outcome-1/inspiration/ (1).jpg', '/assets/images/kew/outcome-1/inspiration/ (2).jpg', '/assets/images/kew/outcome-1/inspiration/ (3).jpg', '/assets/images/kew/outcome-1/inspiration/ (4).jpg', '/assets/images/kew/outcome-1/inspiration/ (5).jpg', '/assets/images/kew/outcome-1/inspiration/ (6).jpg', '/assets/images/kew/outcome-1/inspiration/ (7).jpg', '/assets/images/kew/outcome-1/inspiration/image131.jpeg', '/assets/images/kew/outcome-1/inspiration/image132.png', '/assets/images/kew/outcome-1/inspiration/image133.png', '/assets/images/kew/outcome-1/inspiration/image134.png', '/assets/images/kew/outcome-1/inspiration/image24.png', '/assets/images/kew/outcome-1/inspiration/image42.jpeg', '/assets/images/kew/outcome-1/inspiration/image43.jpg']
 
+const outcome2Processes = ['/assets/images/kew/outcome-2/processes/image174.png', '/assets/images/kew/outcome-2/processes/image175.png', '/assets/images/kew/outcome-2/processes/image176.png', '/assets/images/kew/outcome-2/processes/image177.png', '/assets/images/kew/outcome-2/processes/image178.png', '/assets/images/kew/outcome-2/processes/image179.png', '/assets/images/kew/outcome-2/processes/image180.png', '/assets/images/kew/outcome-2/processes/image181.png', '/assets/images/kew/outcome-2/processes/image182.png', '/assets/images/kew/outcome-2/processes/image183.png', '/assets/images/kew/outcome-2/processes/image184.png', '/assets/images/kew/outcome-2/processes/image185.png']
+
+
 const Kew = () => {
     return (
         <>
@@ -316,9 +319,35 @@ const Kew = () => {
                     <Image className='threexline content-img' src='/assets/images/kew/outcome-2/inspiration/image171.jpeg' />
                     <Image className='threexline content-img' src='/assets/images/kew/outcome-2/inspiration/image172.jpeg' />
                     <Subsection id='outcome-2--processes' />
-
-
+                    <p>For my 2nd outcome, I used Affinity Designer for its tools with vector art. I started by creating the ferns, which I knew I wanted to help create a solid base on which I could add more foliage to the bouquet. I started off by creating some very generic flowers, but I later hated how similar they looked, so got rid of them. I then started by creating more flowers based off of pictures I took. I then reused some of them, by recolouring them, and rotating them, to help add volume of the bouquet. I continued to add small sprigs of cow parsley, and leaves to help bulk out the piece. I then started adding text and a containing rectangle, to help promote Kew. I experimented by adding a shadow, but later removed it, as it added too much complexity to it. Finally I added a small established element, to further emphasise 260 years at Kew.</p>
+                    <Gallery imgs={outcome2Processes} />
+                    <Subsection id='outcome-2--shadow-experiments' />
+                    <p>Originally, I wanted to have a drop shadow on all of the flowers and text, to help increase realism on the final product. However, I later removed this, as it made the image much more complex and cluttered, detracting from Abbiss Smiths' distinct style. When I removed all the shadows, it made the letters very difficult to read the text on the border, due to them being the same colour. To help increase contrast and help with readability, I added these shadows back in. I’m very glad I made these changes, and I think it makes the final product look much more professional, and clean.</p>
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-2/shadow-experiments/image163.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-2/shadow-experiments/image186.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-2/shadow-experiments/image187.png' />
+                    <p>As well as this, I also moved the W, as it obstructed the focal point of the poster, and was very distracting, so I later moved it towards the right, and embedded it in the bouquet a bit more.</p>
+                    <Subsection id='outcome-2--layout-experiments' />
+                    <p>For this experiment I decided to remove the complexity of the letters mixed in with the bouquet, and instead decided to keep them separate. I experimented with the border and without, but decided to keep it, as it tied it all together, by adding volume to the bouquet.</p>
+                    <Image className='content-img' style={{float: 'left', paddingRight: '20px'}} src='/assets/images/kew/outcome-2/layout-experiments/image188.png' />
+                    <Image className='content-img' src='/assets/images/kew/outcome-2/layout-experiments/image189.png' />
+                    <Subsection id='outcome-2--colour-experiments' />
+                    <p>I wanted to keep the colours as bright and as engaging as possible, to help draw the eye to the bag, and to make Kew’s brand attractive to the audience. As well as this Abbiss Smiths’ work is often very colourful, using primarily very saturated and vibrant colours. To help emulate this in my own work, I also tried to pick similarly bright colours, to help grab the audience’s attention.</p>
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-2/colour-experiments/image192.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-2/colour-experiments/image193.png' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-2/colour-experiments/image194.png' />
+                    <p>However, I later experimented with various different colour combinations, to see how they would look. I first experimented with changing the border and text colour. I think that the light cyan I chose for one experiment is way too light, resulting in the text being hard to read. However, I love how the purple turned out, and mixes up the very floral colours in the bouquet.</p>
+                    <p>I then decided to recolour some of the flowers to fit better with the new colours. I chose mainly pink/red, as I thought it looked good with</p>
+                    <Subsection id='outcome-2--mockups' />
+                    <Image className='content-img' style={{float: 'left', paddingRight: '20px'}} src='/assets/images/kew/outcome-2/finals/mockups/image195.jpeg' />
+                    <Image className='content-img' src='/assets/images/kew/outcome-2/finals/mockups/image196.jpeg' />
+                    <Image className='divider-img' style={{width: 'calc(100% - 20px)'}}src='/assets/images/kew/outcome-2/finals/mockups/image197.png' />
+                    <Subsection id='outcome-2--final-3d-outcome' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-2/finals/3d-outcomes/image198.jpg' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-2/finals/3d-outcomes/image199.jpg' />
+                    <Image className='threexline content-img' src='/assets/images/kew/outcome-2/finals/3d-outcomes/image200.jpg' />
                 </Section>
+                
             </div>
         </>
     )
