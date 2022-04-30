@@ -115,6 +115,7 @@ const Kew = () => {
                     <Image className='line content-img' src='/assets/images/kew/digital-editing/cyanotypes/image66.jpg' />
                 </Section>
                 <Section id='infographics'>
+                    <Subsection id='infographics--original-infographics'/>
                     <p>As part of our Kew Gardens project, we had to make an infographic on them. I first created the Infographic you can see here, but due to the lockdown, I had no access to any professional art tools, and so made it in PowerPoint. Of course, I was not happy with this outcome, as it seemed very plain, and not attractive to the eye, so I created a new Infographic, that I far prefer.</p>
                     <p>Here is a small moodboard that I put together to help inspire my design:</p>
                     <Image style={{paddingRight: '20px'}} className='inline content-img' src='/assets/images/kew/infographics/moodboard-old/image69.png' />
@@ -175,6 +176,67 @@ const Kew = () => {
                     <Gallery imgs={moodboard2} />
                 </Section>
                 <Section id='tom-abbiss-smith'>
+                    <Subsection id='tom-abbiss-smith--artist-research' />
+                    <Image className='right content-img' src='/assets/images/kew/abbiss-smith/artist-research/image111.png' />
+                    <p>Tom Abbiss-Smith is an Artist and Graphic Designer from Norwich, UK. He uses a mix of digital collage, printmaking and painting to create abstract collages primarily of flowers, plants and fruit. </p>
+                    <p>He graduated from the Norwich University of Arts, where he discovered the Polish poster artist Henryk Tomaszewski, who has influenced his work with his diverse use of shape and typography.</p>
+                    <Image className='content-img' style={{float: 'left', marginRight: '20px'}}src='/assets/images/kew/abbiss-smith/artist-research/image110.jpg' />
+                    <p>To create such varied pieces, Abbiss-Smith starts by experimenting with many different mediums on paper, by cutting out coloured paper, experimenting with textures, and arranging compositions. Once this is done, he will scan them into Photoshop or Illustrator, where he can then edit them.</p>
+                    <p>His work is often seen as screen prints, or applied as a design to clothing or a poster. He has worked for many companies, including , Häagen-Dazs, Proper Corn and the Whip Appeal of Sweden</p>
+                    <Image className='content-img' style={{float: 'right', margin: '5px 10px'}} src='/assets/images/kew/abbiss-smith/artist-research/image112.png' />
+                    <p>His work is often very colourful, helping encite the audience to find out more about the product it is helping to advertise. As well as this , he overlays texture onto his shapes, to help create a sense of depth without needing tone or other traditional methods. He also ensures that there are no flat lines, helping to emphasise the organic sense of nature he wants his art to bring. This is done by creating curved shapes, or by creating rough edges like a piece of torn paper. This further helps to make sure it doesn’t look to bland, and breaks up the very flat colours he uses</p>
+
+                    <Image className='content-img' style={{float: 'right', padding: '0px 10px'}} src='/assets/images/kew/abbiss-smith/artist-research/image113.jpg' />
+                    <Image className='content-img' style={{padding: '0px 10px'}} src='/assets/images/kew/abbiss-smith/artist-research/image114.jpg' />
+    
+                    <p><span style={{ color: 'GrayText' }}>1. </span>I like how his pieces tend to have a limited colour palette, creating a minimalist design. Combined with the very subtle layers of texture that he overlays on top of the flat shapes, and it creates a simple, but effective design. He will often use a curved line, to emulate what is seen in nature, but will mix in some randomness, creating the look of a traditional hand cut collage. </p>
+                    <p><span style={{ color: 'GrayText' }}>2. </span>I particularly like how he has used very cold colours, to represent this to be winter, and the textures he use are very faint, to create a sense of frailness in the leaves and flowers. This is emphasised further by the faint textures overlayed on top, making sure that its not bold and doesn’t over power the frail leaf below</p>
+                
+                    <Subsection id='tom-abbiss-smith--non-digital-outcomes' />
+
+
+                    <p>I created multiple small tiles of textures, that I could use in my final outcome, similar to how Tom Abbiss-Smith. I mainly used different sponges, but also used the ends of paint brushes to create a texture in the wet paint and even put sand in the paint</p>
+                    <Image className='threexline content-img' src='/assets/images/kew/abbiss-smith/outcomes/image116.jpeg' />
+                    <Image className='threexline content-img' src='/assets/images/kew/abbiss-smith/outcomes/image117.jpeg' />
+                    <Image className='threexline content-img' src='/assets/images/kew/abbiss-smith/outcomes/image118.jpeg' />
+                    <Image className='threexline content-img' src='/assets/images/kew/abbiss-smith/outcomes/image121.jpeg' />
+                    <Image className='threexline content-img' src='/assets/images/kew/abbiss-smith/outcomes/image119.jpeg' />
+                    <Image className='threexline content-img' src='/assets/images/kew/abbiss-smith/outcomes/image120.jpeg' />
+
+                    <Image className='content-img' style={{float: 'left', paddingRight: '20px'}} src='/assets/images/kew/abbiss-smith/outcomes/image115.jpeg' />
+                    <p>I made a collage, mimicking Tom Abbiss Smith’s style. I used primarily different colours of paper and card to help create the base, but created texture on some of the paper using a variety of techniques, including ripping paper, and drawing the textures on with either a sharpie, or a highlighter.</p>
+                    <Spacer h={37} />
+                </Section>
+                <Section id='henri-matisse'>
+                    <Subsection id='henri-matisse--artist-research' />
+                    <Image className='right content-img' src='/assets/images/kew/matisse/artist-research/image125.jpeg' />
+                    <p>Henri Matisse is a French Artist born in 1869 in Le Cateau-Cambresis, and he was known for being a Printmaker and Sculptor, but primarily a painter. He originally studied Law, but his Mother bought him a set of Art Supplies following an Appendicitis attack. He described the time after as “a kind of paradise”, and decided to become an artist. </p>
+
+                    <p>He studied art at the Académie Julian where he originally painted still lifes and landscapes in a traditional style. He later left this style, as he was introduced to impressionism, and swapped the more traditional colour palette for more bright and saturated colours.</p>
+                    <Image className='left content-img' src='/assets/images/kew/matisse/artist-research/image124.jpg' />
+
+                    <p>As he got older his work evolved into collages and cut-outs due to the physical limitations his cancer had imposed on him. He would prepare pure and vibrant colours to create a playful atmosphere. His assistants would then paint a large sheet with this colour, and pin it to his studio wall. He would then cut it out in dynamic and spontaneous shapes, and collage them together to create anything from a small canvas, to a huge mural</p>
+
+                    <p>His work is very expressive, and he uses the exposed white canvas to create a sense of volume and structure in his work. He was inspired heavily from art from other cultures, which can be seen in his colourful and playful work.</p>
+
+                    <p>I will be focusing on primarily on his collages and cut-outs, as it better represents my style</p>
+
+                    <Image className='content-img' style={{float: 'left', paddingRight: '20px'}} src='/assets/images/kew/matisse/artist-research/image122.jpg' />
+                    <Image className='content-img' src='/assets/images/kew/matisse/artist-research/image126.jpg' />
+
+                    <p><span style={{ color: 'GrayText' }}>1. </span>I like how Matisse has used vibrant, and contrasting colours in his piece to create a sense of playfulness and abstraction. This is further emphasised by the subtle texture the paper has, break up the composition. This is further emphasised by the slight shadows created by the layered paper. Matisse uses very abstract and dynamic shapes to create an almost childlike design.</p>
+                    <p><span style={{ color: 'GrayText' }}>2. </span>I really like the simplicity of Matisse’s design, with very few, but effective shapes demonstrating how simplistic but beautiful nature is. His colours in this piece are not quite as vibrant in this, but I think it better represents the colours found in nature, rather than the unnatural colours found in his other designs. I like how there are no straight or hard lines, only curved, further demonstrating the beauty in nature. As well as this, I also like how he has placed the individual leaves and flowers, as thought they are radiating from a single point, similar to how a normal plant would grow</p>
+                    <Subsection id='tom-abbiss-smith--non-digital-outcomes' />
+
+                    
+                    <Image className='threexline content-img' src='/assets/images/kew/matisse/outcomes/image127.jpeg' />
+                    <Image className='threexline content-img' src='/assets/images/kew/matisse/outcomes/image128.jpeg' />
+                    <Image className='threexline content-img' src='/assets/images/kew/matisse/outcomes/image129.jpeg' />
+
+                    <p>For my recreation of Matisse’s work, I cut out shapes similar to his from various magazines. This gives me interesting patterns to experiment with. Whilst this deviates from Matisse’s original design, I think that it looks good, as it creates texture for the audience, as well as variation to the shapes.</p>
+                    <p>I also experimented with the composition of the shapes. I wanted to create a sense of all the other flowers and leaves coming together to create a larger plant.</p>
+                </Section>
+                <Section id='outcome-1'>
 
                 </Section>
             </div>
