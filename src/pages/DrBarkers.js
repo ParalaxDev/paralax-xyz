@@ -447,6 +447,11 @@ const DrBarkers = (props) => {
                     <Image className='divider-img' src='/assets/images/dr-barkers/final box.png' />
                     <Image className='divider-img' src='/assets/images/dr-barkers/final top box.png' />
 
+                    <p>After the exam I then created the box with the sleeve</p>
+                    <Image className='divider-img' src='/assets/images/dr-barkers/3d-outcomes/top.jpg' />
+                    <Image className='divider-img' src='/assets/images/dr-barkers/3d-outcomes/side-profile.jpg' />
+                    <Image className='divider-img' src='/assets/images/dr-barkers/3d-outcomes/box-with-milo.jpg' />
+
                     <Subsection id='biscuit-tub--the-biscuit-tub' />
 
 
