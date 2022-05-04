@@ -357,7 +357,7 @@ const DrBarkers = (props) => {
                     <Image className='right content-img' src='https://i.ibb.co/NVp1WpS/final.png' />
                     <p>For my final artist research outcome, I removed the extra hairs on his stomach, as I thought that it didn't look as similar as my reference photo. This is because my dog has quite smooth hair on the rest of his body, apart from his tummy</p>
                     <p>I'm really happy with how it came out, and I think it represents Tonks' style very well.</p>
-                    <Spacer h='50%' dH='40vh' />
+                    <Spacer h='50' />
                 </Section>
                 <Section id='infographics,-logo-and-bag' >
                     <h1>Logo</h1>
@@ -377,7 +377,7 @@ const DrBarkers = (props) => {
                     <Image className='inline content-img' src='https://i.ibb.co/ctFnCmt/4.png' />
                     <Image className='left content-img' src='https://i.ibb.co/1fCGPd8/logo.png' />
                     <p>This is the design I finally came up with. It was originally just black and white, but didn't like the very harsh result it gave. To fix this, I switched the colour to be a more friendly. I like how the ear breaks up the consistent linework and adds variety to the logo. I also like how the text wraps around the logo, giving it a more traditional style, similar to those like the old Starbucks logo.</p>
-                    <Spacer h='50%' dH='22vh' />
+                    <Spacer h='22'/>
                     <h1>Infographics</h1>
                     <Subsection id='infographics--infographics-moodboard' />
                     <p>To help with my development of my infographics, I created a moodboard of existing similar images to help inspire me:</p>
@@ -492,16 +492,16 @@ const DrBarkers = (props) => {
                     <Image className='left content-img' src='/assets/images/dr-barkers/kibble-bag/1.png' />
                     <p>For the first Iteration, I used a similar styling as the <a href='#biscuit-tub--the-biscuit-tub'>Biscuit Box</a>, with the flavour in the banner, and the product in the less prevalent secondary text. In addition to this, I also reused the same bone pattern that could be seen in the other products, although I later switched this out, as it looked far too repetitive. This was to help keep a sense of consistency that is often seen in premium products, and to not confuse or overwhelm the customer with a very contrasting design.</p>
                     <p>However, I didn't like how prevalent the logo was, and how it didn't help to identify the product you were receiving. Instead of just removing the Logo, I moved it to one of the unused sides, to still represent the brand, but in more of a subtle way. </p>
-                    <Spacer h='30vh' />
+                    <Spacer h='35' />
                     <Image className='right content-img' src='/assets/images/dr-barkers/kibble-bag/2.png' />
                     {/* <Image className='inline content-img' src='/assets/images/dr-barkers/kibble-bag/2.1.png' /> */}
                     <p>To replace the logo, I added the Illustration I used on the box. I thought this dramatically helped by adding some vibrant colour, rather than the otherwise very duotone colour scheme, and helped to balance the design, making a far more well rounded product. </p>
                     <p>As well as this, by including him in multiple designs, it was suggested that he became mascot for Dr Barkers. I think that this was a great idea, as it creates a friendly and more vibrant image to associate with Dr Barkers, other than the more traditional monotone logo.</p>
-                    <Spacer h='40vh' />
+                    <Spacer h='45' />
                     <Image className='left content-img' src='/assets/images/dr-barkers/kibble-bag/3.png' />
                     <p>For the nutritional and ingredients sections I decided to place it on the side rather than on the back. This was because there was far too much empty space, and that its overall size fitted far better on a slimmer footprint. I think that this was definitely a good decision, as many people view this information as quite tedious and boring, so making it fit on the back would have been unattractive for the brand.</p>
                     <p>I also used a similar layout and style to represent this information, to keep consistency across the various shapes and sizes of packaging.</p>
-                    <Spacer h='40vh' />
+                    <Spacer h='45' />
 
                     <Image className='right content-img' src='/assets/images/dr-barkers/kibble-bag/5.png' />
                     <Image className='inline content-img' src='/assets/images/dr-barkers/kibble-bag/4.png' />
