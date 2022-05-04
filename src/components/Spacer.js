@@ -5,7 +5,7 @@ const Spacer = ({ h, dH }) => {
 
     return (
         <>
-            {isMobile || window.innerWidth < 922 ? null : <div style={{ height: `${h * 1000 / window.innerHeight}vh` }} />}
+            {isMobile || window.innerWidth < 922 ? null : <div style={{ height: `${h}vh` }} />}
 
         </>
     )

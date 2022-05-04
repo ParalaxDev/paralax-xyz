@@ -54,37 +54,21 @@ const moodboardImages = [
 ]
 
 const primarySourcePhotos = [
-    'https://i.ibb.co/f2yBW7K/20210424-124914.jpg',
-    'https://i.ibb.co/gtVF4j1/IMG-20211002-WA0004.jpg',
-    'https://i.ibb.co/qgL8rtY/IMG-20211002-WA0000.jpg',
-    'https://i.ibb.co/fHbMCJb/IMG-20210927-WA0004.jpg',
-    'https://i.ibb.co/DbN4fkK/IMG-20210927-WA0001.jpg',
-    'https://i.ibb.co/1LMcnFL/IMG-20210925-WA0014.jpg',
-    'https://i.ibb.co/pjrTpD9/IMG-20210907-WA0003.jpg',
-    'https://i.ibb.co/CQBTdBm/IMG-20210904-WA0001.jpg',
-    'https://i.ibb.co/cvxc5v2/IMG-20210831-WA0004.jpg',
-    'https://i.ibb.co/xLvmJPn/IMG-20210829-WA0000.jpg',
-    'https://i.ibb.co/kB6Nv9w/IMG-20210826-WA0003.jpg',
-    'https://i.ibb.co/GWd0TtN/IMG-20210825-WA0003.jpg',
-    'https://i.ibb.co/G5pkLZW/IMG-20210821-WA0003.jpg',
-    'https://i.ibb.co/ssqcpKx/IMG-20210817-WA0006.jpg',
-    'https://i.ibb.co/GWbndFS/IMG-20210816-WA0008.jpg',
-    'https://i.ibb.co/g7NfLrb/IMG-20210816-WA0005.jpg',
-    'https://i.ibb.co/pyB0F1Z/IMG-20210815-WA0018.jpg',
-    'https://i.ibb.co/f8mnm7S/IMG-20210815-WA0017.jpg',
-    'https://i.ibb.co/qNfQfcV/IMG-20210813-WA0009.jpg',
-    'https://i.ibb.co/HtCmQ54/IMG-20210813-WA0000.jpg',
-    'https://i.ibb.co/mBdTPYY/IMG-20210811-WA0003.jpg',
-    'https://i.ibb.co/LgRtNqg/IMG-20210805-WA0000.jpg',
-    'https://i.ibb.co/VWm8PD0/IMG-20210730-WA0005.jpg',
-    'https://i.ibb.co/fD3PFpb/IMG-20210723-WA0002.jpg',
-    'https://i.ibb.co/yF7yx11/IMG-20210727-WA0013.jpg',
-    'https://i.ibb.co/gW4yYvX/IMG-20210701-WA0001.jpg',
-    'https://i.ibb.co/RbVqR8f/IMG-20210624-WA0005.jpg',
-    'https://i.ibb.co/sHKMMdz/IMG-20210607-WA0000.jpg',
-    'https://i.ibb.co/hmDXw75/IMG-20210605-WA0000.jpg',
     'https://i.ibb.co/vz58dBQ/IMG-20210530-WA0003.jpg',
-    'https://i.ibb.co/wLPgThG/IMG-20210530-WA0001.jpg'
+    'https://i.ibb.co/sHKMMdz/IMG-20210607-WA0000.jpg',
+    'https://i.ibb.co/gW4yYvX/IMG-20210701-WA0001.jpg',
+    'https://i.ibb.co/VWm8PD0/IMG-20210730-WA0005.jpg',
+    'https://i.ibb.co/mBdTPYY/IMG-20210811-WA0003.jpg',
+    'https://i.ibb.co/GWbndFS/IMG-20210816-WA0008.jpg',
+    'https://i.ibb.co/G5pkLZW/IMG-20210821-WA0003.jpg',
+    'https://i.ibb.co/GWd0TtN/IMG-20210825-WA0003.jpg',
+    'https://i.ibb.co/kB6Nv9w/IMG-20210826-WA0003.jpg',
+    'https://i.ibb.co/xLvmJPn/IMG-20210829-WA0000.jpg',
+    'https://i.ibb.co/cvxc5v2/IMG-20210831-WA0004.jpg',
+    'https://i.ibb.co/CQBTdBm/IMG-20210904-WA0001.jpg',
+    'https://i.ibb.co/DbN4fkK/IMG-20210927-WA0001.jpg',
+    'https://i.ibb.co/fHbMCJb/IMG-20210927-WA0004.jpg',
+    'https://i.ibb.co/7vkKy68/20210515-122821.jpg',
 ]
 
 const packagingPrimarySourcePhotos = [
@@ -375,7 +359,7 @@ const DrBarkers = (props) => {
                     <p>I'm really happy with how it came out, and I think it represents Tonks' style very well.</p>
                     <Spacer h='50%' dH='40vh' />
                 </Section>
-                <Section id='infographics,-logo-and-stickers' >
+                <Section id='infographics,-logo-and-bag' >
                     <h1>Logo</h1>
                     <Subsection id='logo--logo-moodboard' />
                     <p>I knew I wanted my logo to be very simple, but also quite striking. To do this, I created a moodboard of logos similar to what i desired:</p>
@@ -406,7 +390,12 @@ const DrBarkers = (props) => {
                     <p>To create a vibrant red, I changed the hue of the beige, to link them, and to keep my work consistent. I used this red colour sparingly, to give it more impact. For example, when I want to highlight important information and statistics. When I chose additional colours, I also based them off of the original red colour, but selected them to ensure that they would provide sufficient contrast to the background. </p>
                     <p>I chose the font <a href='https://fonts.google.com/specimen/Inter'>Inter</a>, as it is very easy to read, making it accessible for everyone to read. This is very important for my Infographics, as there is a lot of text, so I wanted to reduce eye strain by using a very legible font.</p>
                     <p>I added the textured background last, as I thought they infographics as a whole looked very empty. I had hoped that it would help to tie all the other elements together, and to fill empty space. Initially it was a far too similar colour to the text, making it very disrupting. To help with this, I lowered the opacity, and made the text far easier to read.</p>
-                    <h1>Stickers</h1>
+                    <Subsection id='bag--the-bag' />
+                    <p>I made a simple Bag that could be included within the box to help promote the brand. The bag itself is very simple, by only using the logo on it. I tried making a worn out version to help give it texture and to not make it as plain, but it just ended up looking odd.</p>
+                    <Image className='inline content-img' src='/assets/images/dr-barkers/old-bag.png' />
+                    <Image className='left content-img' src='/assets/images/dr-barkers/3d-outcomes/bag-front.jpg' />
+                    <Image className='inline content-img' style={{paddingTop: '10px'}} src='/assets/images/dr-barkers/3d-outcomes/bag-hung-up.jpg' />
+                    {/* <h1>Stickers</h1>
                     <Subsection id='stickers--stickers-moodboard' />
                     <p>My Dad originally suggested to me that I include stickers in the box, similar to how Apple do with their products. I thought that it was a great idea to give the customer a little extra, as a gift for choosing Dr Barkers. I had seen similar dog brands include stickers as well, so thought that it would be a great thing to include.</p>
                     <p>I then created this small moodboard to help influence my design:</p>
@@ -414,7 +403,7 @@ const DrBarkers = (props) => {
                     <Subsection id='stickers--stickers-digital-outcomes' />
                     <Gallery imgs={stickerVariants} />
                     <p>In the end, I created 3 different stickers to include in my box, in addition to the products. One of them contained just the logo, one with the surrounding text, and finally an inverted icon. I used <a href='https://affinity.serif.com/en-gb/'>Affinity Designer</a> to create these, and used a mixture of raidial gradients (for the colours), and two concial gradients with screen and difference opacity effects to make it look realistic, and to make it look reflective.</p>
-                    <Subsection id='stickers--stickers-non-digital-outcomes' />
+                    <Subsection id='stickers--stickers-non-digital-outcomes' /> */}
 
                 </Section>
                 <Section id='the-exam' >
@@ -447,7 +436,8 @@ const DrBarkers = (props) => {
                     <Image className='divider-img' src='/assets/images/dr-barkers/final box.png' />
                     <Image className='divider-img' src='/assets/images/dr-barkers/final top box.png' />
 
-                    <p>After the exam I then created the box with the sleeve</p>
+                    <Subsection id='box--bag-non-digital-outcome' />
+                    <p>After the exam I then created the box with the sleeve:</p>
                     <Image className='divider-img' src='/assets/images/dr-barkers/3d-outcomes/top.jpg' />
                     <Image className='divider-img' src='/assets/images/dr-barkers/3d-outcomes/side-profile.jpg' />
                     <Image className='divider-img' src='/assets/images/dr-barkers/3d-outcomes/box-with-milo.jpg' />
