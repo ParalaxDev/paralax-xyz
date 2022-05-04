@@ -63,6 +63,9 @@ const Homepage = () => {
             </section>
             <section id='about' className='content-container'>
             </section>
+            <section id='footer' className='content-container'>
+                <p><center>This website was made my me. You can view everything about it <a href="/assets/files/Paralax.xyz.pdf" target="_blank">here</a></center></p>
+            </section>
         </div>
     )
 }

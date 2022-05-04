@@ -297,7 +297,7 @@ const DrBarkers = (props) => {
                     <Subsection id='ideas--the-packaging' />
                     {/* <h2>The Packaging</h2> */}
                     <Image className='left content-img' src='https://www.petfoodprocessing.net/ext/resources/030921_Packaging-trends_Lead-Srcrangizzz.jpg?t=1615230590&width=1080' />
-                    <p>For me, I knew I wanted the packaging to be aesthetic, and environmentally friendly. I knew this would mean using sustainable cardboard, and recycled plastic. As well as this, I wanted to make the treat, dog biscuit and kibble bags all resealable, making it very convenient for the customer to refill, further adding to the environmental aspect. I wanted the packaging very colourful and use saturated colours, making it fun for the customer to view. To further use the subscription boxes to my advantage, I want to change the design every month, making it an experience for the customer to open.</p>
+                    <p>For me, I knew I wanted the packaging to be aesthetic, and environmentally friendly. I knew this would mean using sustainable cardboard, and recycled plastic. As well as this, I wanted to make the treat, dog biscuit and kibble bags all resealable, making it very convenient for the customer, further adding to the environmental aspect. I wanted the packaging very colourful, making it fun for the customer to view. To further use the subscription boxes to my advantage, I want to change the design every month, making it an experience for the customer to open.</p>
                     <p>I also want the packaging to be functional, by making the treat bag into a reusable holder, acting as advertising for when the customer uses out and about, further reducing its environmental impact. I would shape my packaging to give me as much space as possible, giving me more real estate to advertise the brand. I want to make sure the packaging is capable of keeping in the odour and freshness contained, making it more pleasurable to keep in the house.</p>
 
                     {/* <h2>The Advertising</h2> */}
@@ -418,7 +418,7 @@ const DrBarkers = (props) => {
                     <Subsection id='box--the-sleeve-design' />
                     <Image className='left content-img' src='/assets/images/dr-barkers/original design.png' />
                     <p>I created the original design in <a href='https://affinity.serif.com/en-gb/'>Affinity Designer</a>, and then UV mapped it onto the sleeve in Blender. The proportions didn't exactly match up, so I had to correct for some distortion, but eventually got it working. </p>
-                    <p>I originally had the idea to have the large logo in the center with the tagline below, and the bone pattern underneath. However, after some iterating, I found that the bone pattern was 1) no visible enough on the actual design, but 2) also interfered with the other elements. </p>
+                    <p>I originally had the idea to have the large logo in the center with the tagline below, and the bone pattern underneath. However, after some iterating, I found that the bone pattern was 1) not visible enough on the actual design, but 2) also interfered with the other elements. </p>
                     <p>To help with this, I removed the pattern on the from side, and increased the contrast on the remaining sides. This had the desired effect, by making the front more legible, but also keeping the link to my <a href='#infographics--infographics-digital-response'>Infographics</a>, helping to create a well-rounded experience for the entire product.</p>
                     <br />
                     <br />
@@ -432,11 +432,13 @@ const DrBarkers = (props) => {
                     <p>This then gave me lots of empty space in the middle, allowing me to reintroduce the illustration of the dog, helping to demonstrate what the box contains, further pushing the brand to the customer, in a subtle way. </p>
                     <p>For the final design, I added some leaves at the base of the Dog, to add some colour, as without it, it was very bland and monotone. I also think that it really helps to add a sense of playfulness to the design. Before, he was just a dog standing very upright, as though he was on guard. Now, however, he looks as though he is playing in the leaves, and makes the customer more confident that my product will make their dog happy.</p>
                     <p>I also made some small quality changes, such as shifting the bones on the side to stop it from clipping with the edge. I also increased the contrast between some of the text and the background. I also experimented with centring the text, and making the artwork bigger, to further promote the illustration</p>
+                    <br />
+                    <br />
                     <p> I then created some final renders of the box mockup:</p>
                     <Image className='divider-img' src='/assets/images/dr-barkers/final box.png' />
                     <Image className='divider-img' src='/assets/images/dr-barkers/final top box.png' />
 
-                    <Subsection id='box--bag-non-digital-outcome' />
+                    <Subsection id='box--box-non-digital-outcome' />
                     <p>After the exam I then created the box with the sleeve:</p>
                     <Image className='divider-img' src='/assets/images/dr-barkers/3d-outcomes/top.jpg' />
                     <Image className='divider-img' src='/assets/images/dr-barkers/3d-outcomes/side-profile.jpg' />

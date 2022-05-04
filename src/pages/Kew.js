@@ -36,11 +36,11 @@ const Kew = () => {
         <>
             <ScrollingHeader title='KEW' image={titleThumbnail} />
             <div className='text-container'>
-                <p>This is an adapted version of my original powerpoint. To view this in its original form, you can download a PDF form <a href="/assets/files/GCSE Portfolio Unit 1 Part 2.pdf" target="_blank">here</a></p>
+                <p>This is an adapted version of my original powerpoint. To view this in its original form, you can download a PDF from <a href="/assets/files/GCSE Portfolio Unit 1 Part 2.pdf" target="_blank">here</a></p>
 
                 <Subsection id='kew--moodboard'/>
                 <Gallery imgs={moodboard} />
-                <p>I like the very bright and vibrant colours used in these photos, making them very eye catching to the viewer. I also like the very intricate line work of some pieces, but for others, the artist has used plain shaped to create a very bold effect. The colour green is used a lot to help convey the natural beauty of the projects and Kew Gardens as a whole.</p>
+                <p>I like the bright and vibrant colours used in these photos, making them very eye catching to the viewer. I also like the intricate line work of some pieces, but for others, the artist has used plain shaped to create a bold effect. The colour green is used a lot to help convey the natural beauty of the projects and Kew Gardens as a whole.</p>
                 <p>I also like how the artists have adapted their artwork to fit with their packaging, to help create an exciting design, promoting their product.</p>
 
                 <Section id='inspiration'>
@@ -48,27 +48,27 @@ const Kew = () => {
                     <Image style={{paddingRight: '20px'}} className='inline content-img' src='/assets/images/kew/primary-sources/image15.jpeg' />
                     <Image className='inline content-img' src='/assets/images/kew/primary-sources/image16.jpeg' />
                     <p><span style={{ color: 'GrayText' }}>1. </span>I love the complex bulb at the centre, that creates an exiting focal point to the flower. I also love the slightly frayed petals, giving it a sense of age and decay. I love the vibrant purple it has, balancing its frailness, with a such stark colour</p>
-                    <p><span style={{ color: 'GrayText' }}>2. </span>I love the saturated orange this flower has, and it creates a joyful and warm experience for the audience. Similarly to the flower above, I also love the complex bulb it has, creating a harsh difference between the simple petals</p>
+                    <p><span style={{ color: 'GrayText' }}>2. </span>I love the saturated orange this flower has, and it creates a joyful and warm experience for the audience. Similarly to the first flower, I also love the complex bulb it has, creating a striking difference to the simple petals</p>
                     
                     <Image style={{paddingRight: '20px'}} className='inline content-img' src='/assets/images/kew/primary-sources/image17.jpeg' />
                     <Image className='inline content-img' src='/assets/images/kew/primary-sources/image18.jpeg' />
-                    <p><span style={{ color: 'GrayText' }}>3. </span>I really like how the petals have a gradient from the older, pink tips, to the newer white base. I also love how the petals radiate from the centre, drawing the eye to the yellow stigma at the middle</p>
-                    <p><span style={{ color: 'GrayText' }}>4. </span>I really like how the petals create a geometric pattern, the entices the audience, and combined with the subtle gradient from the stark yellow, to a slight orange, it creates an inviting and warm flower. As well as this, it creates the image of summer and warmth</p>
+                    <p><span style={{ color: 'GrayText' }}>3. </span>I really like how the petals have a gradient from the older, pink tips, to the white center. I also love how the petals radiate from the centre, drawing the eye to the yellow stigma at the middle</p>
+                    <p><span style={{ color: 'GrayText' }}>4. </span>I really like how the petals create a geometric pattern, the entices the audience, and combined with the subtle gradient from the stark yellow to a slight orange, it creates an inviting and warm flower. As well as this, it creates the image of summer and warmth</p>
 
                     <Image style={{paddingRight: '20px'}} className='inline content-img' src='/assets/images/kew/primary-sources/image19.png' />
                     <Image className='inline content-img' src='/assets/images/kew/primary-sources/image20.png' />
-                    <p><span style={{ color: 'GrayText' }}>5. </span>I like this plant because the hive like form it has. It creates a sense of structure and rigidness. I also like the red burgundy colour it has, creating a sense of excitement. The imperfect geometry of it also adds to the sense of excitement</p>
-                    <p><span style={{ color: 'GrayText' }}>6. </span>I like the simplicity of these Osa pulchra flowers, and combined with the translucent white, it gives it a very fragile feel. I like how the stem curves towards the bulb of the flower, further emphasising this fragile sense. As well as this, I also like how the yellow of the filaments contrast against the flowers, making them seem very majestic and precious.</p>
+                    <p><span style={{ color: 'GrayText' }}>5. </span>I like this plant because the hive like form it has. It creates a sense of structure and rigidness. I also like the red burgundy colour it has, creating a sense of excitement. The imperfect geometry adds a very organic aspect.</p>
+                    <p><span style={{ color: 'GrayText' }}>6. </span>I like the simplicity of these Osa pulchra flowers, and combined with the translucent white, it gives it a very fragile feel. I like how the stem curves towards the bulb of the flower, further emphasising the delicate attachment. As well as this, I also like how the yellow of the filaments contrast against the flowers, making them seem very majestic and precious.</p>
                     
                     <Image style={{paddingRight: '20px'}} className='inline content-img' src='/assets/images/kew/primary-sources/image21.png' />
                     <Image className='inline content-img' src='/assets/images/kew/primary-sources/image22.png' />
-                    <p><span style={{ color: 'GrayText' }}>7. </span>I love the vibrant colour this Borwnea coccinea uses, giving a very exotic and exciting feel to it. Its complex shape also adds to this, with its intricate layering of translucent petals, giving the overall plant a very relaxing variation to it. Its smooth texture allows a very pleasant experience to the eye, and its intricateness keeps the eye fixed to it.</p>
-                    <p><span style={{ color: 'GrayText' }}>8. </span>I like these flowers from the Mango tree as their structure reminds me of fractals, and their branches being very mathematical. I also like the very dark, yet vibrant green, the leaves are, showing off how beautiful nature is. I also like how the branch fades from the new, pale green, to the older, burgundy red. This creates a nice gradient.</p>
+                    <p><span style={{ color: 'GrayText' }}>7. </span>I love the vibrant colour this Borwnea coccinea uses, giving a very exotic and exciting feel to it. Its complex shape also adds to this, with its intricate layering of translucent petals giving the overall plant a very relaxing variation to it. Its smooth texture produces a very pleasant experience to the eye, and its intricateness keeps the eye fixed to it.</p>
+                    <p><span style={{ color: 'GrayText' }}>8. </span>I like these flowers from the Mango tree as their structure reminds me of fractals seeming very mathematical. I also like the very dark, yet vibrant, green colour of the leaves, showing off how beautiful nature is. It also contrasts as the branch fades from the new, pale green, to the older, burgundy red. This creates a nice gradient.</p>
 
                     <Image style={{paddingRight: '20px'}} className='inline content-img' src='/assets/images/kew/primary-sources/image25.jpg' />
                     <Image className='inline content-img' src='/assets/images/kew/primary-sources/image24.png' />
-                    <p><span style={{ color: 'GrayText' }}>9. </span>I like the overall shape of this flower. Its not over complicated, but its also not too minimalistic. The anther’s very bright yellow contrasts well to the translucent white the petals have. As well as this, the outer petals have a pinkish-red backing to them, adding to the very calm sense that they emit.</p>
-                    <p><span style={{ color: 'GrayText' }}>10. </span>I like the silhouette this cactus has, and it helps to creates a striking image. I also like the very vibrant green that the cactus has due to the early sunrise. This also creates some interesting shadows on the cactus, adding to the dramatic effect</p>
+                    <p><span style={{ color: 'GrayText' }}>9. </span>I like the overall shape of this flower. Its not over complicated, but its also not too minimalistic. The anther is very bright yellow contrasts well to the translucent white of the petals. In addition, the outer petals have a pinkish-red backing to them, adding to the very calm sense that they emit.</p>
+                    <p><span style={{ color: 'GrayText' }}>10. </span>I like the silhouette this cactus has, and it helps to creates a striking image. I also like the very vibrant green that the cactus has due to the early sunrise. This creates some interesting shadows on the cactus, adding to the dramatic effect</p>
 
                     <Subsection id='inspiration--more-primary-source-photos'/>
                     <Gallery imgs={primarysources} />
@@ -100,16 +100,16 @@ const Kew = () => {
                     <Image className='line content-img' src='/assets/images/kew/digital-editing/flower-1/image52.png' />
                     <Image className='line content-img' src='/assets/images/kew/digital-editing/flower-1/image53.png' />
                     <Image className='line content-img' src='/assets/images/kew/digital-editing/flower-1/image54.png' />
-                    <p>Here is another mixed media drawing that I made, and the later edited in GIMP. I started by cutting out my sketch, and replacing the background with a gradient I found at UI Gradients. I then created a clipping mask of the flower, and overlayed a flipped version of the gradient. To make this stand out more, I then added a drop shadow, and a thin outline to it.</p>
+                    <p>Here is another mixed media drawing that I made, and then later edited in GIMP. I started by cutting out my sketch, and replacing the background with a gradient I found at UI Gradients. I then created a clipping mask of the flower, and overlayed a flipped version of the gradient. To make this stand out more, I then added a drop shadow, and a thin outline to it.</p>
                     
                     <Image className='line content-img' src='/assets/images/kew/digital-editing/flower-2/image55.png' />
                     <Image className='line content-img' src='/assets/images/kew/digital-editing/flower-2/image56.png' />
                     <Image className='line content-img' src='/assets/images/kew/digital-editing/flower-2/image57.png' />
                     <Image className='line content-img' src='/assets/images/kew/digital-editing/flower-2/image58.png' />
-                    <p>For this edited photo, I first cut around the rose that I drew and then colour in pastels. I then saturated the image slightly, as the lighting when I took the image wasn’t perfect. I then added a coloured background, before then adding a gradient map on top,. I then shifted the hue to something I preferred.</p>
+                    <p>For this edited photo, I first cut around the rose that I drew and then coloured in with pastels. I then saturated the image slightly, as the lighting when I took the image wasn’t perfect. I then added a coloured background, before then adding a gradient map on top,. I then shifted the hue to something I preferred.</p>
                 
                     <Subsection id='inspiration--cyanotypes'/>
-                    <p>For this secondary source, I used Cyanotypes. This is a chemical process that was used to create things such as blueprints. It does this with exposure to UV, curing the chemical making it a vibrant blue. The area that had been covered up by, in this case, some foliage, blocks sunlight from it, and therefore keeping it white.</p>
+                    <p>For this secondary source, I used Cyanotypes. This is a chemical process that was used to create things such as blueprints. It does this through exposure to UV, curing the chemical making it a vibrant blue. The area that had been covered up by, in this case, some foliage, blocks sunlight from it, and therefore keeping it white.</p>
                     <Image className='line content-img' src='/assets/images/kew/digital-editing/cyanotypes/image59.jpeg' />
                     <Image className='line content-img' src='/assets/images/kew/digital-editing/cyanotypes/image60.jpeg' />
                     <Image className='line content-img' src='/assets/images/kew/digital-editing/cyanotypes/image61.jpg' />
@@ -132,7 +132,7 @@ const Kew = () => {
                     <Image className='inline content-img' src='/assets/images/kew/infographics/moodboard-old/image67.png' />
 
                     <Subsection id='infographics--improved-infographic'/>
-                    <p>For my revised Infographics, I wanted to keep it bold and bright, to help draw in the eye to the information. I also used the Leaves at the top, and the tree line at the bottom, to help create a natural border around the poster. I added the banded sky to te background, to help break up the plain colour I originally used. I also did this to increase contrast of the flowers at the top, as it was hard to see them on the pale blue I had picked.</p>
+                    <p>For my revised Infographics, I wanted to keep it bold and bright, to help draw in the eye to the information. I also used the leaves at the top, and the tree line at the bottom, to help create a natural border around the poster. I added the banded sky to the background, to help break up the plain colour I originally used. I also did this to increase contrast of the flowers at the top, as it was hard to see them on the pale blue I had picked.</p>
                     <Image className='line content-img' src='/assets/images/kew/infographics/revised-version/image79.png' />
                     <Image className='line content-img' src='/assets/images/kew/infographics/revised-version/image72.png' />
                     <Image className='line content-img' src='/assets/images/kew/infographics/revised-version/image73.png' />
@@ -343,7 +343,7 @@ const Kew = () => {
                     <Image className='content-img' style={{float: 'left', paddingRight: '20px'}} src='/assets/images/kew/outcome-2/finals/mockups/image195.jpeg' />
                     <Image className='content-img' src='/assets/images/kew/outcome-2/finals/mockups/image196.jpeg' />
                     <Image className='divider-img' style={{width: 'calc(100% - 20px)'}}src='/assets/images/kew/outcome-2/finals/mockups/image197.png' />
-                    <Subsection id='outcome-2--final-3d-outcome' />
+                    <Subsection id='outcome-2--final-non-digital-outcome' />
                     <Image className='threexline content-img' src='/assets/images/kew/outcome-2/finals/3d-outcomes/image198.jpg' />
                     <Image className='threexline content-img' src='/assets/images/kew/outcome-2/finals/3d-outcomes/image199.jpg' />
                     <Image className='threexline content-img' src='/assets/images/kew/outcome-2/finals/3d-outcomes/image200.jpg' />

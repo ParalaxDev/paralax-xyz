@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;800;900&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap");
 
 @font-face {
@@ -11,7 +12,7 @@ $textOutline: 10px;
 * {
   //   width: 100vw;
   //   height: 100vh;
-  // font-family: "Arvo", serif;
+  font-family: "Inter", serif;
 
   // cursor: none;
 
@@ -48,6 +49,13 @@ html {
   color: #000;
   z-index: -15;
   position: fixed;
+}
+
+#footer {
+    padding: 20px;
+    a {
+        color: #6196cc;
+    }
 }
 
 .scroll-indicator {

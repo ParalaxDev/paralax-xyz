@@ -29,7 +29,7 @@ const Typography = () => {
         <>
             <ScrollingHeader title='TYPOGRAPHY' image={titleThumbnail} />
             <div className='text-container'>
-                <p>This is an adapted version of my original powerpoint. To view this in its original form, you can download a PDF form <a href="/assets/files/GCSE Portfolio Unit 1 Part 1.pdf" target="_blank">here</a></p>
+                <p>This is an adapted version of my original powerpoint. To view this in its original form, you can download a PDF from <a href="/assets/files/GCSE Portfolio Unit 1 Part 1.pdf" target="_blank">here</a></p>
                 <Subsection id='moodboard' />
                 {/* <Image className='divider-img' src='/assets/images/kew/moodboard.jpg' /> */}
                 <Image className='divider-img' src='https://i.ibb.co/XXPn4Xn/20211027-170943.jpg' />
@@ -46,10 +46,10 @@ const Typography = () => {
                     <p>I really like the use of colours, and how he used lines to emphasize the first letter of the word. As well as this, he uses the numbers to show the date 1985. He differentiates these numbers by making them red.</p>
                     <Subsection id='artist-inspired-outcome' />
                     <Image className='inline content-img' src='https://i.ibb.co/6rLYr12/Picture3.png' />
-                    <Image className='right content-img' src='https://i.pinimg.com/originals/42/e8/86/42e886e3a13ac54b503dd88e87c4ce6f.jpg' />
+                    <Image className='right content-img' src='https://i.pinimg.com/originals/42/e8/86/42e886e3a13ac54b503Dd88e87c4ce6f.jpg' />
                     <Spacer />
                     <Spacer />
-                    <p >For my interpretation of his work, I chose his 2012 London Olympics poster. I recreated it in GIMP on my computer. To put a twist on it, I chose to do the deaths of soldiers in WW1 in and around High Wycombe. To keep it true to the original, I added “Lest We Forget” down the side, similar to how Baines put London Olympics 2012 in his. I am very happy with how the final version turned out. You can see his original below:</p>
+                    <p >For my interpretation of his work, I chose his 2012 London Olympics poster. I recreated it in GIMP on my computer. To put a twist on it, I chose to do the deaths of soldiers in WW1 in and around High Wycombe. To keep it true to the original, I added “Lest We Forget” down the side, similar to how Baines put London Olympics 2012 in his. I am very happy with how the final version turned out. You can see his original above</p>
                 </Section>
                 <Section id='deconstructing-the-alphabet' >
                     {/* https://i.ibb.co/MPD7TV8/20200923-094922.jpg
@@ -87,14 +87,15 @@ const Typography = () => {
                     
                     <Image className='inline content-img' style={{paddingRight: '20px'}} src='/assets/images/typography/ripped/3.png' />
                     <Image className='inline content-img' src='/assets/images/typography/ripped/5.png' />
-                    <p><span style={{ color: 'GrayText' }}>3. </span>The ripped pieces of paper which I have stuck back down creates an interesting fade between the segments, adding texture to the piece. As well as this, it makes it look almost 3d, adding a bit of depth to it. There is some space between the segments, breaking up the mayhem of the letters with the still black paper.</p>
+                    <p><span style={{ color: 'GrayText' }}>3. </span>The ripped pieces of paper which I have stuck back down creates an interesting fade between the segments, adding texture to the piece. As well as this, it makes it look almost 3D, adding a bit of depth to it. There is some space between the segments, breaking up the mayhem of the letters with the still black paper.</p>
                     
  
                     <p><span style={{ color: 'GrayText' }}>4. </span>The curls which I then stuck down created a striking image, adding a very outstanding essence of depth to the scene. The way the curls are different heights also adds a sense of randomness to the piece, the same way the tears in the letters do. </p>
                     <Image className='left content-img' src='/assets/images/typography/ripped/4.jpeg' />
-                    <p>The accordion of paper created an interesting look when 3d, adding depth to the piece. It also created a shadow on the troughs, creating an appeasing look. When read from an angle, it reads in an odd way, skipping some lines, deconstructing the alphabet further. When read form above, it appears like the letters are squished, further deconstructing the alphabet.</p>
+                    <p>The accordion of paper created an interesting look when 3D, adding depth to the piece. It also created a shadow on the troughs, creating an appeasing look. When read from an angle, it reads in an odd way, skipping some lines, deconstructing the alphabet further. When read form above, it appears like the letters are squished, further deconstructing the alphabet.</p>
                     <Spacer h={30} />
                     <Subsection id='3d-typography' />
+                    <p>For these next images, I designed and 3D printed a series of optical illusions using the 3D printer that I have at home. I wanted to incorporate my love for technical engineering and design with my love for graphic design.</p>
                     <Image className='divider-img' src='/assets/images/typography/3d/1.jpeg' />
                     <p>I really like this picture because of the illusion it creates. When you look at it from one angle, it creates a W. However, from another angle if creates a B. This creates an interesting shape, making the audience want to figure out more. I used a very rigid font, to create an evocative impact, which is further depicted by the monochromatic atmosphere it creates. The white paper in the background creates subtle texture, to make the picture more visually appeasing, but it doesn’t detract from the main element.</p>
                     <Image className='divider-img' src='/assets/images/typography/3d/4.jpeg' />
@@ -145,7 +146,7 @@ const Typography = () => {
                     <Image className='inline content-img' src='/assets/images/typography/book-poster/image50.jpg' />
                     <Image className='right content-img' src='/assets/images/typography/book-poster/image52.jpeg' />
 
-                    <p>I started off by removing all the black card behind the image, leaving me with just the white parts. I then place a blue background behind it, to create contrast between the letters, and to make it more appealing to the eye. I then place a translucent grey background between the text and the letters to create contrast between them. I then experimented with giving the text a drop shadow, but later decided against it. I then hue shifted the blue into an orange as I thought it looked better. To create a 3d book effect as seen in many of the book posters I had on my moodboard, I modelled a quick book in Blender, and UV wrapped the front cover onto it, as well as a page texture I found online.</p>
+                    <p>I started off by removing all the black card behind the image, leaving me with just the white parts. I then placed a blue background behind it, to create contrast between the letters, and to make it more appealing to the eye. I then placed a translucent grey background between the text and the letters to create contrast between them. I then experimented with giving the text a drop shadow, but later decided against it. I then hue shifted the blue into an orange as I thought it looked better. To create a 3D book effect as seen in many of the book posters I had on my moodboard, I modelled a quick book in Blender, and UV wrapped the front cover onto it, as well as a page texture I found online.</p>
                     <Image className='left content-img' src='/assets/images/typography/book-poster/book-processes/image55.png' />
                     {/* <Spacer h={16} /> */}
                     <div style={{marginTop: '25px'}}>
